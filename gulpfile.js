@@ -60,6 +60,6 @@ gulp.task( 'bs-reload', function() {
 // Default task
 //
 gulp.task( 'default', [ 'bs', 'sass' ], function() { // 1
-  gulp.watch("./**/*.html", ['bs-reload']); // 2
-  gulp.watch("./src/assets/sass/**/*.scss", [ 'sass', 'bs-reload' ]); // 3
+  gulp.watch("index.html", ['bs-reload']); // 2
+  gulp.watch("assets/styles/**/*.scss", [ 'sass', 'bs-reload' ]); // 3
 });
