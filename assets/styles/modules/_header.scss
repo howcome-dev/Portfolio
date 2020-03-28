@@ -1,3 +1,35 @@
 @charset "UTF-8";
+@import "../mixin/_layout.scss";
+@import "../config/_size.scss";
+@import "../config/_color.scss";
 
-$color: red;
+.ly_header_media{
+  margin: 0;
+  img{
+    vertical-align: bottom;
+  }
+}
+
+.ly_header_inner{
+  @include boxSet();
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+
+  &_ttl{
+    order: 2;
+    font-size: $h1;
+    margin: 0;
+  }
+  &_ttl2{
+    order: 3;
+    font-size: $h2;
+  }
+  &_media{
+    order: 1;
+    margin: 0;
+  }
+  &_txt{
+    order: 4;
+  }
+}

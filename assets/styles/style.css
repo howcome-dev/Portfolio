@@ -1,2 +1,58 @@
 @import url(/Users/user/Portfolio/node_modules/normalize.css/normalize.css);
+.ly_header_media {
+  margin: 0;
+}
+
+.ly_header_media img {
+  vertical-align: bottom;
+}
+
+.ly_header_inner {
+  color: #dd3333;
+  background: #FEFEFE;
+  max-width: 85%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .ly_header_inner {
+    width: 1000px;
+  }
+}
+
+.ly_header_inner_ttl {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  font-size: 1.75rem;
+  margin: 0;
+}
+
+.ly_header_inner_ttl2 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  font-size: 1.25rem;
+}
+
+.ly_header_inner_media {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin: 0;
+}
+
+.ly_header_inner_txt {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
 /*# sourceMappingURL=style.css.map */

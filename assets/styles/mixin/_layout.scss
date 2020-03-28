@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@import "../config/_color.scss";
+@import "../config/_size.scss";
+
+@mixin boxSet {
+  color: $main-color;
+  background: $background-color;
+  max-width: 85%;
+  margin: 0 auto;
+  @include media(pc){
+    width: $min-width;
+  }
+}

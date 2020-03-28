@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import "../../node_modules/normalize.css/normalize";
 @import "modules/_header.scss";
-
-header{
-  background: $color;
-}
+@import "config/_color.scss";
+@import "config/_size.scss";
+@import "mixin/_layout.scss";
