@@ -12,17 +12,20 @@ $bp-pc: 768px;
 		}
 	}
 	@else if $media-width == pc {
-		@media only screen and (max-width: $bp-pc) {
+		@media only screen and (min-width: $bp-pc) {
 			@content;
 		}
 	}
 }
 
 // PC最小サイズ
-$min-width: 1000px;
+$pc-min: 1000px;
 
-//フォントサイズ
+// SP最小サイズ
+$sp-min: 320px;
+
+// フォントサイズ
 $base-size: 1rem;
 $h1: 1.75rem;
-$h2: 1.25rem;
-$h3: 1rem;
+$h2: 0.875rem;
+$h3: 0.812rem;

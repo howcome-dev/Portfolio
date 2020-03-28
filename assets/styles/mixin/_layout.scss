@@ -5,9 +5,14 @@
 @mixin boxSet {
   color: $main-color;
   background: $background-color;
-  max-width: 85%;
   margin: 0 auto;
+
+  @include media(sp){
+    width: 100%;
+    min-width: $sp-min;
+  }
+
   @include media(pc){
-    width: $min-width;
+    min-width: $pc-min;
   }
 }
