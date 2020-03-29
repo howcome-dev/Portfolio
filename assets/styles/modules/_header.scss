@@ -4,7 +4,7 @@
 @import "../config/_color.scss";
 
 header{
-  @include boxSet();
+  @include baseSet();
 }
 
 .ly_header_media{
@@ -16,15 +16,12 @@ header{
 }
 
 .ly_header_inner{
-  width: 90%;
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-  margin: -2em auto 0;
+  @include boxSet();
+  margin-top: -2em;
 
   &_ttl{
     order: 2;
-    font-size: $h1;
+    font-size: $ttl;
     margin: 0;
     padding: 1.6em 0 0 .21em;
     letter-spacing: .03em;
@@ -33,7 +30,7 @@ header{
     order: 3;
     width: 100%;
     text-align: right;
-    font-size: $h2;
+    font-size: $ttl2;
     margin: -2.3em 0 0 0;
     padding: 0 .4em 0 0;
     letter-spacing: .02em;
@@ -42,11 +39,10 @@ header{
     order: 1;
     margin: 0;
   }
-  &_txt{
+  &_desc{
     order: 4;
-    font-size: $h3;
-    line-height: .8em;
-    line-height: 1.2em;
+    font-size: $txt;
+    line-height: $base-height;
     letter-spacing: .05em;
   }
 }

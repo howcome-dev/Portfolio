@@ -2,11 +2,12 @@
 @import "../config/_color.scss";
 @import "../config/_size.scss";
 
-@mixin boxSet {
+body{
   color: $main-color;
   background: $background-color;
-  margin: 0 auto;
+}
 
+@mixin baseSet {
   @include media(sp){
     width: 100%;
     min-width: $sp-min;
@@ -15,4 +16,12 @@
   @include media(pc){
     min-width: $pc-min;
   }
+}
+
+@mixin boxSet{
+  width: 90%;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-between;
+  margin: 0 auto 4em;
 }

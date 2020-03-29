@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "../mixin/_layout.scss";
+@import "../config/_size.scss";
+
+.bl_inner{
+  margin: 0 auto 3em;
+  text-align: center;
+  dd{
+    width: 100%;
+    margin: 0 auto .8em;
+  }
+  &_ttl{
+    order: 2;
+    width: 100%;
+    font-size: $ttl;
+    margin-bottom: .8em;
+    line-height: $base-height;
+  }
+  &_ttl2{
+    order: 3;
+  }
+  &_term{
+    order: 1;
+    font-size: $txt;
+  }
+  &_desc{
+    order: 4;
+    line-height: $base-height;
+  }
+}

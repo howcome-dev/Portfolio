@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import "../config/_color.scss";
+@import "../mixin/_layout.scss";
+
+a{
+  color: $main-color;
+  text-decoration: none;
+}
+main{
+  @include baseSet();
+}
+
+.ly_ttl{
+  width: 100%;
+  font-size: $ttl;
+  text-align: center;
+  margin: 0 auto 2em;
+}
+
+.ly_wrapper{
+  @include boxSet();
+
+  &_conts{
+    width: 100%;
+    font-size: $base-size;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+  }
+}

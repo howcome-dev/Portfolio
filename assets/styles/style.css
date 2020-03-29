@@ -1,8 +1,12 @@
 @import url(/Users/user/Portfolio/node_modules/normalize.css/normalize.css);
-header {
+body {
   color: #fefefe;
   background: #600a0c;
-  margin: 0 auto;
+}
+
+body {
+  color: #fefefe;
+  background: #600a0c;
 }
 
 @media only screen and (max-width: 767px) {
@@ -37,7 +41,8 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: -2em auto 0;
+  margin: 0 auto 4em;
+  margin-top: -2em;
 }
 
 .ly_header_inner_ttl {
@@ -69,13 +74,113 @@ header {
   margin: 0;
 }
 
-.ly_header_inner_txt {
+.ly_header_inner_desc {
   -webkit-box-ordinal-group: 5;
       -ms-flex-order: 4;
           order: 4;
   font-size: 0.812rem;
-  line-height: .8em;
-  line-height: 1.2em;
+  line-height: 1.7em;
   letter-spacing: .05em;
+}
+
+body {
+  color: #fefefe;
+  background: #600a0c;
+}
+
+a {
+  color: #fefefe;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  main {
+    width: 100%;
+    min-width: 320px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    min-width: 1000px;
+  }
+}
+
+.ly_ttl {
+  width: 100%;
+  font-size: 1.75rem;
+  text-align: center;
+  margin: 0 auto 2em;
+}
+
+.ly_wrapper {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 4em;
+}
+
+.ly_wrapper_conts {
+  width: 100%;
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body {
+  color: #fefefe;
+  background: #600a0c;
+}
+
+.bl_inner {
+  margin: 0 auto 3em;
+  text-align: center;
+}
+
+.bl_inner dd {
+  width: 100%;
+  margin: 0 auto .8em;
+}
+
+.bl_inner_ttl {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  width: 100%;
+  font-size: 1.75rem;
+  margin-bottom: .8em;
+  line-height: 1.7em;
+}
+
+.bl_inner_ttl2 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.bl_inner_term {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  font-size: 0.812rem;
+}
+
+.bl_inner_desc {
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+  line-height: 1.7em;
 }
 /*# sourceMappingURL=style.css.map */
