@@ -5,8 +5,11 @@
 .bl_inner{
   margin: 0 auto 3em;
   text-align: center;
-  dd{
+  a{
+    display: block;
     width: 100%;
+  }
+  dd{
     margin: 0 auto .8em;
   }
   &_ttl{

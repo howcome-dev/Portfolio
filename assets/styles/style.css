@@ -149,8 +149,12 @@ body {
   text-align: center;
 }
 
-.bl_inner dd {
+.bl_inner a {
+  display: block;
   width: 100%;
+}
+
+.bl_inner dd {
   margin: 0 auto .8em;
 }
 
@@ -182,5 +186,9 @@ body {
       -ms-flex-order: 4;
           order: 4;
   line-height: 1.7em;
+}
+
+.bl_works .bl_inner:last-child {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
