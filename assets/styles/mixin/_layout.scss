@@ -3,10 +3,16 @@
 @import "../config/_size.scss";
 
 body{
-  color: $main-color;
+  color: $base-color;
   background: $background-color;
 }
 
+a{
+  display: block;
+  text-decoration: none;
+}
+
+//幅
 @mixin baseSet{
   @include media(sp){
     width: 100%;
@@ -18,10 +24,74 @@ body{
   }
 }
 
+//flex
 @mixin boxSet{
   width: 90%;
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
   margin: 0 auto 4em;
+}
+
+//sectionレイアウト
+.ly_wrapper{
+  width: 90%;
+  margin: 0 auto 5em;
+
+  @include media(pc){
+    margin-bottom: 12em;
+  }
+
+  &_ttl{
+    width: 100%;
+    color: $main-color;
+    font-size: $ttl;
+    text-align: center;
+    margin: 0 auto 2em;
+  }
+
+  &_conts{
+    width: 100%;
+    font-size: $base-size;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 0 auto 1em;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+//ブロックレイアウト
+.bl_inner{
+  margin: 0 auto 3em;
+  text-align: left;
+  a{
+    display: block;
+    width: 100%;
+  }
+  dd{
+    margin: 0 0 .8em;
+  }
+  &_ttl{
+    order: 2;
+    width: 100%;
+    color: $main-color;
+    font-size: $ttl;
+    margin: 0 0 .8em;
+    line-height: $base-height;
+  }
+  &_ttl2{
+    order: 3;
+  }
+  &_term{
+    order: 1;
+    font-size: $txt;
+  }
+  &_desc{
+    order: 4;
+    line-height: $base-height;
+  }
 }

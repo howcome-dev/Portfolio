@@ -1,7 +1,33 @@
 @charset "UTF-8";
+@import "../mixin/_layout.scss";
 
 .bl_works{
-  .bl_inner:last-child{
-    margin-bottom: 0;
+  @include media(pc){
+    @include boxSet();
+  }
+  .bl_inner{
+    width: 82%;
+    text-align: center;
+    box-shadow: 0 2px 14px rgba(214,187,178,0.3);
+    padding: 20px;
+
+    @include media(pc){
+      width: 45%;
+    }
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    a{
+      display: block;
+      color: $base-color;
+      
+      @include media(pc){
+        &:hover{
+          border: 3px solid $main-color;
+        }
+      }
+    }
   }
 }

@@ -1,48 +1,49 @@
 @charset "UTF-8";
 @import "../mixin/_layout.scss";
-@import "../config/_size.scss";
-@import "../config/_color.scss";
 
 header{
-  @include baseSet();
-}
+  @include baseSet;
+  margin-top: 2.5em;
 
-.ly_header_media{
-  margin: 0 auto;
-  img{
-    width: 100%;
-    vertical-align: bottom;
+  @include media(pc){
+    margin-bottom: 5em;
   }
 }
 
 .ly_header_inner{
-  @include boxSet();
-  margin-top: -2em;
+  @include boxSet;
+  justify-content: center;
+  text-align: center;
 
   &_ttl{
     order: 2;
+    width: 100%;
+    color: $main-color;
     font-size: $ttl;
-    margin: 0;
-    padding: 1.6em 0 0 .21em;
     letter-spacing: .03em;
+    margin: 0 auto .5em;
   }
   &_ttl2{
     order: 3;
-    width: 100%;
-    text-align: right;
+    color: $sub-color;
     font-size: $ttl2;
-    margin: -2.3em 0 0 0;
-    padding: 0 .4em 0 0;
     letter-spacing: .02em;
+    margin: 0 auto 2.5em;
   }
   &_media{
     order: 1;
-    margin: 0;
+    margin-top: 0;
   }
   &_desc{
     order: 4;
     font-size: $txt;
     line-height: $base-height;
     letter-spacing: .05em;
+    margin: 0 auto;
+
+    @include media(pc){
+      width: 100%;
+      margin: 0 0 0 11.2em;
+    }
   }
 }
