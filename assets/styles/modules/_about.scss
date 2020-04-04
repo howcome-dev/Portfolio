@@ -1,23 +1,26 @@
 @charset "UTF-8";
-@import "../mixin/_layout.scss";
+@import "_base.scss";
 
 .ly_wrapper.bl_about{
-  @include media(pc){
-    width: 30%;
-  }
+  width: 87%;
+  max-width: 328px;
   .ly_wrapper_conts{
-    @include media(pc){
-      margin-bottom: 2em;
-
-      dt{
-        width: 30%;
-      }
-      dd{
-        width: 50%;
+    flex-flow: nowrap;
+    padding: .5em 0;
+    margin-bottom: 0;
+    
+    .bl_about_data{
+      width: 71%;
+      @include media(pc){
+        width: 64%;
       }
     }
-  }
-  a{
-    color: $main-color;
+    .bl_about_link{
+      color: $main-color;
+
+      &:hover{
+        color: $sub-color;
+      }
+    }
   }
 }

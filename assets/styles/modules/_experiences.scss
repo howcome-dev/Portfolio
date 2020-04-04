@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "../mixin/_layout.scss";
+@import "_base.scss";
 
 // lineと上と下の丸
 .bl_exp{
@@ -32,6 +32,7 @@
       background: $main-color;
 
       @include media(pc){
+        left: -13px;
         width: 23px;
         height: 23px;
       }
@@ -51,10 +52,18 @@
 }
 
 
-// 中の丸sp
+// 中の丸
 .bl_exp{
-  &_odd, &_even{
+  .bl_exp_odd,
+  .bl_exp_even{
     position: relative;
+    width: 80%;
+    margin-left: 3em;
+
+    @include media(pc){
+      width: 100%;
+      margin-left: 0;
+    }
 
     &:before{
       content: "";
@@ -71,18 +80,19 @@
   }
 }
 
-// 中の丸pc
-@include media(pc){
-  .bl_exp{
-    &_odd{
+.bl_exp{
+  .bl_exp_odd{
+    @include media(pc){
       &:before{
-        left: -3.5em;
+        left: -9px;
       }
     }
-    &_even{
+  }
+  .bl_exp_even{
+    @include media(pc){
       &:before{
         left: auto;
-        right: -2.6em;
+        right: -12px;
       }
     }
   }
@@ -90,19 +100,31 @@
 
 // 各exp
 .bl_exp{
+
   .ly_wrapper_ttl{
     @include media(pc){
       margin-bottom: 4em;
     }
   }
 
-  .bl_inner{
-    width: 80%;
-    margin-left: 3em;
+  &_odd, &_even{
+    width: 100%;
+    text-align: center;
+  }
 
-    &_term{
-      color: $main-color;
+  &_wrapper{
+
+    @include media(pc){
+      padding: 0 2em;
     }
+  }
+
+  &_ttl{
+    color: $main-color;
+  }
+
+  &_term{
+    color: $sub-color;
   }
 }
 
@@ -114,27 +136,27 @@
       grid-template-columns: 20% 30% 30% 20%;
       grid-template-rows: auto;
 
-      .bl_inner:nth-child(1){
+      .ly_wrapper_conts:nth-child(1){
         grid-column: 2 / 3;
         grid-row: 1 / 2;
       }
-      .bl_inner:nth-child(2){
+      .ly_wrapper_conts:nth-child(2){
         grid-column: 3 / 4;
         grid-row: 2 / 3;
       }
-      .bl_inner:nth-child(3){
+      .ly_wrapper_conts:nth-child(3){
         grid-column: 2 / 3;
         grid-row: 3 / 4;
       }
-      .bl_inner:nth-child(4){
+      .ly_wrapper_conts:nth-child(4){
         grid-column: 3 / 4;
         grid-row: 4 / 5;
       }
-      .bl_inner:nth-child(5){
+      .ly_wrapper_conts:nth-child(5){
         grid-column: 2 / 3;
         grid-row: 5 / 6;
       }
-      .bl_inner:nth-child(6){
+      .ly_wrapper_conts:nth-child(6){
         grid-column: 3 / 4;
         grid-row: 6 / 7;
       }

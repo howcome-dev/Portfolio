@@ -1,0 +1,82 @@
+@charset "UTF-8";
+@import "../config/_size.scss";
+@import "../mixin/_layout.scss";
+
+body{
+
+  @include media(sp){
+    width: 100%;
+    min-width: $sp-min;
+  }
+
+  @include media(pc){
+    min-width: $pc-min;
+  }
+
+  color: $base-color;
+  background: $background-color;
+  line-height: $base-height;
+}
+
+a{
+  display: block;
+  text-decoration: none;
+}
+
+dd{
+  margin: 0;
+}
+
+//sectionレイアウト
+.ly_wrapper{
+  width: 90%;
+  margin: 0 auto 5em;
+
+  @include media(pc){
+    margin-bottom: 12em;
+  }
+
+  &:last-child{
+    margin-bottom: 0;
+  }
+
+  &_ttl{
+    width: 100%;
+    color: $main-color;
+    font-size: $ttl;
+    text-align: center;
+    margin: 0 auto 2em;
+  }
+
+  &_conts{
+    width: 100%;
+    font-size: $base-size;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    margin: 0 auto 3em;
+
+    a{
+      display: block;
+      width: 100%;
+    }
+    &_ttl{
+      order: 2;
+      width: 100%;
+      color: $main-color;
+      font-size: $ttl;
+      margin: 0 0 .8em;
+    }
+    &_ttl2{
+      order: 3;
+    }
+    &_term{
+      order: 1;
+      font-size: $txt;
+    }
+    &_desc{
+      order: 4;
+    }
+
+  }
+}

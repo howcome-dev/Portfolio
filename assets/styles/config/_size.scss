@@ -4,20 +4,6 @@
 $bp-sp: 767px;
 $bp-pc: 768px;
 
-// メディアクエリ用のミックスイン
-@mixin media($media-width) {
-	@if $media-width == sp {
-		@media only screen and (max-width: $bp-sp) {
-			@content;
-		}
-	}
-	@else if $media-width == pc {
-		@media only screen and (min-width: $bp-pc) {
-			@content;
-		}
-	}
-}
-
 // PC最小サイズ
 $pc-min: 1000px;
 
