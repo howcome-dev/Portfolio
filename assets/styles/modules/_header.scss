@@ -4,11 +4,7 @@
 .ly_header{
   width: 90%;
   text-align: center;
-  margin: 2.5em auto 2em;
-
-  @include media(pc){
-    margin-bottom: 5em;
-  }
+  margin: 2.5em auto 5em;
 
   &_ttl{
     order: 2;

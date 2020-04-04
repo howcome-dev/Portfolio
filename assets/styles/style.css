@@ -29,7 +29,7 @@ dd {
 
 .ly_wrapper {
   width: 90%;
-  margin: 0 auto 5em;
+  margin: 0 auto 10em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -101,13 +101,7 @@ dd {
 .ly_header {
   width: 90%;
   text-align: center;
-  margin: 2.5em auto 2em;
-}
-
-@media only screen and (min-width: 768px) {
-  .ly_header {
-    margin-bottom: 5em;
-  }
+  margin: 2.5em auto 5em;
 }
 
 .ly_header_ttl {
@@ -184,7 +178,7 @@ dd {
 
 .ly_wrapper {
   width: 90%;
-  margin: 0 auto 5em;
+  margin: 0 auto 10em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -313,7 +307,7 @@ dd {
 
 .ly_wrapper {
   width: 90%;
-  margin: 0 auto 5em;
+  margin: 0 auto 10em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -592,7 +586,7 @@ dd {
 
 .ly_wrapper {
   width: 90%;
-  margin: 0 auto 5em;
+  margin: 0 auto 10em;
 }
 
 @media only screen and (min-width: 768px) {
