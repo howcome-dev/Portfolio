@@ -12,12 +12,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    min-width: 1000px;
-  }
-}
-
 a {
   display: block;
   text-decoration: none;
@@ -161,12 +155,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  body {
-    min-width: 1000px;
-  }
-}
-
 a {
   display: block;
   text-decoration: none;
@@ -287,12 +275,6 @@ body {
   body {
     width: 100%;
     min-width: 320px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    min-width: 1000px;
   }
 }
 
@@ -572,12 +554,6 @@ body {
   body {
     width: 100%;
     min-width: 320px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  body {
-    min-width: 1000px;
   }
 }
 

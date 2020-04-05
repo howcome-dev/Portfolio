@@ -9,10 +9,6 @@ body{
     min-width: $sp-min;
   }
 
-  @include media(pc){
-    min-width: $pc-min;
-  }
-
   color: $base-color;
   background: $background-color;
   line-height: $base-height;
