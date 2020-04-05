@@ -398,6 +398,12 @@ dd {
 
 .bl_exp_ttl {
   color: #A82530;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+.bl_exp dd {
+  margin-bottom: .5em;
 }
 
 .bl_exp_term {
@@ -679,5 +685,20 @@ dd {
   .bl_works_link:hover {
     border: 2px solid #A82530;
   }
+}
+
+.bl_works_ttl {
+  color: #A82530;
+  font-weight: bold;
+  margin-bottom: 2em;
+}
+
+.bl_works_desc {
+  margin-bottom: .5em;
+}
+
+.bl_works_tools {
+  color: #FF6B77;
+  margin-bottom: .5em;
 }
 /*# sourceMappingURL=style.css.map */

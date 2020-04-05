@@ -40,6 +40,12 @@
 
   &_ttl{
     color: $main-color;
+    font-weight: bold;
+    margin-bottom: 2em;
+  }
+
+  dd{
+    margin-bottom: .5em;
   }
 
   &_term{

@@ -32,4 +32,19 @@
       }
     }
   }
+
+  &_ttl{
+    color: $main-color;
+    font-weight: bold;
+    margin-bottom: 2em;
+  }
+
+  &_desc{
+    margin-bottom: .5em;
+  }
+
+  &_tools{
+    color: $sub-color;
+    margin-bottom: .5em;
+  }
 }
