@@ -1,4 +1,4 @@
-@import url(/Users/user/Portfolio/node_modules/normalize.css/normalize.css);
+@import url(/Users/user/Sites/Howcome_dev/node_modules/normalize.css/normalize.css);
 body {
   color: #401919;
   background: #fefefe;
@@ -700,5 +700,10 @@ dd {
 .bl_works_tools {
   color: #FF6B77;
   margin-bottom: .5em;
+}
+
+.opening {
+  width: 800px;
+  background: url(../../img/pillar1.svg);
 }
 /*# sourceMappingURL=style.css.map */
