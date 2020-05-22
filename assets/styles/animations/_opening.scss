@@ -1,10 +1,20 @@
+.animations{
+  display: flex;
+  justify-content: center;
+}
+
 .entrance{
+  position: relative;
   width: 800px;
   height: 800px;
 }
 
 .home{
-  width: 30%;
-  height: 30%;
+  width: 15%;
+  height: 15%;
+  display: block;
+  position: absolute;
   background: url(assets/img/pillar1.svg) no-repeat;
+  top: -15%;
+  left: 27%;
 }
