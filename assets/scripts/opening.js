@@ -1,16 +1,20 @@
-// // 要素を取得
-// const element = document.querySelector('.home');
-// element.animate(
-//   {
-//     transform: [
-//       'translateY(0px)', // 開始値
-//       'translateY(420px)' // 終了値
-//     ]
-//   },
-//   {
-//     duration: 2500, // ミリ秒指定
-//     iterations: 1, // 繰り返し回数
-//     direction: 'normal', // 繰り返し挙動
-//     easing: 'cubic-bezier(0.83, 0, 0.17, 1)' // 加減速種類
-//   }
-// );
+// howcomeのアニメーション
+let howcomeTransform = [
+  { transform: 'scale(0.2) translate3D(0, -20%, 0) rotate(20deg)' },
+  { transform: 'translate3D(0, 20%, 0) rotate(80deg)' },
+  { transform: 'translate3D(0, -10%, 0)' },
+  { transform: 'translate3D(0, 10%, 0) rotate(20deg)' },
+  { transform: 'translate3D(20%, 50%, 0)' },
+  { transform: 'scale(0.1) translate3D(10%, -50%, 0) rotate(-180deg)' },
+  { transform: 'translate3D(-18%, 80%, 0) rotate(30deg)' }
+];
+
+let howcomeTiming = {
+  duration: 6000,
+  iterations: 1
+}
+
+document.getElementById("howcome").animate(
+  howcomeTransform,
+  howcomeTiming
+)

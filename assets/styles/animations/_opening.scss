@@ -18,28 +18,11 @@ html, body{
   height: 100%;
 }
 
-.home{
+#howcome{
   font-family: 'Sunshiney';
   font-size: 5rem;
   text-align: center;
   display: block;
   height: 100%;
-  transform: translateX(-50%);
-
-  animation: scale forwards;
-  animation-iteration-count: 1;
-  animation-duration: 6s;
-
-  @keyframes scale{
-    0%{ transform: translateY(-41%); }
-
-    25%{ transform: scale(.2); opacity: 0; }
-
-    50%{ transform: translateY(80%); opacity: 1;}
-
-    60%{ transform: translateY(80%); opacity: 0;}
-  
-    100%{ transform: scale(1) translateY(80%); opacity: 1; }
-  }
-
+  transform: translate(-18%, 80%) rotate(-12deg);
 }
