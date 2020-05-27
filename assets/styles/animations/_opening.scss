@@ -1,21 +1,32 @@
+@charset "UTF-8";
+@import "../mixin/_layout.scss";
+
 html, body{
   height: 100%;
 }
 
 .animations{
   position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
+  width: calc(100vw - 20px);
   height: 100%;
+  margin: auto;
+
+  @include media(pc){
+    width: 50%;
+  }
 }
 
 .entrance{
   position: absolute;
   top: 0;
-  left: 10px;
-  width: calc(100vw - 20px);
-  height: 100%;
+  left: 0;
+  display: flex;
+
+  @include media(pc){
+    top: 50%;
+    width: 800px;
+    height: 800px;
+  }
 }
 
 #howcome{
@@ -23,6 +34,11 @@ html, body{
   font-size: 5rem;
   text-align: center;
   display: block;
-  height: 100%;
-  transform: translate(-18%, 80%) rotate(-12deg);
+}
+
+#question{
+  font-family: 'Sunshiney';
+  font-size: 5rem;
+  text-align: center;
+  display: block;
 }
