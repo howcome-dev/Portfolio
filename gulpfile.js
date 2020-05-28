@@ -44,6 +44,7 @@ let browserSync  = require( 'browser-sync' );
 // Browser Sync
 gulp.task('bs', function() {
     browserSync({
+        notify: false,
         server: { // 1
             baseDir: "./",
             index: "index.html"
