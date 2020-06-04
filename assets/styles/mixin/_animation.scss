@@ -1,0 +1,13 @@
+@mixin animationValue( $name, $duration, $function, $delay, $count, $state){
+  -webkit-animation: $name $duration+s $function $delay+s $count $state;
+  animation: $name $duration+s $function $delay+s $count $state;
+}
+
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
