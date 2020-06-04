@@ -1,11 +1,14 @@
 /*jshint esversion: 6 */
+
+// 下からわく？たち
 const floating = {
   chars: ['?','Why?','How Come?','Warum?','Wozu?','Pourquoi?','Comment ça se fait?','왜?','어째서?','为什么?','怎么会?'],
 
   init: function () {
     floating.container = document.createElement('div'); // 要素を生成する
     floating.container.className = 'intro_floating';
-    document.body.appendChild(floating.container); // body要素の末尾にdivを追加する
+    const intro_desc = document.querySelector('.intro_desc');
+    intro_desc.after(floating.container); // .intro_descのあとにdivを追加する
     window.setInterval(floating.add, 100); // 0.1秒後にadd functionを実行する
   },
 
@@ -28,9 +31,7 @@ const floating = {
   remove: function (element) {
     element.parentNode.removeChild(element); // spanの親要素からspanを削除する
   },
-
 };
-
 document.addEventListener('DOMContentLoaded', floating.init); // HTMLドキュメントの解析完了時
 
 // .intro_desc letter-glowアニメーション
@@ -64,10 +65,6 @@ let Spanizer = function() {
 
 // Init Spanizer
 Spanizer.init();
-
-let promise = new Promise((resolve, reject) => { // #1
-  resolve(howcome)
-}, 1000)
 
 // // ？をマウスで動かす
 // const moveQuestion = document.getElementById('question');
