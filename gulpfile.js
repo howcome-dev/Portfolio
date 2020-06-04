@@ -83,7 +83,7 @@ gulp.task('bs', function() {
         notify: false,
         server: { // 1
             baseDir: "./",
-            index: "index.html"
+            index: "index.html", 
         }
     });
 });
@@ -97,7 +97,7 @@ gulp.task( 'bs-reload', function() {
 // Default task
 //
 gulp.task( 'default', [ 'bs', 'sass', 'js.concat', 'js.compress', 'imagemin' ], function() { // 1
-  gulp.watch("index.html", ['bs-reload']); // 2
+  gulp.watch("*.html", ['bs-reload']); // 2
   gulp.watch("./assets/styles/**/*.scss", [ 'sass', 'bs-reload' ]); // 3
   gulp.watch("./assets/scripts/*.js", [ 'js.concat', 'js.compress', 'bs-reload' ]);
   gulp.watch("./assets/images/*", [ 'imagemin', 'bs-reload' ]);
