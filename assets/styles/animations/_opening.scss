@@ -1,28 +1,80 @@
 @charset "UTF-8";
 @import "../mixin/_layout.scss";
 
-html, body{
-  height: 100%;
+*, *:before, *:after {
+  box-sizing: border-box;
 }
 
-.animations{
+html, body{
+  height: 100%;
+  background: black;
+  color: #fff;
+}
+
+.home{
   position: relative;
   width: calc(100vw - 20px);
   height: 100%;
   margin: auto;
+}
 
-  @include media(pc){
-    width: 50%;
+.intro_desc{
+  white-space: pre;
+}
+// .intro_desc letter-glowアニメーション
+@mixin animationValue( $name, $duration, $function, $delay, $count, $state){
+  -webkit-animation: $name $duration+s $function $delay+s $count $state;
+  animation: $name $duration+s $function $delay+s $count $state;
+}
+// through の後の数字を子要素の数字にすることで
+// ↓{}（ブレース）内の処理をその回数分繰り返します。
+@for $cnt from 1 through 464{
+  // ↓nth-child の中の数字を #{$cnt} として現在の繰り返しているカウント数にします
+  .intro_desc span:nth-child(#{$cnt}){
+      // ↓ include で animation プロパティを定義した mixin を呼び出す。
+      // ↓現在のカウント数（$cnt）に少数値をかけた値を $delay 
+      // ↓に指定することで時間差をつけることができる
+      span{
+        -webkit-animation: letter-glow 3s ease;
+        animation: letter-glow 3s ease;
+      }
+      @include animationValue(letter-glow, 0.7, ease, $cnt * 0.05 , 1, both);
+  }
+} 
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content; 
+  }
+  @keyframes #{$name} {
+    @content;
+  } 
+}
+@include keyframes(letter-glow) {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1);
+  }
+  66% {
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  }
+  77% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
   }
 }
 
-.myTheme1{
+.home_theme{
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  transform: translateX(-50%);
 
   @include media(pc){
     top: 50%;
@@ -31,42 +83,109 @@ html, body{
   }
 }
 
-#howcome{
-  font-family: 'Sunshiney';
-  font-size: 5rem;
-  text-align: center;
-  display: block;
-
-}
-
+#howcome,
 #question{
-  font-family: 'Sunshiney';
+  font-family: $opening-font;
   font-size: 5rem;
   text-align: center;
   display: block;
+  line-height: 1;
+  transform: translateY(-50%);
 }
 
-#pillars{
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 70%;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-between;
-  transform: translateX(-44%);
+// #pillars{
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   width: 70%;
+//   height: 100%;
+//   overflow: hidden;
+//   display: flex;
+//   justify-content: space-between;
+//   transform: translateX(-44%);
 
-  #pillar1,
-  #pillar2{
-    display: block;
-    width: 30px;
-    transform: translateY(-50%);
-  }
-  #pillar1{
-    background: url(assets/images/pillar1.svg) no-repeat;
-  }
-  #pillar2{
-    background: url(assets/images/pillar2.svg) no-repeat;
-  }
-}
+//   #pillarLeft,
+//   #pillarRight{
+//     display: block;
+//     width: 30px;
+//     transform: translateY(-50%);
+//   }
+//   #pillarLeft{
+//     background: url(assets/images/pillarLeft.svg) no-repeat;
+//   }
+//   #pillarRight{
+//     background: url(assets/images/pillarRight.svg) no-repeat;
+//   }
+// }
+
+// #roof{
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   width: 80%;
+//   height: 100%;
+//   overflow: hidden;
+//   transform: translateX(-44%);
+
+//   #roofBase,
+//   #roofNuts,
+//   #roofDoor{
+//     position: absolute;
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     transform: translateY(-50%);
+//   }
+//   #roofBase{
+//     background: url(assets/images/roofBase.svg) no-repeat;
+//   }
+//   #roofNuts{
+//     background: url(assets/images/roofNuts.svg) no-repeat;
+//     width: 86%;
+//     left: 8%;
+//     top: 2.5%;
+//   }
+
+//   #roofDoor{
+//     background: url(assets/images/roofDoor.svg) no-repeat;
+//     width: 14%;
+//     left: 40.5%;
+//   }
+
+// }
+
+// #bases{
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   width: 70%;
+//   height: 100%;
+//   overflow: hidden;
+//   display: flex;
+//   justify-content: space-between;
+//   transform: translateX(-44%);
+
+//   #baseLeft,
+//   #baseRight{
+//     display: block;
+//     width: 30px;
+//     transform: translateY(-50%);
+//   }
+//   #baseLeft{
+//     background: url(assets/images/baseLeft.svg) no-repeat;
+//   }
+//   #baseRight{
+//     background: url(assets/images/baseRight.svg) no-repeat;
+//   }
+// }
+
+// #middleDoor{
+//   background: url(assets/images/middleDoor.svg) no-repeat;
+//   position: absolute;
+//   top: 0;
+//   left: 50%;
+//   width: 11%;
+//   height: 100%;
+//   overflow: hidden;
+//   transform: translate(-44%, -50%);
+// }

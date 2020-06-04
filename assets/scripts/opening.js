@@ -1,6 +1,38 @@
 /*jshint esversion: 6 */
 
-// Howcomeが現れた6秒後に1.8秒間で消える
+// .intro_desc letter-glowアニメーション
+let textbox = document.querySelector('.intro_desc');
+let text = textbox.textContent;
+
+// .intro_disc内のテキストを1文字ずつspanタグで囲って文字を光らせる
+let Spanizer = function() {
+  let t;
+  return {
+      settings: {
+          letters: $(".js-letters")
+      },
+      init: function() {
+          t = this.settings, this.bindEvents() // tに文字列を分割して入れる
+      },
+      bindEvents: function() {
+          Spanizer.letters()
+      },
+      letters: function() {
+          t.letters.html(function(t, n) { // nが文章
+              let e = $.trim(n).split(""),// 文字列から空白を取り除く 
+                  i = [];
+              return e.forEach(function(t) {
+                  " " !== t ? i.push("<span>" + t + "</span>") : i.push("<span>&nbsp;</span>")
+              }), i.join("")
+          })
+      }
+  }
+}();
+
+// Init Spanizer
+Spanizer.init();
+
+// Howcomeが現れて消える
 const howcome = document.getElementById('howcome');
 howcome.animate(
   {
@@ -17,14 +49,15 @@ howcome.animate(
   }
 );
 
-// Howcomeが1.8秒間で上から小さく現れて下に移動する
+// Howcomeが上から小さく現れて下に移動する
 let howcomeTransform = [
-  { transform: 'scale(0.1) translate3D(-10%, -50px, 0)' },
+  { transform: 'scale(0.1) translate3D(-10%, 0, 0)' },
   { transform: 'translate3D(-10%, 80vw, 0)', offset: 0.8 },
   { transform: 'scale(1) translate3D(-10%, 80vw, 0)' }
 ];
 
 let howcomeTiming = {
+  delay: 1700,
   duration: 1800,
   iterations: 1,
   fill: 'forwards'
@@ -35,9 +68,9 @@ document.getElementById('howcome').animate(
   howcomeTiming
 );
 
-// ？が6秒間で上からくるくる降ってきて傾いて止まる
+// ？が降ってきて止まる
 let questionTransform = [
-  { transform: 'scale(0.1) translate3D(50%, -100vw, 0) rotate(-50deg)' }, // 右に傾きながらフレームの上から降る
+  { transform: 'scale(0.1) translate3D(50%, 0, 0) rotate(-50deg)' }, // 右に傾きながらフレームの上から降る
   { transform: 'translate3D(0, 20vw, 0) rotate(160deg)' }, // 右にかたむきながらHowcomeと一緒におちる
   { transform: 'scale(5) translate3D(0, 10vw, 0) rotate(360deg)' }, // 大きくなって一回転しながら真ん中へ
   { transform: 'translate3D(0, 70vw, 0) rotate(-360deg)' }, // 元の大きさに戻って逆回転
@@ -51,6 +84,7 @@ let questionTransform = [
 ];
 
 let questionTiming = {
+  delay: 1700,
   duration: 6000,
   iterations: 1,
   fill: 'forwards',
@@ -106,38 +140,146 @@ document.getElementById('question').animate(
 //   `;
 // });
 
-// 柱1が開始8秒後に左から1.8秒で上から降ってくる
-let pillar1Transform = [
-  { transform: 'translate3D(0, 0, 0)' },
-  { transform: 'translate3D(0, 90vw, 0)' }
-];
+// 柱ひだりが上から降ってくる
+// let pillarLTransform = [
+//   { transform: 'translate3D(0, 0, 0)' },
+//   { transform: 'translate3D(0, 90vw, 0)' }
+// ];
 
-let pillar1Timing = {
-  delay: 7200,
-  duration: 1000,
-  iterations: 1,
-  fill: 'forwards'
-};
+// let pillarLTiming = {
+//   delay: 7200,
+//   duration: 1000,
+//   iterations: 1,
+//   fill: 'forwards'
+// };
 
-document.getElementById('pillar1').animate(
-  pillar1Transform,
-  pillar1Timing
-);
+// document.getElementById('pillarLeft').animate(
+//   pillarLTransform,
+//   pillarLTiming
+// );
 
-// 柱2が開始10秒後に1.8秒間で右から降ってくる
-let pillar2Transform = [
-  { transform: 'translate3D(0, 0, 0)' },
-  { transform: 'translate3D(0, 90vw, 0)' }
-];
+// // 柱みぎが降ってくる
+// let pillarRTransform = [
+//   { transform: 'translate3D(0, 0, 0)' },
+//   { transform: 'translate3D(0, 90vw, 0)' }
+// ];
 
-let pillar2Timing = {
-  delay: 7400,
-  duration: 1000,
-  iterations: 1,
-  fill: 'forwards' // 終了時にプロパティーを保つ
-};
+// let pillarRTiming = {
+//   delay: 7400,
+//   duration: 1000,
+//   iterations: 1,
+//   fill: 'forwards'
+// };
 
-document.getElementById('pillar2').animate(
-  pillar2Transform,
-  pillar2Timing
-);
+// document.getElementById('pillarRight').animate(
+//   pillarRTransform,
+//   pillarRTiming
+// );
+
+// // 屋根の基礎が降ってくる
+// let roofBaseTransform = [
+//   { transform: 'translate3D(0, 0, 0)' },
+//   { transform: 'translate3D(0, 50vw, 0)' }
+// ];
+
+// let roofBaseTiming = {
+//   delay: 7200,
+//   duration: 1000,
+//   iterations: 1,
+//   fill: 'forwards'
+// };
+
+// document.getElementById('roofBase').animate(
+//   roofBaseTransform,
+//   roofBaseTiming
+// );
+
+// // 基礎ひだりが上から降ってくる
+// let baseLTransform = [
+//   { transform: 'translate3D(0, 0, 0)' },
+//   { transform: 'translate3D(0, 115vw, 0)' }
+// ];
+
+// let baseLTiming = {
+//   delay: 7200,
+//   duration: 1000,
+//   iterations: 1,
+//   fill: 'forwards'
+// };
+
+// document.getElementById('baseLeft').animate(
+//   baseLTransform,
+//   baseLTiming
+// );
+
+// // 基礎みぎが降ってくる
+// let baseRTransform = [
+//   { transform: 'translate3D(0, 0, 0)' },
+//   { transform: 'translate3D(0, 115vw, 0)' }
+// ];
+
+// let baseRTiming = {
+//   delay: 7400,
+//   duration: 1000,
+//   iterations: 1,
+//   fill: 'forwards'
+// };
+
+// document.getElementById('baseRight').animate(
+//   baseRTransform,
+//   baseRTiming
+// );
+
+// // 屋根のナッツが降ってくる
+// let roofNutsTransform = [
+//   { transform: 'translate3D(0, 0, 0)' },
+//   { transform: 'translate3D(0, 50vw, 0)' }
+// ];
+
+// let roofNutsTiming = {
+//   delay: 7400,
+//   duration: 1000,
+//   iterations: 1,
+//   fill: 'forwards'
+// };
+
+// document.getElementById('roofNuts').animate(
+//   roofNutsTransform,
+//   roofNutsTiming
+// );
+
+// // 屋根のとびらが降ってくる
+// let roofDoorTransform = [
+//   { transform: 'translate3D(0, 0, 0)' },
+//   { transform: 'translate3D(0, 50vw, 0)' }
+// ];
+
+// let roofDoorTiming = {
+//   delay: 7400,
+//   duration: 1000,
+//   iterations: 1,
+//   fill: 'forwards'
+// };
+
+// document.getElementById('roofDoor').animate(
+//   roofDoorTransform,
+//   roofDoorTiming
+// );
+
+// // まんなかのとびらが降ってくる
+// let middleDoorTransform = [
+//   { transform: 'translate3D(0, 0, 0)' },
+//   { transform: 'translate3D(0, 50vw, 0)' }
+// ];
+
+// let middleDoorTiming = {
+//   delay: 7400,
+//   duration: 1000,
+//   iterations: 1,
+//   fill: 'forwards'
+// };
+
+// document.getElementById('middleDoor').animate(
+//   middleDoorTransform,
+//   middleDoorTiming
+// );

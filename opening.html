@@ -11,19 +11,81 @@
   <link rel="icon" type="image/png" href="/icon-192x192.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="assets/scripts/opening.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js" defer></script>
   <title>Howcome? R's Portfolio Website</title>
 </head>
 <body>
-  <main class="animations">
-    <section class="myTheme1">
+  <main class="home">
+    <section class="intro">
+      <h1 class="intro_ttl">Howcome?</h1>
+      <p class="intro_desc js-letters">
+Hello! My name is R.
+Welcome to my portfolio website.
+I like to spend my time on thinking.
+Every time, everywhere,
+"Why?" keeps popping up up in my head.
+Howcome?
+The reason why I named this title
+is its uniqueness as a website domain.
+I'd like to explore things I never knew,
+to accept, or to grow thoughts about it.
+It's incredibly so much fun
+to develop and create my life!
+</p>
+    </section>
+    <section class="home_theme">
       <div id="howcome">Howcome</div>
       <div id="question">?</div>
-      <p class="log"></p>
     </section>
-    <section id="pillars">
-      <div id="pillar1"></div>
-      <div id="pillar2"></div>
-    </section>
+
+    <!-- <section class="myhome">
+      <div id="pillarLeft"><img src="assets/images/pillarLeft.svg" alt="左の柱"></div>
+      <div id="pillarRight"><img src="assets/images/pillarRight.svg" alt="右の柱"></div>
+      <div id="roofBase"><img src="assets/images/roofBase.svg" alt="屋根のもと"></div>
+      <div id="baseLeft"><img src="assets/images/baseLeft.svg" alt="家の基礎部分左"></div>
+      <div id="baseRight"><img src="assets/images/baseRight.svg" alt="家の基礎部分右"></div>
+      <div id="attic"><img src="assets/images/attic.svg" alt="屋根裏部屋"></div>
+      <div id="window2"><img src="assets/images/window2.svg" alt="2階の窓"></div>
+      <div id="window"><img src="assets/images/window.svg" alt="1階の窓"></div>
+      <div id="secretBase"><img src="assets/images/secretBase.svg" alt="秘密のお部屋　カップ部分"></div>
+      <div id="secretLines"><img src="assets/images/secretLines.svg" alt="秘密のお部屋　カップのライン"></div>
+      <div id="secretSponge"><img src="assets/images/secretSponge.svg" alt="秘密のお部屋　カップケーキのスポンジ"></div>
+      <div id="secretCream"><img src="assets/images/secretCream.svg" alt="秘密のお部屋　カップケーキのクリーム"></div>
+      <div id="secretBerry"><img src="assets/images/secretBerry.svg" alt="秘密のお部屋　カップケーキのベリー"></div>
+      <div id="secretChocolates"><img src="assets/images/secretChocolates.svg" alt="秘密のお部屋　カップケーキのチョコレート"></div>
+      <div id="secretPearls"><img src="assets/images/secretPearls.svg" alt="秘密のお部屋　カップケーキのパール"></div>
+      <div id="secretSeeds"><img src="assets/images/secretSeeds.svg" alt="秘密のお部屋　カップケーキのいちごのつぶつぶ"></div>
+      <div id="secretDoor"><img src="assets/images/secretDoor.svg" alt="秘密のお部屋　扉"></div>
+      <div id="entrance"><img src="assets/images/entrance.svg" alt="家の扉"></div>
+      <div id="entranceWall1"><img src="assets/images/entranceWall1.svg" alt="家の扉の壁"></div>
+      <div id="entranceWall2"><img src="assets/images/entranceWall2.svg" alt="家の扉の壁"></div>
+      <div id="entranceWall3"><img src="assets/images/entranceWall3.svg" alt="家の扉の壁"></div>
+      <div id="entranceWall4"><img src="assets/images/entranceWall4.svg" alt="家の扉の壁"></div>
+      <div id="handrailLeft"><img src="assets/images/handrailLeft.svg" alt="柱の手すり左"></div>
+      <div id="handrailRight"><img src="assets/images/handrailRight.svg" alt="柱の手すり右"></div>
+      <div id="wallChocochips1"><img src="assets/images/wallChocochips1.svg" alt="家の壁のチョコチップ"></div>
+      <div id="wallChocochips2"><img src="assets/images/wallChocochips2.svg" alt="家の壁のチョコチップ"></div>
+      <div id="wallChocochips3"><img src="assets/images/wallChocochips3.svg" alt="家の壁のチョコチップ"></div>
+      <div id="wallChocochips4"><img src="assets/images/wallChocochips4.svg" alt="家の壁のチョコチップ"></div>
+      <div id="spiral"><img src="assets/images/spiral.svg" alt="家の壁　くるくる飾り"></div>
+      <div id="roofNuts"><img src="assets/images/roofNuts.svg" alt="屋根のナッツ"></div>
+      <div id="road1"><img src="assets/images/road1.svg" alt="家への道"></div>
+      <div id="road2"><img src="assets/images/road2.svg" alt="家への道"></div>
+      <div id="road3"><img src="assets/images/road3.svg" alt="家への道"></div>
+      <div id="road4"><img src="assets/images/road4.svg" alt="家への道"></div>
+      <div id="road5"><img src="assets/images/road5.svg" alt="家への道　五線譜"></div>
+      <div id="note1"><img src="assets/images/note1.svg" alt="五線譜を踊る音符"></div>
+      <div id="note2"><img src="assets/images/note2.svg" alt="五線譜を踊る音符"></div>
+      <div id="note3"><img src="assets/images/note3.svg" alt="五線譜を踊る音符"></div>
+      <div id="note4"><img src="assets/images/note4.svg" alt="五線譜を踊る音符"></div>
+      <div id="note5"><img src="assets/images/note5.svg" alt="五線譜を踊る音符"></div>
+      <div id="note6"><img src="assets/images/note6.svg" alt="五線譜を踊る音符"></div>
+      <div id="note7"><img src="assets/images/note7.svg" alt="五線譜を踊る音符"></div>
+      <div id="entranceMarble"><img src="assets/images/entranceMarble.svg" alt="家の扉　周りのマーブルチョコ"></div>
+      <div id="knob"><img src="assets/images/knob.svg" alt="ドアノブ"></div>
+      <div id="knobBtn"><img src="assets/images/knobBtn.svg" alt="ドアノブ　再生ボタン"></div>
+    </section> -->
+
   </main>
 </body>
