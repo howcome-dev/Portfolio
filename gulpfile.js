@@ -52,7 +52,7 @@ let browserSync  = require( 'browser-sync' );
 gulp.task( 'imagemin', function() {
  // svg
  gulp.src( './assets/images/**/*.+(svg)' )
-     .pipe( changed( './assets/images' ) )
+     .pipe( changed( './assets/images/*' ) )
      .pipe( svgmin() )
      .pipe( gulp.dest( './images/' ) );
 } );
