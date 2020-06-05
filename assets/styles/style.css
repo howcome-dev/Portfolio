@@ -1,4 +1,10 @@
 @import url(/Users/user/Sites/Howcome_dev/node_modules/normalize.css/normalize.css);
+@import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
 body {
   color: #401919;
   background: #fefefe;
@@ -702,8 +708,3999 @@ dd {
   margin-bottom: .5em;
 }
 
-.opening {
-  width: 800px;
-  background: url(../../img/pillar1.svg);
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background: black;
+  color: #fff;
+}
+
+.home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+.home .ttl {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#howcome,
+#question {
+  font-family: "Sunshiney";
+  text-align: center;
+  display: block;
+  line-height: 1;
+}
+
+#howcome {
+  font-size: 2.375rem;
+  color: transparent;
+  -webkit-animation: howcome 3s ease-in backwards;
+  animation: howcome 3s ease-in backwards;
+}
+
+@-webkit-keyframes howcome {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  20%, 75% {
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0px 0px 50px #fff;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes howcome {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 40px #fff;
+    -webkit-transform: scale(1.3);
+            transform: scale(1.3);
+  }
+  20%, 75% {
+    opacity: 1;
+    text-shadow: 0px 0px 1px #fff;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    text-shadow: 0px 0px 50px #fff;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+#question {
+  font-size: 5rem;
+}
+
+.intro {
+  font-family: "Sunshiney";
+}
+
+.intro_floating {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.intro_floating span {
+  color: whitesmoke;
+  display: block;
+  font-size: 18px;
+  text-shadow: 0 0 1px white;
+  position: absolute;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  cursor: default;
+  z-index: 1;
+  opacity: 0;
+  will-change: transform, opacity;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-name: floating;
+  animation-name: floating;
+}
+
+@-webkit-keyframes floating {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes floating {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100vh);
+            transform: translateY(100vh);
+  }
+  25% {
+    opacity: 0.6;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+.intro_desc {
+  font-family: 'Helvetica';
+  white-space: pre;
+}
+
+.intro_desc span:nth-child(1) {
+  -webkit-animation: letter-glow 0.7s ease 0.05s 1 both;
+  animation: letter-glow 0.7s ease 0.05s 1 both;
+}
+
+.intro_desc span:nth-child(1) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(2) {
+  -webkit-animation: letter-glow 0.7s ease 0.1s 1 both;
+  animation: letter-glow 0.7s ease 0.1s 1 both;
+}
+
+.intro_desc span:nth-child(2) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(3) {
+  -webkit-animation: letter-glow 0.7s ease 0.15s 1 both;
+  animation: letter-glow 0.7s ease 0.15s 1 both;
+}
+
+.intro_desc span:nth-child(3) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(4) {
+  -webkit-animation: letter-glow 0.7s ease 0.2s 1 both;
+  animation: letter-glow 0.7s ease 0.2s 1 both;
+}
+
+.intro_desc span:nth-child(4) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(5) {
+  -webkit-animation: letter-glow 0.7s ease 0.25s 1 both;
+  animation: letter-glow 0.7s ease 0.25s 1 both;
+}
+
+.intro_desc span:nth-child(5) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(6) {
+  -webkit-animation: letter-glow 0.7s ease 0.3s 1 both;
+  animation: letter-glow 0.7s ease 0.3s 1 both;
+}
+
+.intro_desc span:nth-child(6) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(7) {
+  -webkit-animation: letter-glow 0.7s ease 0.35s 1 both;
+  animation: letter-glow 0.7s ease 0.35s 1 both;
+}
+
+.intro_desc span:nth-child(7) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(8) {
+  -webkit-animation: letter-glow 0.7s ease 0.4s 1 both;
+  animation: letter-glow 0.7s ease 0.4s 1 both;
+}
+
+.intro_desc span:nth-child(8) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(9) {
+  -webkit-animation: letter-glow 0.7s ease 0.45s 1 both;
+  animation: letter-glow 0.7s ease 0.45s 1 both;
+}
+
+.intro_desc span:nth-child(9) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(10) {
+  -webkit-animation: letter-glow 0.7s ease 0.5s 1 both;
+  animation: letter-glow 0.7s ease 0.5s 1 both;
+}
+
+.intro_desc span:nth-child(10) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(11) {
+  -webkit-animation: letter-glow 0.7s ease 0.55s 1 both;
+  animation: letter-glow 0.7s ease 0.55s 1 both;
+}
+
+.intro_desc span:nth-child(11) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(12) {
+  -webkit-animation: letter-glow 0.7s ease 0.6s 1 both;
+  animation: letter-glow 0.7s ease 0.6s 1 both;
+}
+
+.intro_desc span:nth-child(12) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(13) {
+  -webkit-animation: letter-glow 0.7s ease 0.65s 1 both;
+  animation: letter-glow 0.7s ease 0.65s 1 both;
+}
+
+.intro_desc span:nth-child(13) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(14) {
+  -webkit-animation: letter-glow 0.7s ease 0.7s 1 both;
+  animation: letter-glow 0.7s ease 0.7s 1 both;
+}
+
+.intro_desc span:nth-child(14) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(15) {
+  -webkit-animation: letter-glow 0.7s ease 0.75s 1 both;
+  animation: letter-glow 0.7s ease 0.75s 1 both;
+}
+
+.intro_desc span:nth-child(15) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(16) {
+  -webkit-animation: letter-glow 0.7s ease 0.8s 1 both;
+  animation: letter-glow 0.7s ease 0.8s 1 both;
+}
+
+.intro_desc span:nth-child(16) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(17) {
+  -webkit-animation: letter-glow 0.7s ease 0.85s 1 both;
+  animation: letter-glow 0.7s ease 0.85s 1 both;
+}
+
+.intro_desc span:nth-child(17) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(18) {
+  -webkit-animation: letter-glow 0.7s ease 0.9s 1 both;
+  animation: letter-glow 0.7s ease 0.9s 1 both;
+}
+
+.intro_desc span:nth-child(18) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(19) {
+  -webkit-animation: letter-glow 0.7s ease 0.95s 1 both;
+  animation: letter-glow 0.7s ease 0.95s 1 both;
+}
+
+.intro_desc span:nth-child(19) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(20) {
+  -webkit-animation: letter-glow 0.7s ease 1s 1 both;
+  animation: letter-glow 0.7s ease 1s 1 both;
+}
+
+.intro_desc span:nth-child(20) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(21) {
+  -webkit-animation: letter-glow 0.7s ease 1.05s 1 both;
+  animation: letter-glow 0.7s ease 1.05s 1 both;
+}
+
+.intro_desc span:nth-child(21) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(22) {
+  -webkit-animation: letter-glow 0.7s ease 1.1s 1 both;
+  animation: letter-glow 0.7s ease 1.1s 1 both;
+}
+
+.intro_desc span:nth-child(22) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(23) {
+  -webkit-animation: letter-glow 0.7s ease 1.15s 1 both;
+  animation: letter-glow 0.7s ease 1.15s 1 both;
+}
+
+.intro_desc span:nth-child(23) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(24) {
+  -webkit-animation: letter-glow 0.7s ease 1.2s 1 both;
+  animation: letter-glow 0.7s ease 1.2s 1 both;
+}
+
+.intro_desc span:nth-child(24) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(25) {
+  -webkit-animation: letter-glow 0.7s ease 1.25s 1 both;
+  animation: letter-glow 0.7s ease 1.25s 1 both;
+}
+
+.intro_desc span:nth-child(25) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(26) {
+  -webkit-animation: letter-glow 0.7s ease 1.3s 1 both;
+  animation: letter-glow 0.7s ease 1.3s 1 both;
+}
+
+.intro_desc span:nth-child(26) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(27) {
+  -webkit-animation: letter-glow 0.7s ease 1.35s 1 both;
+  animation: letter-glow 0.7s ease 1.35s 1 both;
+}
+
+.intro_desc span:nth-child(27) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(28) {
+  -webkit-animation: letter-glow 0.7s ease 1.4s 1 both;
+  animation: letter-glow 0.7s ease 1.4s 1 both;
+}
+
+.intro_desc span:nth-child(28) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(29) {
+  -webkit-animation: letter-glow 0.7s ease 1.45s 1 both;
+  animation: letter-glow 0.7s ease 1.45s 1 both;
+}
+
+.intro_desc span:nth-child(29) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(30) {
+  -webkit-animation: letter-glow 0.7s ease 1.5s 1 both;
+  animation: letter-glow 0.7s ease 1.5s 1 both;
+}
+
+.intro_desc span:nth-child(30) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(31) {
+  -webkit-animation: letter-glow 0.7s ease 1.55s 1 both;
+  animation: letter-glow 0.7s ease 1.55s 1 both;
+}
+
+.intro_desc span:nth-child(31) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(32) {
+  -webkit-animation: letter-glow 0.7s ease 1.6s 1 both;
+  animation: letter-glow 0.7s ease 1.6s 1 both;
+}
+
+.intro_desc span:nth-child(32) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(33) {
+  -webkit-animation: letter-glow 0.7s ease 1.65s 1 both;
+  animation: letter-glow 0.7s ease 1.65s 1 both;
+}
+
+.intro_desc span:nth-child(33) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(34) {
+  -webkit-animation: letter-glow 0.7s ease 1.7s 1 both;
+  animation: letter-glow 0.7s ease 1.7s 1 both;
+}
+
+.intro_desc span:nth-child(34) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(35) {
+  -webkit-animation: letter-glow 0.7s ease 1.75s 1 both;
+  animation: letter-glow 0.7s ease 1.75s 1 both;
+}
+
+.intro_desc span:nth-child(35) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(36) {
+  -webkit-animation: letter-glow 0.7s ease 1.8s 1 both;
+  animation: letter-glow 0.7s ease 1.8s 1 both;
+}
+
+.intro_desc span:nth-child(36) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(37) {
+  -webkit-animation: letter-glow 0.7s ease 1.85s 1 both;
+  animation: letter-glow 0.7s ease 1.85s 1 both;
+}
+
+.intro_desc span:nth-child(37) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(38) {
+  -webkit-animation: letter-glow 0.7s ease 1.9s 1 both;
+  animation: letter-glow 0.7s ease 1.9s 1 both;
+}
+
+.intro_desc span:nth-child(38) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(39) {
+  -webkit-animation: letter-glow 0.7s ease 1.95s 1 both;
+  animation: letter-glow 0.7s ease 1.95s 1 both;
+}
+
+.intro_desc span:nth-child(39) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(40) {
+  -webkit-animation: letter-glow 0.7s ease 2s 1 both;
+  animation: letter-glow 0.7s ease 2s 1 both;
+}
+
+.intro_desc span:nth-child(40) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(41) {
+  -webkit-animation: letter-glow 0.7s ease 2.05s 1 both;
+  animation: letter-glow 0.7s ease 2.05s 1 both;
+}
+
+.intro_desc span:nth-child(41) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(42) {
+  -webkit-animation: letter-glow 0.7s ease 2.1s 1 both;
+  animation: letter-glow 0.7s ease 2.1s 1 both;
+}
+
+.intro_desc span:nth-child(42) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(43) {
+  -webkit-animation: letter-glow 0.7s ease 2.15s 1 both;
+  animation: letter-glow 0.7s ease 2.15s 1 both;
+}
+
+.intro_desc span:nth-child(43) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(44) {
+  -webkit-animation: letter-glow 0.7s ease 2.2s 1 both;
+  animation: letter-glow 0.7s ease 2.2s 1 both;
+}
+
+.intro_desc span:nth-child(44) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(45) {
+  -webkit-animation: letter-glow 0.7s ease 2.25s 1 both;
+  animation: letter-glow 0.7s ease 2.25s 1 both;
+}
+
+.intro_desc span:nth-child(45) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(46) {
+  -webkit-animation: letter-glow 0.7s ease 2.3s 1 both;
+  animation: letter-glow 0.7s ease 2.3s 1 both;
+}
+
+.intro_desc span:nth-child(46) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(47) {
+  -webkit-animation: letter-glow 0.7s ease 2.35s 1 both;
+  animation: letter-glow 0.7s ease 2.35s 1 both;
+}
+
+.intro_desc span:nth-child(47) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(48) {
+  -webkit-animation: letter-glow 0.7s ease 2.4s 1 both;
+  animation: letter-glow 0.7s ease 2.4s 1 both;
+}
+
+.intro_desc span:nth-child(48) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(49) {
+  -webkit-animation: letter-glow 0.7s ease 2.45s 1 both;
+  animation: letter-glow 0.7s ease 2.45s 1 both;
+}
+
+.intro_desc span:nth-child(49) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(50) {
+  -webkit-animation: letter-glow 0.7s ease 2.5s 1 both;
+  animation: letter-glow 0.7s ease 2.5s 1 both;
+}
+
+.intro_desc span:nth-child(50) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(51) {
+  -webkit-animation: letter-glow 0.7s ease 2.55s 1 both;
+  animation: letter-glow 0.7s ease 2.55s 1 both;
+}
+
+.intro_desc span:nth-child(51) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(52) {
+  -webkit-animation: letter-glow 0.7s ease 2.6s 1 both;
+  animation: letter-glow 0.7s ease 2.6s 1 both;
+}
+
+.intro_desc span:nth-child(52) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(53) {
+  -webkit-animation: letter-glow 0.7s ease 2.65s 1 both;
+  animation: letter-glow 0.7s ease 2.65s 1 both;
+}
+
+.intro_desc span:nth-child(53) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(54) {
+  -webkit-animation: letter-glow 0.7s ease 2.7s 1 both;
+  animation: letter-glow 0.7s ease 2.7s 1 both;
+}
+
+.intro_desc span:nth-child(54) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(55) {
+  -webkit-animation: letter-glow 0.7s ease 2.75s 1 both;
+  animation: letter-glow 0.7s ease 2.75s 1 both;
+}
+
+.intro_desc span:nth-child(55) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(56) {
+  -webkit-animation: letter-glow 0.7s ease 2.8s 1 both;
+  animation: letter-glow 0.7s ease 2.8s 1 both;
+}
+
+.intro_desc span:nth-child(56) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(57) {
+  -webkit-animation: letter-glow 0.7s ease 2.85s 1 both;
+  animation: letter-glow 0.7s ease 2.85s 1 both;
+}
+
+.intro_desc span:nth-child(57) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(58) {
+  -webkit-animation: letter-glow 0.7s ease 2.9s 1 both;
+  animation: letter-glow 0.7s ease 2.9s 1 both;
+}
+
+.intro_desc span:nth-child(58) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(59) {
+  -webkit-animation: letter-glow 0.7s ease 2.95s 1 both;
+  animation: letter-glow 0.7s ease 2.95s 1 both;
+}
+
+.intro_desc span:nth-child(59) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(60) {
+  -webkit-animation: letter-glow 0.7s ease 3s 1 both;
+  animation: letter-glow 0.7s ease 3s 1 both;
+}
+
+.intro_desc span:nth-child(60) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(61) {
+  -webkit-animation: letter-glow 0.7s ease 3.05s 1 both;
+  animation: letter-glow 0.7s ease 3.05s 1 both;
+}
+
+.intro_desc span:nth-child(61) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(62) {
+  -webkit-animation: letter-glow 0.7s ease 3.1s 1 both;
+  animation: letter-glow 0.7s ease 3.1s 1 both;
+}
+
+.intro_desc span:nth-child(62) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(63) {
+  -webkit-animation: letter-glow 0.7s ease 3.15s 1 both;
+  animation: letter-glow 0.7s ease 3.15s 1 both;
+}
+
+.intro_desc span:nth-child(63) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(64) {
+  -webkit-animation: letter-glow 0.7s ease 3.2s 1 both;
+  animation: letter-glow 0.7s ease 3.2s 1 both;
+}
+
+.intro_desc span:nth-child(64) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(65) {
+  -webkit-animation: letter-glow 0.7s ease 3.25s 1 both;
+  animation: letter-glow 0.7s ease 3.25s 1 both;
+}
+
+.intro_desc span:nth-child(65) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(66) {
+  -webkit-animation: letter-glow 0.7s ease 3.3s 1 both;
+  animation: letter-glow 0.7s ease 3.3s 1 both;
+}
+
+.intro_desc span:nth-child(66) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(67) {
+  -webkit-animation: letter-glow 0.7s ease 3.35s 1 both;
+  animation: letter-glow 0.7s ease 3.35s 1 both;
+}
+
+.intro_desc span:nth-child(67) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(68) {
+  -webkit-animation: letter-glow 0.7s ease 3.4s 1 both;
+  animation: letter-glow 0.7s ease 3.4s 1 both;
+}
+
+.intro_desc span:nth-child(68) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(69) {
+  -webkit-animation: letter-glow 0.7s ease 3.45s 1 both;
+  animation: letter-glow 0.7s ease 3.45s 1 both;
+}
+
+.intro_desc span:nth-child(69) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(70) {
+  -webkit-animation: letter-glow 0.7s ease 3.5s 1 both;
+  animation: letter-glow 0.7s ease 3.5s 1 both;
+}
+
+.intro_desc span:nth-child(70) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(71) {
+  -webkit-animation: letter-glow 0.7s ease 3.55s 1 both;
+  animation: letter-glow 0.7s ease 3.55s 1 both;
+}
+
+.intro_desc span:nth-child(71) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(72) {
+  -webkit-animation: letter-glow 0.7s ease 3.6s 1 both;
+  animation: letter-glow 0.7s ease 3.6s 1 both;
+}
+
+.intro_desc span:nth-child(72) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(73) {
+  -webkit-animation: letter-glow 0.7s ease 3.65s 1 both;
+  animation: letter-glow 0.7s ease 3.65s 1 both;
+}
+
+.intro_desc span:nth-child(73) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(74) {
+  -webkit-animation: letter-glow 0.7s ease 3.7s 1 both;
+  animation: letter-glow 0.7s ease 3.7s 1 both;
+}
+
+.intro_desc span:nth-child(74) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(75) {
+  -webkit-animation: letter-glow 0.7s ease 3.75s 1 both;
+  animation: letter-glow 0.7s ease 3.75s 1 both;
+}
+
+.intro_desc span:nth-child(75) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(76) {
+  -webkit-animation: letter-glow 0.7s ease 3.8s 1 both;
+  animation: letter-glow 0.7s ease 3.8s 1 both;
+}
+
+.intro_desc span:nth-child(76) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(77) {
+  -webkit-animation: letter-glow 0.7s ease 3.85s 1 both;
+  animation: letter-glow 0.7s ease 3.85s 1 both;
+}
+
+.intro_desc span:nth-child(77) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(78) {
+  -webkit-animation: letter-glow 0.7s ease 3.9s 1 both;
+  animation: letter-glow 0.7s ease 3.9s 1 both;
+}
+
+.intro_desc span:nth-child(78) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(79) {
+  -webkit-animation: letter-glow 0.7s ease 3.95s 1 both;
+  animation: letter-glow 0.7s ease 3.95s 1 both;
+}
+
+.intro_desc span:nth-child(79) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(80) {
+  -webkit-animation: letter-glow 0.7s ease 4s 1 both;
+  animation: letter-glow 0.7s ease 4s 1 both;
+}
+
+.intro_desc span:nth-child(80) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(81) {
+  -webkit-animation: letter-glow 0.7s ease 4.05s 1 both;
+  animation: letter-glow 0.7s ease 4.05s 1 both;
+}
+
+.intro_desc span:nth-child(81) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(82) {
+  -webkit-animation: letter-glow 0.7s ease 4.1s 1 both;
+  animation: letter-glow 0.7s ease 4.1s 1 both;
+}
+
+.intro_desc span:nth-child(82) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(83) {
+  -webkit-animation: letter-glow 0.7s ease 4.15s 1 both;
+  animation: letter-glow 0.7s ease 4.15s 1 both;
+}
+
+.intro_desc span:nth-child(83) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(84) {
+  -webkit-animation: letter-glow 0.7s ease 4.2s 1 both;
+  animation: letter-glow 0.7s ease 4.2s 1 both;
+}
+
+.intro_desc span:nth-child(84) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(85) {
+  -webkit-animation: letter-glow 0.7s ease 4.25s 1 both;
+  animation: letter-glow 0.7s ease 4.25s 1 both;
+}
+
+.intro_desc span:nth-child(85) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(86) {
+  -webkit-animation: letter-glow 0.7s ease 4.3s 1 both;
+  animation: letter-glow 0.7s ease 4.3s 1 both;
+}
+
+.intro_desc span:nth-child(86) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(87) {
+  -webkit-animation: letter-glow 0.7s ease 4.35s 1 both;
+  animation: letter-glow 0.7s ease 4.35s 1 both;
+}
+
+.intro_desc span:nth-child(87) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(88) {
+  -webkit-animation: letter-glow 0.7s ease 4.4s 1 both;
+  animation: letter-glow 0.7s ease 4.4s 1 both;
+}
+
+.intro_desc span:nth-child(88) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(89) {
+  -webkit-animation: letter-glow 0.7s ease 4.45s 1 both;
+  animation: letter-glow 0.7s ease 4.45s 1 both;
+}
+
+.intro_desc span:nth-child(89) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(90) {
+  -webkit-animation: letter-glow 0.7s ease 4.5s 1 both;
+  animation: letter-glow 0.7s ease 4.5s 1 both;
+}
+
+.intro_desc span:nth-child(90) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(91) {
+  -webkit-animation: letter-glow 0.7s ease 4.55s 1 both;
+  animation: letter-glow 0.7s ease 4.55s 1 both;
+}
+
+.intro_desc span:nth-child(91) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(92) {
+  -webkit-animation: letter-glow 0.7s ease 4.6s 1 both;
+  animation: letter-glow 0.7s ease 4.6s 1 both;
+}
+
+.intro_desc span:nth-child(92) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(93) {
+  -webkit-animation: letter-glow 0.7s ease 4.65s 1 both;
+  animation: letter-glow 0.7s ease 4.65s 1 both;
+}
+
+.intro_desc span:nth-child(93) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(94) {
+  -webkit-animation: letter-glow 0.7s ease 4.7s 1 both;
+  animation: letter-glow 0.7s ease 4.7s 1 both;
+}
+
+.intro_desc span:nth-child(94) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(95) {
+  -webkit-animation: letter-glow 0.7s ease 4.75s 1 both;
+  animation: letter-glow 0.7s ease 4.75s 1 both;
+}
+
+.intro_desc span:nth-child(95) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(96) {
+  -webkit-animation: letter-glow 0.7s ease 4.8s 1 both;
+  animation: letter-glow 0.7s ease 4.8s 1 both;
+}
+
+.intro_desc span:nth-child(96) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(97) {
+  -webkit-animation: letter-glow 0.7s ease 4.85s 1 both;
+  animation: letter-glow 0.7s ease 4.85s 1 both;
+}
+
+.intro_desc span:nth-child(97) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(98) {
+  -webkit-animation: letter-glow 0.7s ease 4.9s 1 both;
+  animation: letter-glow 0.7s ease 4.9s 1 both;
+}
+
+.intro_desc span:nth-child(98) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(99) {
+  -webkit-animation: letter-glow 0.7s ease 4.95s 1 both;
+  animation: letter-glow 0.7s ease 4.95s 1 both;
+}
+
+.intro_desc span:nth-child(99) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(100) {
+  -webkit-animation: letter-glow 0.7s ease 5s 1 both;
+  animation: letter-glow 0.7s ease 5s 1 both;
+}
+
+.intro_desc span:nth-child(100) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(101) {
+  -webkit-animation: letter-glow 0.7s ease 5.05s 1 both;
+  animation: letter-glow 0.7s ease 5.05s 1 both;
+}
+
+.intro_desc span:nth-child(101) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(102) {
+  -webkit-animation: letter-glow 0.7s ease 5.1s 1 both;
+  animation: letter-glow 0.7s ease 5.1s 1 both;
+}
+
+.intro_desc span:nth-child(102) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(103) {
+  -webkit-animation: letter-glow 0.7s ease 5.15s 1 both;
+  animation: letter-glow 0.7s ease 5.15s 1 both;
+}
+
+.intro_desc span:nth-child(103) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(104) {
+  -webkit-animation: letter-glow 0.7s ease 5.2s 1 both;
+  animation: letter-glow 0.7s ease 5.2s 1 both;
+}
+
+.intro_desc span:nth-child(104) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(105) {
+  -webkit-animation: letter-glow 0.7s ease 5.25s 1 both;
+  animation: letter-glow 0.7s ease 5.25s 1 both;
+}
+
+.intro_desc span:nth-child(105) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(106) {
+  -webkit-animation: letter-glow 0.7s ease 5.3s 1 both;
+  animation: letter-glow 0.7s ease 5.3s 1 both;
+}
+
+.intro_desc span:nth-child(106) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(107) {
+  -webkit-animation: letter-glow 0.7s ease 5.35s 1 both;
+  animation: letter-glow 0.7s ease 5.35s 1 both;
+}
+
+.intro_desc span:nth-child(107) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(108) {
+  -webkit-animation: letter-glow 0.7s ease 5.4s 1 both;
+  animation: letter-glow 0.7s ease 5.4s 1 both;
+}
+
+.intro_desc span:nth-child(108) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(109) {
+  -webkit-animation: letter-glow 0.7s ease 5.45s 1 both;
+  animation: letter-glow 0.7s ease 5.45s 1 both;
+}
+
+.intro_desc span:nth-child(109) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(110) {
+  -webkit-animation: letter-glow 0.7s ease 5.5s 1 both;
+  animation: letter-glow 0.7s ease 5.5s 1 both;
+}
+
+.intro_desc span:nth-child(110) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(111) {
+  -webkit-animation: letter-glow 0.7s ease 5.55s 1 both;
+  animation: letter-glow 0.7s ease 5.55s 1 both;
+}
+
+.intro_desc span:nth-child(111) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(112) {
+  -webkit-animation: letter-glow 0.7s ease 5.6s 1 both;
+  animation: letter-glow 0.7s ease 5.6s 1 both;
+}
+
+.intro_desc span:nth-child(112) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(113) {
+  -webkit-animation: letter-glow 0.7s ease 5.65s 1 both;
+  animation: letter-glow 0.7s ease 5.65s 1 both;
+}
+
+.intro_desc span:nth-child(113) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(114) {
+  -webkit-animation: letter-glow 0.7s ease 5.7s 1 both;
+  animation: letter-glow 0.7s ease 5.7s 1 both;
+}
+
+.intro_desc span:nth-child(114) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(115) {
+  -webkit-animation: letter-glow 0.7s ease 5.75s 1 both;
+  animation: letter-glow 0.7s ease 5.75s 1 both;
+}
+
+.intro_desc span:nth-child(115) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(116) {
+  -webkit-animation: letter-glow 0.7s ease 5.8s 1 both;
+  animation: letter-glow 0.7s ease 5.8s 1 both;
+}
+
+.intro_desc span:nth-child(116) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(117) {
+  -webkit-animation: letter-glow 0.7s ease 5.85s 1 both;
+  animation: letter-glow 0.7s ease 5.85s 1 both;
+}
+
+.intro_desc span:nth-child(117) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(118) {
+  -webkit-animation: letter-glow 0.7s ease 5.9s 1 both;
+  animation: letter-glow 0.7s ease 5.9s 1 both;
+}
+
+.intro_desc span:nth-child(118) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(119) {
+  -webkit-animation: letter-glow 0.7s ease 5.95s 1 both;
+  animation: letter-glow 0.7s ease 5.95s 1 both;
+}
+
+.intro_desc span:nth-child(119) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(120) {
+  -webkit-animation: letter-glow 0.7s ease 6s 1 both;
+  animation: letter-glow 0.7s ease 6s 1 both;
+}
+
+.intro_desc span:nth-child(120) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(121) {
+  -webkit-animation: letter-glow 0.7s ease 6.05s 1 both;
+  animation: letter-glow 0.7s ease 6.05s 1 both;
+}
+
+.intro_desc span:nth-child(121) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(122) {
+  -webkit-animation: letter-glow 0.7s ease 6.1s 1 both;
+  animation: letter-glow 0.7s ease 6.1s 1 both;
+}
+
+.intro_desc span:nth-child(122) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(123) {
+  -webkit-animation: letter-glow 0.7s ease 6.15s 1 both;
+  animation: letter-glow 0.7s ease 6.15s 1 both;
+}
+
+.intro_desc span:nth-child(123) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(124) {
+  -webkit-animation: letter-glow 0.7s ease 6.2s 1 both;
+  animation: letter-glow 0.7s ease 6.2s 1 both;
+}
+
+.intro_desc span:nth-child(124) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(125) {
+  -webkit-animation: letter-glow 0.7s ease 6.25s 1 both;
+  animation: letter-glow 0.7s ease 6.25s 1 both;
+}
+
+.intro_desc span:nth-child(125) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(126) {
+  -webkit-animation: letter-glow 0.7s ease 6.3s 1 both;
+  animation: letter-glow 0.7s ease 6.3s 1 both;
+}
+
+.intro_desc span:nth-child(126) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(127) {
+  -webkit-animation: letter-glow 0.7s ease 6.35s 1 both;
+  animation: letter-glow 0.7s ease 6.35s 1 both;
+}
+
+.intro_desc span:nth-child(127) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(128) {
+  -webkit-animation: letter-glow 0.7s ease 6.4s 1 both;
+  animation: letter-glow 0.7s ease 6.4s 1 both;
+}
+
+.intro_desc span:nth-child(128) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(129) {
+  -webkit-animation: letter-glow 0.7s ease 6.45s 1 both;
+  animation: letter-glow 0.7s ease 6.45s 1 both;
+}
+
+.intro_desc span:nth-child(129) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(130) {
+  -webkit-animation: letter-glow 0.7s ease 6.5s 1 both;
+  animation: letter-glow 0.7s ease 6.5s 1 both;
+}
+
+.intro_desc span:nth-child(130) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(131) {
+  -webkit-animation: letter-glow 0.7s ease 6.55s 1 both;
+  animation: letter-glow 0.7s ease 6.55s 1 both;
+}
+
+.intro_desc span:nth-child(131) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(132) {
+  -webkit-animation: letter-glow 0.7s ease 6.6s 1 both;
+  animation: letter-glow 0.7s ease 6.6s 1 both;
+}
+
+.intro_desc span:nth-child(132) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(133) {
+  -webkit-animation: letter-glow 0.7s ease 6.65s 1 both;
+  animation: letter-glow 0.7s ease 6.65s 1 both;
+}
+
+.intro_desc span:nth-child(133) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(134) {
+  -webkit-animation: letter-glow 0.7s ease 6.7s 1 both;
+  animation: letter-glow 0.7s ease 6.7s 1 both;
+}
+
+.intro_desc span:nth-child(134) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(135) {
+  -webkit-animation: letter-glow 0.7s ease 6.75s 1 both;
+  animation: letter-glow 0.7s ease 6.75s 1 both;
+}
+
+.intro_desc span:nth-child(135) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(136) {
+  -webkit-animation: letter-glow 0.7s ease 6.8s 1 both;
+  animation: letter-glow 0.7s ease 6.8s 1 both;
+}
+
+.intro_desc span:nth-child(136) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(137) {
+  -webkit-animation: letter-glow 0.7s ease 6.85s 1 both;
+  animation: letter-glow 0.7s ease 6.85s 1 both;
+}
+
+.intro_desc span:nth-child(137) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(138) {
+  -webkit-animation: letter-glow 0.7s ease 6.9s 1 both;
+  animation: letter-glow 0.7s ease 6.9s 1 both;
+}
+
+.intro_desc span:nth-child(138) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(139) {
+  -webkit-animation: letter-glow 0.7s ease 6.95s 1 both;
+  animation: letter-glow 0.7s ease 6.95s 1 both;
+}
+
+.intro_desc span:nth-child(139) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(140) {
+  -webkit-animation: letter-glow 0.7s ease 7s 1 both;
+  animation: letter-glow 0.7s ease 7s 1 both;
+}
+
+.intro_desc span:nth-child(140) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(141) {
+  -webkit-animation: letter-glow 0.7s ease 7.05s 1 both;
+  animation: letter-glow 0.7s ease 7.05s 1 both;
+}
+
+.intro_desc span:nth-child(141) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(142) {
+  -webkit-animation: letter-glow 0.7s ease 7.1s 1 both;
+  animation: letter-glow 0.7s ease 7.1s 1 both;
+}
+
+.intro_desc span:nth-child(142) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(143) {
+  -webkit-animation: letter-glow 0.7s ease 7.15s 1 both;
+  animation: letter-glow 0.7s ease 7.15s 1 both;
+}
+
+.intro_desc span:nth-child(143) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(144) {
+  -webkit-animation: letter-glow 0.7s ease 7.2s 1 both;
+  animation: letter-glow 0.7s ease 7.2s 1 both;
+}
+
+.intro_desc span:nth-child(144) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(145) {
+  -webkit-animation: letter-glow 0.7s ease 7.25s 1 both;
+  animation: letter-glow 0.7s ease 7.25s 1 both;
+}
+
+.intro_desc span:nth-child(145) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(146) {
+  -webkit-animation: letter-glow 0.7s ease 7.3s 1 both;
+  animation: letter-glow 0.7s ease 7.3s 1 both;
+}
+
+.intro_desc span:nth-child(146) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(147) {
+  -webkit-animation: letter-glow 0.7s ease 7.35s 1 both;
+  animation: letter-glow 0.7s ease 7.35s 1 both;
+}
+
+.intro_desc span:nth-child(147) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(148) {
+  -webkit-animation: letter-glow 0.7s ease 7.4s 1 both;
+  animation: letter-glow 0.7s ease 7.4s 1 both;
+}
+
+.intro_desc span:nth-child(148) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(149) {
+  -webkit-animation: letter-glow 0.7s ease 7.45s 1 both;
+  animation: letter-glow 0.7s ease 7.45s 1 both;
+}
+
+.intro_desc span:nth-child(149) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(150) {
+  -webkit-animation: letter-glow 0.7s ease 7.5s 1 both;
+  animation: letter-glow 0.7s ease 7.5s 1 both;
+}
+
+.intro_desc span:nth-child(150) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(151) {
+  -webkit-animation: letter-glow 0.7s ease 7.55s 1 both;
+  animation: letter-glow 0.7s ease 7.55s 1 both;
+}
+
+.intro_desc span:nth-child(151) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(152) {
+  -webkit-animation: letter-glow 0.7s ease 7.6s 1 both;
+  animation: letter-glow 0.7s ease 7.6s 1 both;
+}
+
+.intro_desc span:nth-child(152) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(153) {
+  -webkit-animation: letter-glow 0.7s ease 7.65s 1 both;
+  animation: letter-glow 0.7s ease 7.65s 1 both;
+}
+
+.intro_desc span:nth-child(153) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(154) {
+  -webkit-animation: letter-glow 0.7s ease 7.7s 1 both;
+  animation: letter-glow 0.7s ease 7.7s 1 both;
+}
+
+.intro_desc span:nth-child(154) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(155) {
+  -webkit-animation: letter-glow 0.7s ease 7.75s 1 both;
+  animation: letter-glow 0.7s ease 7.75s 1 both;
+}
+
+.intro_desc span:nth-child(155) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(156) {
+  -webkit-animation: letter-glow 0.7s ease 7.8s 1 both;
+  animation: letter-glow 0.7s ease 7.8s 1 both;
+}
+
+.intro_desc span:nth-child(156) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(157) {
+  -webkit-animation: letter-glow 0.7s ease 7.85s 1 both;
+  animation: letter-glow 0.7s ease 7.85s 1 both;
+}
+
+.intro_desc span:nth-child(157) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(158) {
+  -webkit-animation: letter-glow 0.7s ease 7.9s 1 both;
+  animation: letter-glow 0.7s ease 7.9s 1 both;
+}
+
+.intro_desc span:nth-child(158) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(159) {
+  -webkit-animation: letter-glow 0.7s ease 7.95s 1 both;
+  animation: letter-glow 0.7s ease 7.95s 1 both;
+}
+
+.intro_desc span:nth-child(159) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(160) {
+  -webkit-animation: letter-glow 0.7s ease 8s 1 both;
+  animation: letter-glow 0.7s ease 8s 1 both;
+}
+
+.intro_desc span:nth-child(160) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(161) {
+  -webkit-animation: letter-glow 0.7s ease 8.05s 1 both;
+  animation: letter-glow 0.7s ease 8.05s 1 both;
+}
+
+.intro_desc span:nth-child(161) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(162) {
+  -webkit-animation: letter-glow 0.7s ease 8.1s 1 both;
+  animation: letter-glow 0.7s ease 8.1s 1 both;
+}
+
+.intro_desc span:nth-child(162) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(163) {
+  -webkit-animation: letter-glow 0.7s ease 8.15s 1 both;
+  animation: letter-glow 0.7s ease 8.15s 1 both;
+}
+
+.intro_desc span:nth-child(163) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(164) {
+  -webkit-animation: letter-glow 0.7s ease 8.2s 1 both;
+  animation: letter-glow 0.7s ease 8.2s 1 both;
+}
+
+.intro_desc span:nth-child(164) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(165) {
+  -webkit-animation: letter-glow 0.7s ease 8.25s 1 both;
+  animation: letter-glow 0.7s ease 8.25s 1 both;
+}
+
+.intro_desc span:nth-child(165) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(166) {
+  -webkit-animation: letter-glow 0.7s ease 8.3s 1 both;
+  animation: letter-glow 0.7s ease 8.3s 1 both;
+}
+
+.intro_desc span:nth-child(166) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(167) {
+  -webkit-animation: letter-glow 0.7s ease 8.35s 1 both;
+  animation: letter-glow 0.7s ease 8.35s 1 both;
+}
+
+.intro_desc span:nth-child(167) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(168) {
+  -webkit-animation: letter-glow 0.7s ease 8.4s 1 both;
+  animation: letter-glow 0.7s ease 8.4s 1 both;
+}
+
+.intro_desc span:nth-child(168) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(169) {
+  -webkit-animation: letter-glow 0.7s ease 8.45s 1 both;
+  animation: letter-glow 0.7s ease 8.45s 1 both;
+}
+
+.intro_desc span:nth-child(169) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(170) {
+  -webkit-animation: letter-glow 0.7s ease 8.5s 1 both;
+  animation: letter-glow 0.7s ease 8.5s 1 both;
+}
+
+.intro_desc span:nth-child(170) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(171) {
+  -webkit-animation: letter-glow 0.7s ease 8.55s 1 both;
+  animation: letter-glow 0.7s ease 8.55s 1 both;
+}
+
+.intro_desc span:nth-child(171) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(172) {
+  -webkit-animation: letter-glow 0.7s ease 8.6s 1 both;
+  animation: letter-glow 0.7s ease 8.6s 1 both;
+}
+
+.intro_desc span:nth-child(172) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(173) {
+  -webkit-animation: letter-glow 0.7s ease 8.65s 1 both;
+  animation: letter-glow 0.7s ease 8.65s 1 both;
+}
+
+.intro_desc span:nth-child(173) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(174) {
+  -webkit-animation: letter-glow 0.7s ease 8.7s 1 both;
+  animation: letter-glow 0.7s ease 8.7s 1 both;
+}
+
+.intro_desc span:nth-child(174) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(175) {
+  -webkit-animation: letter-glow 0.7s ease 8.75s 1 both;
+  animation: letter-glow 0.7s ease 8.75s 1 both;
+}
+
+.intro_desc span:nth-child(175) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(176) {
+  -webkit-animation: letter-glow 0.7s ease 8.8s 1 both;
+  animation: letter-glow 0.7s ease 8.8s 1 both;
+}
+
+.intro_desc span:nth-child(176) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(177) {
+  -webkit-animation: letter-glow 0.7s ease 8.85s 1 both;
+  animation: letter-glow 0.7s ease 8.85s 1 both;
+}
+
+.intro_desc span:nth-child(177) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(178) {
+  -webkit-animation: letter-glow 0.7s ease 8.9s 1 both;
+  animation: letter-glow 0.7s ease 8.9s 1 both;
+}
+
+.intro_desc span:nth-child(178) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(179) {
+  -webkit-animation: letter-glow 0.7s ease 8.95s 1 both;
+  animation: letter-glow 0.7s ease 8.95s 1 both;
+}
+
+.intro_desc span:nth-child(179) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(180) {
+  -webkit-animation: letter-glow 0.7s ease 9s 1 both;
+  animation: letter-glow 0.7s ease 9s 1 both;
+}
+
+.intro_desc span:nth-child(180) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(181) {
+  -webkit-animation: letter-glow 0.7s ease 9.05s 1 both;
+  animation: letter-glow 0.7s ease 9.05s 1 both;
+}
+
+.intro_desc span:nth-child(181) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(182) {
+  -webkit-animation: letter-glow 0.7s ease 9.1s 1 both;
+  animation: letter-glow 0.7s ease 9.1s 1 both;
+}
+
+.intro_desc span:nth-child(182) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(183) {
+  -webkit-animation: letter-glow 0.7s ease 9.15s 1 both;
+  animation: letter-glow 0.7s ease 9.15s 1 both;
+}
+
+.intro_desc span:nth-child(183) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(184) {
+  -webkit-animation: letter-glow 0.7s ease 9.2s 1 both;
+  animation: letter-glow 0.7s ease 9.2s 1 both;
+}
+
+.intro_desc span:nth-child(184) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(185) {
+  -webkit-animation: letter-glow 0.7s ease 9.25s 1 both;
+  animation: letter-glow 0.7s ease 9.25s 1 both;
+}
+
+.intro_desc span:nth-child(185) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(186) {
+  -webkit-animation: letter-glow 0.7s ease 9.3s 1 both;
+  animation: letter-glow 0.7s ease 9.3s 1 both;
+}
+
+.intro_desc span:nth-child(186) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(187) {
+  -webkit-animation: letter-glow 0.7s ease 9.35s 1 both;
+  animation: letter-glow 0.7s ease 9.35s 1 both;
+}
+
+.intro_desc span:nth-child(187) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(188) {
+  -webkit-animation: letter-glow 0.7s ease 9.4s 1 both;
+  animation: letter-glow 0.7s ease 9.4s 1 both;
+}
+
+.intro_desc span:nth-child(188) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(189) {
+  -webkit-animation: letter-glow 0.7s ease 9.45s 1 both;
+  animation: letter-glow 0.7s ease 9.45s 1 both;
+}
+
+.intro_desc span:nth-child(189) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(190) {
+  -webkit-animation: letter-glow 0.7s ease 9.5s 1 both;
+  animation: letter-glow 0.7s ease 9.5s 1 both;
+}
+
+.intro_desc span:nth-child(190) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(191) {
+  -webkit-animation: letter-glow 0.7s ease 9.55s 1 both;
+  animation: letter-glow 0.7s ease 9.55s 1 both;
+}
+
+.intro_desc span:nth-child(191) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(192) {
+  -webkit-animation: letter-glow 0.7s ease 9.6s 1 both;
+  animation: letter-glow 0.7s ease 9.6s 1 both;
+}
+
+.intro_desc span:nth-child(192) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(193) {
+  -webkit-animation: letter-glow 0.7s ease 9.65s 1 both;
+  animation: letter-glow 0.7s ease 9.65s 1 both;
+}
+
+.intro_desc span:nth-child(193) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(194) {
+  -webkit-animation: letter-glow 0.7s ease 9.7s 1 both;
+  animation: letter-glow 0.7s ease 9.7s 1 both;
+}
+
+.intro_desc span:nth-child(194) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(195) {
+  -webkit-animation: letter-glow 0.7s ease 9.75s 1 both;
+  animation: letter-glow 0.7s ease 9.75s 1 both;
+}
+
+.intro_desc span:nth-child(195) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(196) {
+  -webkit-animation: letter-glow 0.7s ease 9.8s 1 both;
+  animation: letter-glow 0.7s ease 9.8s 1 both;
+}
+
+.intro_desc span:nth-child(196) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(197) {
+  -webkit-animation: letter-glow 0.7s ease 9.85s 1 both;
+  animation: letter-glow 0.7s ease 9.85s 1 both;
+}
+
+.intro_desc span:nth-child(197) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(198) {
+  -webkit-animation: letter-glow 0.7s ease 9.9s 1 both;
+  animation: letter-glow 0.7s ease 9.9s 1 both;
+}
+
+.intro_desc span:nth-child(198) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(199) {
+  -webkit-animation: letter-glow 0.7s ease 9.95s 1 both;
+  animation: letter-glow 0.7s ease 9.95s 1 both;
+}
+
+.intro_desc span:nth-child(199) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(200) {
+  -webkit-animation: letter-glow 0.7s ease 10s 1 both;
+  animation: letter-glow 0.7s ease 10s 1 both;
+}
+
+.intro_desc span:nth-child(200) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(201) {
+  -webkit-animation: letter-glow 0.7s ease 10.05s 1 both;
+  animation: letter-glow 0.7s ease 10.05s 1 both;
+}
+
+.intro_desc span:nth-child(201) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(202) {
+  -webkit-animation: letter-glow 0.7s ease 10.1s 1 both;
+  animation: letter-glow 0.7s ease 10.1s 1 both;
+}
+
+.intro_desc span:nth-child(202) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(203) {
+  -webkit-animation: letter-glow 0.7s ease 10.15s 1 both;
+  animation: letter-glow 0.7s ease 10.15s 1 both;
+}
+
+.intro_desc span:nth-child(203) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(204) {
+  -webkit-animation: letter-glow 0.7s ease 10.2s 1 both;
+  animation: letter-glow 0.7s ease 10.2s 1 both;
+}
+
+.intro_desc span:nth-child(204) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(205) {
+  -webkit-animation: letter-glow 0.7s ease 10.25s 1 both;
+  animation: letter-glow 0.7s ease 10.25s 1 both;
+}
+
+.intro_desc span:nth-child(205) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(206) {
+  -webkit-animation: letter-glow 0.7s ease 10.3s 1 both;
+  animation: letter-glow 0.7s ease 10.3s 1 both;
+}
+
+.intro_desc span:nth-child(206) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(207) {
+  -webkit-animation: letter-glow 0.7s ease 10.35s 1 both;
+  animation: letter-glow 0.7s ease 10.35s 1 both;
+}
+
+.intro_desc span:nth-child(207) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(208) {
+  -webkit-animation: letter-glow 0.7s ease 10.4s 1 both;
+  animation: letter-glow 0.7s ease 10.4s 1 both;
+}
+
+.intro_desc span:nth-child(208) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(209) {
+  -webkit-animation: letter-glow 0.7s ease 10.45s 1 both;
+  animation: letter-glow 0.7s ease 10.45s 1 both;
+}
+
+.intro_desc span:nth-child(209) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(210) {
+  -webkit-animation: letter-glow 0.7s ease 10.5s 1 both;
+  animation: letter-glow 0.7s ease 10.5s 1 both;
+}
+
+.intro_desc span:nth-child(210) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(211) {
+  -webkit-animation: letter-glow 0.7s ease 10.55s 1 both;
+  animation: letter-glow 0.7s ease 10.55s 1 both;
+}
+
+.intro_desc span:nth-child(211) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(212) {
+  -webkit-animation: letter-glow 0.7s ease 10.6s 1 both;
+  animation: letter-glow 0.7s ease 10.6s 1 both;
+}
+
+.intro_desc span:nth-child(212) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(213) {
+  -webkit-animation: letter-glow 0.7s ease 10.65s 1 both;
+  animation: letter-glow 0.7s ease 10.65s 1 both;
+}
+
+.intro_desc span:nth-child(213) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(214) {
+  -webkit-animation: letter-glow 0.7s ease 10.7s 1 both;
+  animation: letter-glow 0.7s ease 10.7s 1 both;
+}
+
+.intro_desc span:nth-child(214) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(215) {
+  -webkit-animation: letter-glow 0.7s ease 10.75s 1 both;
+  animation: letter-glow 0.7s ease 10.75s 1 both;
+}
+
+.intro_desc span:nth-child(215) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(216) {
+  -webkit-animation: letter-glow 0.7s ease 10.8s 1 both;
+  animation: letter-glow 0.7s ease 10.8s 1 both;
+}
+
+.intro_desc span:nth-child(216) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(217) {
+  -webkit-animation: letter-glow 0.7s ease 10.85s 1 both;
+  animation: letter-glow 0.7s ease 10.85s 1 both;
+}
+
+.intro_desc span:nth-child(217) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(218) {
+  -webkit-animation: letter-glow 0.7s ease 10.9s 1 both;
+  animation: letter-glow 0.7s ease 10.9s 1 both;
+}
+
+.intro_desc span:nth-child(218) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(219) {
+  -webkit-animation: letter-glow 0.7s ease 10.95s 1 both;
+  animation: letter-glow 0.7s ease 10.95s 1 both;
+}
+
+.intro_desc span:nth-child(219) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(220) {
+  -webkit-animation: letter-glow 0.7s ease 11s 1 both;
+  animation: letter-glow 0.7s ease 11s 1 both;
+}
+
+.intro_desc span:nth-child(220) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(221) {
+  -webkit-animation: letter-glow 0.7s ease 11.05s 1 both;
+  animation: letter-glow 0.7s ease 11.05s 1 both;
+}
+
+.intro_desc span:nth-child(221) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(222) {
+  -webkit-animation: letter-glow 0.7s ease 11.1s 1 both;
+  animation: letter-glow 0.7s ease 11.1s 1 both;
+}
+
+.intro_desc span:nth-child(222) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(223) {
+  -webkit-animation: letter-glow 0.7s ease 11.15s 1 both;
+  animation: letter-glow 0.7s ease 11.15s 1 both;
+}
+
+.intro_desc span:nth-child(223) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(224) {
+  -webkit-animation: letter-glow 0.7s ease 11.2s 1 both;
+  animation: letter-glow 0.7s ease 11.2s 1 both;
+}
+
+.intro_desc span:nth-child(224) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(225) {
+  -webkit-animation: letter-glow 0.7s ease 11.25s 1 both;
+  animation: letter-glow 0.7s ease 11.25s 1 both;
+}
+
+.intro_desc span:nth-child(225) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(226) {
+  -webkit-animation: letter-glow 0.7s ease 11.3s 1 both;
+  animation: letter-glow 0.7s ease 11.3s 1 both;
+}
+
+.intro_desc span:nth-child(226) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(227) {
+  -webkit-animation: letter-glow 0.7s ease 11.35s 1 both;
+  animation: letter-glow 0.7s ease 11.35s 1 both;
+}
+
+.intro_desc span:nth-child(227) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(228) {
+  -webkit-animation: letter-glow 0.7s ease 11.4s 1 both;
+  animation: letter-glow 0.7s ease 11.4s 1 both;
+}
+
+.intro_desc span:nth-child(228) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(229) {
+  -webkit-animation: letter-glow 0.7s ease 11.45s 1 both;
+  animation: letter-glow 0.7s ease 11.45s 1 both;
+}
+
+.intro_desc span:nth-child(229) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(230) {
+  -webkit-animation: letter-glow 0.7s ease 11.5s 1 both;
+  animation: letter-glow 0.7s ease 11.5s 1 both;
+}
+
+.intro_desc span:nth-child(230) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(231) {
+  -webkit-animation: letter-glow 0.7s ease 11.55s 1 both;
+  animation: letter-glow 0.7s ease 11.55s 1 both;
+}
+
+.intro_desc span:nth-child(231) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(232) {
+  -webkit-animation: letter-glow 0.7s ease 11.6s 1 both;
+  animation: letter-glow 0.7s ease 11.6s 1 both;
+}
+
+.intro_desc span:nth-child(232) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(233) {
+  -webkit-animation: letter-glow 0.7s ease 11.65s 1 both;
+  animation: letter-glow 0.7s ease 11.65s 1 both;
+}
+
+.intro_desc span:nth-child(233) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(234) {
+  -webkit-animation: letter-glow 0.7s ease 11.7s 1 both;
+  animation: letter-glow 0.7s ease 11.7s 1 both;
+}
+
+.intro_desc span:nth-child(234) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(235) {
+  -webkit-animation: letter-glow 0.7s ease 11.75s 1 both;
+  animation: letter-glow 0.7s ease 11.75s 1 both;
+}
+
+.intro_desc span:nth-child(235) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(236) {
+  -webkit-animation: letter-glow 0.7s ease 11.8s 1 both;
+  animation: letter-glow 0.7s ease 11.8s 1 both;
+}
+
+.intro_desc span:nth-child(236) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(237) {
+  -webkit-animation: letter-glow 0.7s ease 11.85s 1 both;
+  animation: letter-glow 0.7s ease 11.85s 1 both;
+}
+
+.intro_desc span:nth-child(237) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(238) {
+  -webkit-animation: letter-glow 0.7s ease 11.9s 1 both;
+  animation: letter-glow 0.7s ease 11.9s 1 both;
+}
+
+.intro_desc span:nth-child(238) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(239) {
+  -webkit-animation: letter-glow 0.7s ease 11.95s 1 both;
+  animation: letter-glow 0.7s ease 11.95s 1 both;
+}
+
+.intro_desc span:nth-child(239) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(240) {
+  -webkit-animation: letter-glow 0.7s ease 12s 1 both;
+  animation: letter-glow 0.7s ease 12s 1 both;
+}
+
+.intro_desc span:nth-child(240) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(241) {
+  -webkit-animation: letter-glow 0.7s ease 12.05s 1 both;
+  animation: letter-glow 0.7s ease 12.05s 1 both;
+}
+
+.intro_desc span:nth-child(241) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(242) {
+  -webkit-animation: letter-glow 0.7s ease 12.1s 1 both;
+  animation: letter-glow 0.7s ease 12.1s 1 both;
+}
+
+.intro_desc span:nth-child(242) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(243) {
+  -webkit-animation: letter-glow 0.7s ease 12.15s 1 both;
+  animation: letter-glow 0.7s ease 12.15s 1 both;
+}
+
+.intro_desc span:nth-child(243) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(244) {
+  -webkit-animation: letter-glow 0.7s ease 12.2s 1 both;
+  animation: letter-glow 0.7s ease 12.2s 1 both;
+}
+
+.intro_desc span:nth-child(244) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(245) {
+  -webkit-animation: letter-glow 0.7s ease 12.25s 1 both;
+  animation: letter-glow 0.7s ease 12.25s 1 both;
+}
+
+.intro_desc span:nth-child(245) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(246) {
+  -webkit-animation: letter-glow 0.7s ease 12.3s 1 both;
+  animation: letter-glow 0.7s ease 12.3s 1 both;
+}
+
+.intro_desc span:nth-child(246) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(247) {
+  -webkit-animation: letter-glow 0.7s ease 12.35s 1 both;
+  animation: letter-glow 0.7s ease 12.35s 1 both;
+}
+
+.intro_desc span:nth-child(247) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(248) {
+  -webkit-animation: letter-glow 0.7s ease 12.4s 1 both;
+  animation: letter-glow 0.7s ease 12.4s 1 both;
+}
+
+.intro_desc span:nth-child(248) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(249) {
+  -webkit-animation: letter-glow 0.7s ease 12.45s 1 both;
+  animation: letter-glow 0.7s ease 12.45s 1 both;
+}
+
+.intro_desc span:nth-child(249) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(250) {
+  -webkit-animation: letter-glow 0.7s ease 12.5s 1 both;
+  animation: letter-glow 0.7s ease 12.5s 1 both;
+}
+
+.intro_desc span:nth-child(250) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(251) {
+  -webkit-animation: letter-glow 0.7s ease 12.55s 1 both;
+  animation: letter-glow 0.7s ease 12.55s 1 both;
+}
+
+.intro_desc span:nth-child(251) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(252) {
+  -webkit-animation: letter-glow 0.7s ease 12.6s 1 both;
+  animation: letter-glow 0.7s ease 12.6s 1 both;
+}
+
+.intro_desc span:nth-child(252) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(253) {
+  -webkit-animation: letter-glow 0.7s ease 12.65s 1 both;
+  animation: letter-glow 0.7s ease 12.65s 1 both;
+}
+
+.intro_desc span:nth-child(253) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(254) {
+  -webkit-animation: letter-glow 0.7s ease 12.7s 1 both;
+  animation: letter-glow 0.7s ease 12.7s 1 both;
+}
+
+.intro_desc span:nth-child(254) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(255) {
+  -webkit-animation: letter-glow 0.7s ease 12.75s 1 both;
+  animation: letter-glow 0.7s ease 12.75s 1 both;
+}
+
+.intro_desc span:nth-child(255) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(256) {
+  -webkit-animation: letter-glow 0.7s ease 12.8s 1 both;
+  animation: letter-glow 0.7s ease 12.8s 1 both;
+}
+
+.intro_desc span:nth-child(256) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(257) {
+  -webkit-animation: letter-glow 0.7s ease 12.85s 1 both;
+  animation: letter-glow 0.7s ease 12.85s 1 both;
+}
+
+.intro_desc span:nth-child(257) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(258) {
+  -webkit-animation: letter-glow 0.7s ease 12.9s 1 both;
+  animation: letter-glow 0.7s ease 12.9s 1 both;
+}
+
+.intro_desc span:nth-child(258) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(259) {
+  -webkit-animation: letter-glow 0.7s ease 12.95s 1 both;
+  animation: letter-glow 0.7s ease 12.95s 1 both;
+}
+
+.intro_desc span:nth-child(259) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(260) {
+  -webkit-animation: letter-glow 0.7s ease 13s 1 both;
+  animation: letter-glow 0.7s ease 13s 1 both;
+}
+
+.intro_desc span:nth-child(260) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(261) {
+  -webkit-animation: letter-glow 0.7s ease 13.05s 1 both;
+  animation: letter-glow 0.7s ease 13.05s 1 both;
+}
+
+.intro_desc span:nth-child(261) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(262) {
+  -webkit-animation: letter-glow 0.7s ease 13.1s 1 both;
+  animation: letter-glow 0.7s ease 13.1s 1 both;
+}
+
+.intro_desc span:nth-child(262) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(263) {
+  -webkit-animation: letter-glow 0.7s ease 13.15s 1 both;
+  animation: letter-glow 0.7s ease 13.15s 1 both;
+}
+
+.intro_desc span:nth-child(263) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(264) {
+  -webkit-animation: letter-glow 0.7s ease 13.2s 1 both;
+  animation: letter-glow 0.7s ease 13.2s 1 both;
+}
+
+.intro_desc span:nth-child(264) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(265) {
+  -webkit-animation: letter-glow 0.7s ease 13.25s 1 both;
+  animation: letter-glow 0.7s ease 13.25s 1 both;
+}
+
+.intro_desc span:nth-child(265) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(266) {
+  -webkit-animation: letter-glow 0.7s ease 13.3s 1 both;
+  animation: letter-glow 0.7s ease 13.3s 1 both;
+}
+
+.intro_desc span:nth-child(266) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(267) {
+  -webkit-animation: letter-glow 0.7s ease 13.35s 1 both;
+  animation: letter-glow 0.7s ease 13.35s 1 both;
+}
+
+.intro_desc span:nth-child(267) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(268) {
+  -webkit-animation: letter-glow 0.7s ease 13.4s 1 both;
+  animation: letter-glow 0.7s ease 13.4s 1 both;
+}
+
+.intro_desc span:nth-child(268) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(269) {
+  -webkit-animation: letter-glow 0.7s ease 13.45s 1 both;
+  animation: letter-glow 0.7s ease 13.45s 1 both;
+}
+
+.intro_desc span:nth-child(269) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(270) {
+  -webkit-animation: letter-glow 0.7s ease 13.5s 1 both;
+  animation: letter-glow 0.7s ease 13.5s 1 both;
+}
+
+.intro_desc span:nth-child(270) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(271) {
+  -webkit-animation: letter-glow 0.7s ease 13.55s 1 both;
+  animation: letter-glow 0.7s ease 13.55s 1 both;
+}
+
+.intro_desc span:nth-child(271) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(272) {
+  -webkit-animation: letter-glow 0.7s ease 13.6s 1 both;
+  animation: letter-glow 0.7s ease 13.6s 1 both;
+}
+
+.intro_desc span:nth-child(272) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(273) {
+  -webkit-animation: letter-glow 0.7s ease 13.65s 1 both;
+  animation: letter-glow 0.7s ease 13.65s 1 both;
+}
+
+.intro_desc span:nth-child(273) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(274) {
+  -webkit-animation: letter-glow 0.7s ease 13.7s 1 both;
+  animation: letter-glow 0.7s ease 13.7s 1 both;
+}
+
+.intro_desc span:nth-child(274) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(275) {
+  -webkit-animation: letter-glow 0.7s ease 13.75s 1 both;
+  animation: letter-glow 0.7s ease 13.75s 1 both;
+}
+
+.intro_desc span:nth-child(275) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(276) {
+  -webkit-animation: letter-glow 0.7s ease 13.8s 1 both;
+  animation: letter-glow 0.7s ease 13.8s 1 both;
+}
+
+.intro_desc span:nth-child(276) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(277) {
+  -webkit-animation: letter-glow 0.7s ease 13.85s 1 both;
+  animation: letter-glow 0.7s ease 13.85s 1 both;
+}
+
+.intro_desc span:nth-child(277) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(278) {
+  -webkit-animation: letter-glow 0.7s ease 13.9s 1 both;
+  animation: letter-glow 0.7s ease 13.9s 1 both;
+}
+
+.intro_desc span:nth-child(278) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(279) {
+  -webkit-animation: letter-glow 0.7s ease 13.95s 1 both;
+  animation: letter-glow 0.7s ease 13.95s 1 both;
+}
+
+.intro_desc span:nth-child(279) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(280) {
+  -webkit-animation: letter-glow 0.7s ease 14s 1 both;
+  animation: letter-glow 0.7s ease 14s 1 both;
+}
+
+.intro_desc span:nth-child(280) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(281) {
+  -webkit-animation: letter-glow 0.7s ease 14.05s 1 both;
+  animation: letter-glow 0.7s ease 14.05s 1 both;
+}
+
+.intro_desc span:nth-child(281) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(282) {
+  -webkit-animation: letter-glow 0.7s ease 14.1s 1 both;
+  animation: letter-glow 0.7s ease 14.1s 1 both;
+}
+
+.intro_desc span:nth-child(282) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(283) {
+  -webkit-animation: letter-glow 0.7s ease 14.15s 1 both;
+  animation: letter-glow 0.7s ease 14.15s 1 both;
+}
+
+.intro_desc span:nth-child(283) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(284) {
+  -webkit-animation: letter-glow 0.7s ease 14.2s 1 both;
+  animation: letter-glow 0.7s ease 14.2s 1 both;
+}
+
+.intro_desc span:nth-child(284) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(285) {
+  -webkit-animation: letter-glow 0.7s ease 14.25s 1 both;
+  animation: letter-glow 0.7s ease 14.25s 1 both;
+}
+
+.intro_desc span:nth-child(285) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(286) {
+  -webkit-animation: letter-glow 0.7s ease 14.3s 1 both;
+  animation: letter-glow 0.7s ease 14.3s 1 both;
+}
+
+.intro_desc span:nth-child(286) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(287) {
+  -webkit-animation: letter-glow 0.7s ease 14.35s 1 both;
+  animation: letter-glow 0.7s ease 14.35s 1 both;
+}
+
+.intro_desc span:nth-child(287) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(288) {
+  -webkit-animation: letter-glow 0.7s ease 14.4s 1 both;
+  animation: letter-glow 0.7s ease 14.4s 1 both;
+}
+
+.intro_desc span:nth-child(288) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(289) {
+  -webkit-animation: letter-glow 0.7s ease 14.45s 1 both;
+  animation: letter-glow 0.7s ease 14.45s 1 both;
+}
+
+.intro_desc span:nth-child(289) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(290) {
+  -webkit-animation: letter-glow 0.7s ease 14.5s 1 both;
+  animation: letter-glow 0.7s ease 14.5s 1 both;
+}
+
+.intro_desc span:nth-child(290) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(291) {
+  -webkit-animation: letter-glow 0.7s ease 14.55s 1 both;
+  animation: letter-glow 0.7s ease 14.55s 1 both;
+}
+
+.intro_desc span:nth-child(291) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(292) {
+  -webkit-animation: letter-glow 0.7s ease 14.6s 1 both;
+  animation: letter-glow 0.7s ease 14.6s 1 both;
+}
+
+.intro_desc span:nth-child(292) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(293) {
+  -webkit-animation: letter-glow 0.7s ease 14.65s 1 both;
+  animation: letter-glow 0.7s ease 14.65s 1 both;
+}
+
+.intro_desc span:nth-child(293) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(294) {
+  -webkit-animation: letter-glow 0.7s ease 14.7s 1 both;
+  animation: letter-glow 0.7s ease 14.7s 1 both;
+}
+
+.intro_desc span:nth-child(294) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(295) {
+  -webkit-animation: letter-glow 0.7s ease 14.75s 1 both;
+  animation: letter-glow 0.7s ease 14.75s 1 both;
+}
+
+.intro_desc span:nth-child(295) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(296) {
+  -webkit-animation: letter-glow 0.7s ease 14.8s 1 both;
+  animation: letter-glow 0.7s ease 14.8s 1 both;
+}
+
+.intro_desc span:nth-child(296) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(297) {
+  -webkit-animation: letter-glow 0.7s ease 14.85s 1 both;
+  animation: letter-glow 0.7s ease 14.85s 1 both;
+}
+
+.intro_desc span:nth-child(297) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(298) {
+  -webkit-animation: letter-glow 0.7s ease 14.9s 1 both;
+  animation: letter-glow 0.7s ease 14.9s 1 both;
+}
+
+.intro_desc span:nth-child(298) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(299) {
+  -webkit-animation: letter-glow 0.7s ease 14.95s 1 both;
+  animation: letter-glow 0.7s ease 14.95s 1 both;
+}
+
+.intro_desc span:nth-child(299) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(300) {
+  -webkit-animation: letter-glow 0.7s ease 15s 1 both;
+  animation: letter-glow 0.7s ease 15s 1 both;
+}
+
+.intro_desc span:nth-child(300) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(301) {
+  -webkit-animation: letter-glow 0.7s ease 15.05s 1 both;
+  animation: letter-glow 0.7s ease 15.05s 1 both;
+}
+
+.intro_desc span:nth-child(301) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(302) {
+  -webkit-animation: letter-glow 0.7s ease 15.1s 1 both;
+  animation: letter-glow 0.7s ease 15.1s 1 both;
+}
+
+.intro_desc span:nth-child(302) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(303) {
+  -webkit-animation: letter-glow 0.7s ease 15.15s 1 both;
+  animation: letter-glow 0.7s ease 15.15s 1 both;
+}
+
+.intro_desc span:nth-child(303) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(304) {
+  -webkit-animation: letter-glow 0.7s ease 15.2s 1 both;
+  animation: letter-glow 0.7s ease 15.2s 1 both;
+}
+
+.intro_desc span:nth-child(304) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(305) {
+  -webkit-animation: letter-glow 0.7s ease 15.25s 1 both;
+  animation: letter-glow 0.7s ease 15.25s 1 both;
+}
+
+.intro_desc span:nth-child(305) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(306) {
+  -webkit-animation: letter-glow 0.7s ease 15.3s 1 both;
+  animation: letter-glow 0.7s ease 15.3s 1 both;
+}
+
+.intro_desc span:nth-child(306) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(307) {
+  -webkit-animation: letter-glow 0.7s ease 15.35s 1 both;
+  animation: letter-glow 0.7s ease 15.35s 1 both;
+}
+
+.intro_desc span:nth-child(307) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(308) {
+  -webkit-animation: letter-glow 0.7s ease 15.4s 1 both;
+  animation: letter-glow 0.7s ease 15.4s 1 both;
+}
+
+.intro_desc span:nth-child(308) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(309) {
+  -webkit-animation: letter-glow 0.7s ease 15.45s 1 both;
+  animation: letter-glow 0.7s ease 15.45s 1 both;
+}
+
+.intro_desc span:nth-child(309) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(310) {
+  -webkit-animation: letter-glow 0.7s ease 15.5s 1 both;
+  animation: letter-glow 0.7s ease 15.5s 1 both;
+}
+
+.intro_desc span:nth-child(310) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(311) {
+  -webkit-animation: letter-glow 0.7s ease 15.55s 1 both;
+  animation: letter-glow 0.7s ease 15.55s 1 both;
+}
+
+.intro_desc span:nth-child(311) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(312) {
+  -webkit-animation: letter-glow 0.7s ease 15.6s 1 both;
+  animation: letter-glow 0.7s ease 15.6s 1 both;
+}
+
+.intro_desc span:nth-child(312) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(313) {
+  -webkit-animation: letter-glow 0.7s ease 15.65s 1 both;
+  animation: letter-glow 0.7s ease 15.65s 1 both;
+}
+
+.intro_desc span:nth-child(313) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(314) {
+  -webkit-animation: letter-glow 0.7s ease 15.7s 1 both;
+  animation: letter-glow 0.7s ease 15.7s 1 both;
+}
+
+.intro_desc span:nth-child(314) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(315) {
+  -webkit-animation: letter-glow 0.7s ease 15.75s 1 both;
+  animation: letter-glow 0.7s ease 15.75s 1 both;
+}
+
+.intro_desc span:nth-child(315) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(316) {
+  -webkit-animation: letter-glow 0.7s ease 15.8s 1 both;
+  animation: letter-glow 0.7s ease 15.8s 1 both;
+}
+
+.intro_desc span:nth-child(316) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(317) {
+  -webkit-animation: letter-glow 0.7s ease 15.85s 1 both;
+  animation: letter-glow 0.7s ease 15.85s 1 both;
+}
+
+.intro_desc span:nth-child(317) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(318) {
+  -webkit-animation: letter-glow 0.7s ease 15.9s 1 both;
+  animation: letter-glow 0.7s ease 15.9s 1 both;
+}
+
+.intro_desc span:nth-child(318) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(319) {
+  -webkit-animation: letter-glow 0.7s ease 15.95s 1 both;
+  animation: letter-glow 0.7s ease 15.95s 1 both;
+}
+
+.intro_desc span:nth-child(319) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(320) {
+  -webkit-animation: letter-glow 0.7s ease 16s 1 both;
+  animation: letter-glow 0.7s ease 16s 1 both;
+}
+
+.intro_desc span:nth-child(320) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(321) {
+  -webkit-animation: letter-glow 0.7s ease 16.05s 1 both;
+  animation: letter-glow 0.7s ease 16.05s 1 both;
+}
+
+.intro_desc span:nth-child(321) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(322) {
+  -webkit-animation: letter-glow 0.7s ease 16.1s 1 both;
+  animation: letter-glow 0.7s ease 16.1s 1 both;
+}
+
+.intro_desc span:nth-child(322) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(323) {
+  -webkit-animation: letter-glow 0.7s ease 16.15s 1 both;
+  animation: letter-glow 0.7s ease 16.15s 1 both;
+}
+
+.intro_desc span:nth-child(323) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(324) {
+  -webkit-animation: letter-glow 0.7s ease 16.2s 1 both;
+  animation: letter-glow 0.7s ease 16.2s 1 both;
+}
+
+.intro_desc span:nth-child(324) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(325) {
+  -webkit-animation: letter-glow 0.7s ease 16.25s 1 both;
+  animation: letter-glow 0.7s ease 16.25s 1 both;
+}
+
+.intro_desc span:nth-child(325) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(326) {
+  -webkit-animation: letter-glow 0.7s ease 16.3s 1 both;
+  animation: letter-glow 0.7s ease 16.3s 1 both;
+}
+
+.intro_desc span:nth-child(326) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(327) {
+  -webkit-animation: letter-glow 0.7s ease 16.35s 1 both;
+  animation: letter-glow 0.7s ease 16.35s 1 both;
+}
+
+.intro_desc span:nth-child(327) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(328) {
+  -webkit-animation: letter-glow 0.7s ease 16.4s 1 both;
+  animation: letter-glow 0.7s ease 16.4s 1 both;
+}
+
+.intro_desc span:nth-child(328) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(329) {
+  -webkit-animation: letter-glow 0.7s ease 16.45s 1 both;
+  animation: letter-glow 0.7s ease 16.45s 1 both;
+}
+
+.intro_desc span:nth-child(329) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(330) {
+  -webkit-animation: letter-glow 0.7s ease 16.5s 1 both;
+  animation: letter-glow 0.7s ease 16.5s 1 both;
+}
+
+.intro_desc span:nth-child(330) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(331) {
+  -webkit-animation: letter-glow 0.7s ease 16.55s 1 both;
+  animation: letter-glow 0.7s ease 16.55s 1 both;
+}
+
+.intro_desc span:nth-child(331) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(332) {
+  -webkit-animation: letter-glow 0.7s ease 16.6s 1 both;
+  animation: letter-glow 0.7s ease 16.6s 1 both;
+}
+
+.intro_desc span:nth-child(332) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(333) {
+  -webkit-animation: letter-glow 0.7s ease 16.65s 1 both;
+  animation: letter-glow 0.7s ease 16.65s 1 both;
+}
+
+.intro_desc span:nth-child(333) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(334) {
+  -webkit-animation: letter-glow 0.7s ease 16.7s 1 both;
+  animation: letter-glow 0.7s ease 16.7s 1 both;
+}
+
+.intro_desc span:nth-child(334) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(335) {
+  -webkit-animation: letter-glow 0.7s ease 16.75s 1 both;
+  animation: letter-glow 0.7s ease 16.75s 1 both;
+}
+
+.intro_desc span:nth-child(335) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(336) {
+  -webkit-animation: letter-glow 0.7s ease 16.8s 1 both;
+  animation: letter-glow 0.7s ease 16.8s 1 both;
+}
+
+.intro_desc span:nth-child(336) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(337) {
+  -webkit-animation: letter-glow 0.7s ease 16.85s 1 both;
+  animation: letter-glow 0.7s ease 16.85s 1 both;
+}
+
+.intro_desc span:nth-child(337) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(338) {
+  -webkit-animation: letter-glow 0.7s ease 16.9s 1 both;
+  animation: letter-glow 0.7s ease 16.9s 1 both;
+}
+
+.intro_desc span:nth-child(338) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(339) {
+  -webkit-animation: letter-glow 0.7s ease 16.95s 1 both;
+  animation: letter-glow 0.7s ease 16.95s 1 both;
+}
+
+.intro_desc span:nth-child(339) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(340) {
+  -webkit-animation: letter-glow 0.7s ease 17s 1 both;
+  animation: letter-glow 0.7s ease 17s 1 both;
+}
+
+.intro_desc span:nth-child(340) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(341) {
+  -webkit-animation: letter-glow 0.7s ease 17.05s 1 both;
+  animation: letter-glow 0.7s ease 17.05s 1 both;
+}
+
+.intro_desc span:nth-child(341) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(342) {
+  -webkit-animation: letter-glow 0.7s ease 17.1s 1 both;
+  animation: letter-glow 0.7s ease 17.1s 1 both;
+}
+
+.intro_desc span:nth-child(342) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(343) {
+  -webkit-animation: letter-glow 0.7s ease 17.15s 1 both;
+  animation: letter-glow 0.7s ease 17.15s 1 both;
+}
+
+.intro_desc span:nth-child(343) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(344) {
+  -webkit-animation: letter-glow 0.7s ease 17.2s 1 both;
+  animation: letter-glow 0.7s ease 17.2s 1 both;
+}
+
+.intro_desc span:nth-child(344) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(345) {
+  -webkit-animation: letter-glow 0.7s ease 17.25s 1 both;
+  animation: letter-glow 0.7s ease 17.25s 1 both;
+}
+
+.intro_desc span:nth-child(345) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(346) {
+  -webkit-animation: letter-glow 0.7s ease 17.3s 1 both;
+  animation: letter-glow 0.7s ease 17.3s 1 both;
+}
+
+.intro_desc span:nth-child(346) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(347) {
+  -webkit-animation: letter-glow 0.7s ease 17.35s 1 both;
+  animation: letter-glow 0.7s ease 17.35s 1 both;
+}
+
+.intro_desc span:nth-child(347) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(348) {
+  -webkit-animation: letter-glow 0.7s ease 17.4s 1 both;
+  animation: letter-glow 0.7s ease 17.4s 1 both;
+}
+
+.intro_desc span:nth-child(348) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(349) {
+  -webkit-animation: letter-glow 0.7s ease 17.45s 1 both;
+  animation: letter-glow 0.7s ease 17.45s 1 both;
+}
+
+.intro_desc span:nth-child(349) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(350) {
+  -webkit-animation: letter-glow 0.7s ease 17.5s 1 both;
+  animation: letter-glow 0.7s ease 17.5s 1 both;
+}
+
+.intro_desc span:nth-child(350) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(351) {
+  -webkit-animation: letter-glow 0.7s ease 17.55s 1 both;
+  animation: letter-glow 0.7s ease 17.55s 1 both;
+}
+
+.intro_desc span:nth-child(351) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(352) {
+  -webkit-animation: letter-glow 0.7s ease 17.6s 1 both;
+  animation: letter-glow 0.7s ease 17.6s 1 both;
+}
+
+.intro_desc span:nth-child(352) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(353) {
+  -webkit-animation: letter-glow 0.7s ease 17.65s 1 both;
+  animation: letter-glow 0.7s ease 17.65s 1 both;
+}
+
+.intro_desc span:nth-child(353) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(354) {
+  -webkit-animation: letter-glow 0.7s ease 17.7s 1 both;
+  animation: letter-glow 0.7s ease 17.7s 1 both;
+}
+
+.intro_desc span:nth-child(354) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(355) {
+  -webkit-animation: letter-glow 0.7s ease 17.75s 1 both;
+  animation: letter-glow 0.7s ease 17.75s 1 both;
+}
+
+.intro_desc span:nth-child(355) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(356) {
+  -webkit-animation: letter-glow 0.7s ease 17.8s 1 both;
+  animation: letter-glow 0.7s ease 17.8s 1 both;
+}
+
+.intro_desc span:nth-child(356) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(357) {
+  -webkit-animation: letter-glow 0.7s ease 17.85s 1 both;
+  animation: letter-glow 0.7s ease 17.85s 1 both;
+}
+
+.intro_desc span:nth-child(357) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(358) {
+  -webkit-animation: letter-glow 0.7s ease 17.9s 1 both;
+  animation: letter-glow 0.7s ease 17.9s 1 both;
+}
+
+.intro_desc span:nth-child(358) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(359) {
+  -webkit-animation: letter-glow 0.7s ease 17.95s 1 both;
+  animation: letter-glow 0.7s ease 17.95s 1 both;
+}
+
+.intro_desc span:nth-child(359) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(360) {
+  -webkit-animation: letter-glow 0.7s ease 18s 1 both;
+  animation: letter-glow 0.7s ease 18s 1 both;
+}
+
+.intro_desc span:nth-child(360) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(361) {
+  -webkit-animation: letter-glow 0.7s ease 18.05s 1 both;
+  animation: letter-glow 0.7s ease 18.05s 1 both;
+}
+
+.intro_desc span:nth-child(361) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(362) {
+  -webkit-animation: letter-glow 0.7s ease 18.1s 1 both;
+  animation: letter-glow 0.7s ease 18.1s 1 both;
+}
+
+.intro_desc span:nth-child(362) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(363) {
+  -webkit-animation: letter-glow 0.7s ease 18.15s 1 both;
+  animation: letter-glow 0.7s ease 18.15s 1 both;
+}
+
+.intro_desc span:nth-child(363) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(364) {
+  -webkit-animation: letter-glow 0.7s ease 18.2s 1 both;
+  animation: letter-glow 0.7s ease 18.2s 1 both;
+}
+
+.intro_desc span:nth-child(364) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(365) {
+  -webkit-animation: letter-glow 0.7s ease 18.25s 1 both;
+  animation: letter-glow 0.7s ease 18.25s 1 both;
+}
+
+.intro_desc span:nth-child(365) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(366) {
+  -webkit-animation: letter-glow 0.7s ease 18.3s 1 both;
+  animation: letter-glow 0.7s ease 18.3s 1 both;
+}
+
+.intro_desc span:nth-child(366) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(367) {
+  -webkit-animation: letter-glow 0.7s ease 18.35s 1 both;
+  animation: letter-glow 0.7s ease 18.35s 1 both;
+}
+
+.intro_desc span:nth-child(367) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(368) {
+  -webkit-animation: letter-glow 0.7s ease 18.4s 1 both;
+  animation: letter-glow 0.7s ease 18.4s 1 both;
+}
+
+.intro_desc span:nth-child(368) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(369) {
+  -webkit-animation: letter-glow 0.7s ease 18.45s 1 both;
+  animation: letter-glow 0.7s ease 18.45s 1 both;
+}
+
+.intro_desc span:nth-child(369) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(370) {
+  -webkit-animation: letter-glow 0.7s ease 18.5s 1 both;
+  animation: letter-glow 0.7s ease 18.5s 1 both;
+}
+
+.intro_desc span:nth-child(370) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(371) {
+  -webkit-animation: letter-glow 0.7s ease 18.55s 1 both;
+  animation: letter-glow 0.7s ease 18.55s 1 both;
+}
+
+.intro_desc span:nth-child(371) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(372) {
+  -webkit-animation: letter-glow 0.7s ease 18.6s 1 both;
+  animation: letter-glow 0.7s ease 18.6s 1 both;
+}
+
+.intro_desc span:nth-child(372) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(373) {
+  -webkit-animation: letter-glow 0.7s ease 18.65s 1 both;
+  animation: letter-glow 0.7s ease 18.65s 1 both;
+}
+
+.intro_desc span:nth-child(373) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(374) {
+  -webkit-animation: letter-glow 0.7s ease 18.7s 1 both;
+  animation: letter-glow 0.7s ease 18.7s 1 both;
+}
+
+.intro_desc span:nth-child(374) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(375) {
+  -webkit-animation: letter-glow 0.7s ease 18.75s 1 both;
+  animation: letter-glow 0.7s ease 18.75s 1 both;
+}
+
+.intro_desc span:nth-child(375) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(376) {
+  -webkit-animation: letter-glow 0.7s ease 18.8s 1 both;
+  animation: letter-glow 0.7s ease 18.8s 1 both;
+}
+
+.intro_desc span:nth-child(376) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(377) {
+  -webkit-animation: letter-glow 0.7s ease 18.85s 1 both;
+  animation: letter-glow 0.7s ease 18.85s 1 both;
+}
+
+.intro_desc span:nth-child(377) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(378) {
+  -webkit-animation: letter-glow 0.7s ease 18.9s 1 both;
+  animation: letter-glow 0.7s ease 18.9s 1 both;
+}
+
+.intro_desc span:nth-child(378) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+.intro_desc span:nth-child(379) {
+  -webkit-animation: letter-glow 0.7s ease 18.95s 1 both;
+  animation: letter-glow 0.7s ease 18.95s 1 both;
+}
+
+.intro_desc span:nth-child(379) span {
+  -webkit-animation: letter-glow 3s ease;
+  animation: letter-glow 3s ease;
+}
+
+@-webkit-keyframes letter-glow {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1);
+  }
+  66% {
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  }
+  77% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes letter-glow {
+  0% {
+    opacity: 0;
+    text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1);
+  }
+  66% {
+    opacity: 1;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+  }
+  77% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.7;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+  }
 }
 /*# sourceMappingURL=style.css.map */
