@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 89 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,-602,-519)">
-        <g transform="matrix(0.999829,0.0185101,-0.0185101,0.999829,64.2194,-71.5911)">
-            <g id="はしご階段3" transform="matrix(0.494891,0.089111,-0.0529301,0.293955,556.112,511.009)">
-                <path d="M176.617,232.126C176.617,232.126 85.043,233.202 41.299,233.716C28.523,233.867 18.027,250.743 17.351,272.222L17.351,272.224C17.83,285.859 24.682,296.363 32.791,295.892C73.653,293.519 186.33,286.976 186.33,286.976L191.138,246.543L176.617,232.126Z"/>
-            </g>
-        </g>
-    </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 367 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path id="はしご階段3" d="M338.874,58.223c0,0 -188.429,-36.176 -278.441,-53.458c-26.288,-5.047 -51.96,11.254 -58.572,37.193l-0.001,0.002c-2.33,16.839 9.195,32.463 25.972,35.208c84.542,13.833 317.664,51.977 317.664,51.977l19.711,-47.38l-26.333,-23.542Z"/></svg>

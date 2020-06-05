@@ -1,11 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 19 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
-    <g transform="matrix(1,0,0,1,-503,-578)">
-        <g transform="matrix(0.999829,0.0185101,-0.0185101,0.999829,33.6237,-72.364)">
-            <g id="ドアノブ2" transform="matrix(-0.0224709,0.692264,-0.424553,-0.013781,650.687,622.532)">
-                <path d="M54.909,355.763C55.471,354.638 56.314,353.985 57.204,353.985C58.094,353.985 58.936,354.638 59.499,355.763C62.72,362.205 68.674,374.114 73.014,382.794C73.977,384.719 74.174,387.375 73.52,389.619C72.867,391.863 71.479,393.293 69.956,393.293C61.922,393.293 49.918,393.293 42.584,393.293C41.403,393.293 40.328,392.184 39.821,390.445C39.314,388.706 39.467,386.647 40.213,385.154C44.587,376.407 51.384,362.813 54.909,355.763Z" style="fill:white;"/>
-            </g>
-        </g>
-    </g>
-</svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd"><svg width="100%" height="100%" viewBox="0 0 75 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path id="ドアノブ再生ボタン" d="M70.063,47.458c1.905,1.722 2.934,4.209 2.804,6.774c-0.131,2.565 -1.409,4.935 -3.479,6.454c-11.862,8.704 -33.787,24.792 -49.767,36.518c-3.545,2.6 -8.269,2.929 -12.139,0.843c-3.87,-2.086 -6.194,-6.213 -5.97,-10.604c1.181,-23.155 2.946,-57.754 4.024,-78.893c0.174,-3.403 2.291,-6.403 5.439,-7.706c3.149,-1.303 6.767,-0.678 9.295,1.607c14.818,13.394 37.849,34.211 49.793,45.007Z" style="fill:#fff;"/></svg>
