@@ -16,22 +16,22 @@
   }
   &_ttl2{
     order: 3;
-    color: $white;
+    color: $red;
     font-size: $ttl2;
     letter-spacing: .02em;
     margin: 0 auto 2.5em;
   }
   &_media{
     order: 1;
-    width: 30%;
-    background: $red;
+    width: 17%;
+    background: $sunset;
     border-radius: 25%;
-    margin: 0 auto;
+    margin: 0 auto 1em;
   }
   &_desc{
     order: 4;
     font-size: $txt;
-    color: $white;
+    color: $black;
     line-height: $base-height;
     letter-spacing: .05em;
     margin: 0 auto;
