@@ -51,10 +51,10 @@ let browserSync  = require( 'browser-sync' );
 // imagemin
 gulp.task( 'imagemin', function() {
  // svg
- gulp.src( './assets/images/**/*.+(svg)' )
-     .pipe( changed( './assets/images/*' ) )
+ gulp.src( './assets/images/svg/*.+(svg)' )
+     .pipe( changed( './assets/images/svg/*' ) )
      .pipe( svgmin() )
-     .pipe( gulp.dest( './images/' ) );
+     .pipe( gulp.dest( './assets/images/svgmin' ) );
 } );
 
 // concat js file(s)
@@ -83,7 +83,7 @@ gulp.task('bs', function() {
         notify: false,
         server: { // 1
             baseDir: "./",
-            index: "index.html", 
+            index: ['index.html', 'opening.html', 'opening2.html', 'opening3.html', 'opening4.html'],
         }
     });
 });
@@ -100,5 +100,5 @@ gulp.task( 'default', [ 'bs', 'sass', 'js.concat', 'js.compress', 'imagemin' ], 
   gulp.watch("*.html", ['bs-reload']); // 2
   gulp.watch("./assets/styles/**/*.scss", [ 'sass', 'bs-reload' ]); // 3
   gulp.watch("./assets/scripts/*.js", [ 'js.concat', 'js.compress', 'bs-reload' ]);
-  gulp.watch("./assets/images/*", [ 'imagemin', 'bs-reload' ]);
+  gulp.watch("./assets/images/svg/*.svg", [ 'imagemin', 'bs-reload' ]);
 });
