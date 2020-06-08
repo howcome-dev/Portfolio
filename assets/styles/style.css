@@ -6,14 +6,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sunshiney&display=swap");
 body {
-  color: #401919;
-  background: #fefefe;
+  color: #f4f4f4;
+  background: #401919;
   line-height: 1.7em;
 }
 
 @media only screen and (max-width: 767px) {
   body {
     width: 100%;
+    height: 100%;
     min-width: 320px;
   }
 }
@@ -44,7 +45,7 @@ dd {
 
 .ly_wrapper_ttl {
   width: 100%;
-  color: #A82530;
+  color: #a82530;
   font-size: 1.75rem;
   text-align: center;
   margin: 0 auto 2em;
@@ -74,7 +75,7 @@ dd {
       -ms-flex-order: 2;
           order: 2;
   width: 100%;
-  color: #A82530;
+  color: #a82530;
   font-size: 1.75rem;
   margin: 0 0 .8em;
 }
@@ -109,7 +110,7 @@ dd {
       -ms-flex-order: 2;
           order: 2;
   width: 100%;
-  color: #A82530;
+  color: #a82530;
   font-size: 1.75rem;
   letter-spacing: .03em;
   margin: 0 auto .5em;
@@ -119,7 +120,7 @@ dd {
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-  color: #FF6B77;
+  color: #f4f4f4;
   font-size: 0.875rem;
   letter-spacing: .02em;
   margin: 0 auto 2.5em;
@@ -129,7 +130,10 @@ dd {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
-  margin-top: 0;
+  width: 30%;
+  background: #a82530;
+  border-radius: 25%;
+  margin: 0 auto;
 }
 
 .ly_header_desc {
@@ -137,6 +141,7 @@ dd {
       -ms-flex-order: 4;
           order: 4;
   font-size: 0.812rem;
+  color: #f4f4f4;
   line-height: 1.7em;
   letter-spacing: .05em;
   margin: 0 auto;
@@ -149,14 +154,15 @@ dd {
 }
 
 body {
-  color: #401919;
-  background: #fefefe;
+  color: #f4f4f4;
+  background: #401919;
   line-height: 1.7em;
 }
 
 @media only screen and (max-width: 767px) {
   body {
     width: 100%;
+    height: 100%;
     min-width: 320px;
   }
 }
@@ -187,7 +193,7 @@ dd {
 
 .ly_wrapper_ttl {
   width: 100%;
-  color: #A82530;
+  color: #a82530;
   font-size: 1.75rem;
   text-align: center;
   margin: 0 auto 2em;
@@ -217,7 +223,7 @@ dd {
       -ms-flex-order: 2;
           order: 2;
   width: 100%;
-  color: #A82530;
+  color: #a82530;
   font-size: 1.75rem;
   margin: 0 0 .8em;
 }
@@ -264,22 +270,23 @@ dd {
 }
 
 .ly_wrapper.bl_about .ly_wrapper_conts .bl_about_link {
-  color: #A82530;
+  color: #a82530;
 }
 
 .ly_wrapper.bl_about .ly_wrapper_conts .bl_about_link:hover {
-  color: #FF6B77;
+  color: #f4f4f4;
 }
 
 body {
-  color: #401919;
-  background: #fefefe;
+  color: #f4f4f4;
+  background: #401919;
   line-height: 1.7em;
 }
 
 @media only screen and (max-width: 767px) {
   body {
     width: 100%;
+    height: 100%;
     min-width: 320px;
   }
 }
@@ -310,7 +317,7 @@ dd {
 
 .ly_wrapper_ttl {
   width: 100%;
-  color: #A82530;
+  color: #a82530;
   font-size: 1.75rem;
   text-align: center;
   margin: 0 auto 2em;
@@ -340,7 +347,7 @@ dd {
       -ms-flex-order: 2;
           order: 2;
   width: 100%;
-  color: #A82530;
+  color: #a82530;
   font-size: 1.75rem;
   margin: 0 0 .8em;
 }
@@ -403,7 +410,7 @@ dd {
 }
 
 .bl_exp_ttl {
-  color: #A82530;
+  color: #a82530;
   font-weight: bold;
   margin-bottom: 2em;
 }
@@ -413,7 +420,7 @@ dd {
 }
 
 .bl_exp_term {
-  color: #FF6B77;
+  color: #f4f4f4;
 }
 
 @media only screen and (min-width: 768px) {
@@ -483,7 +490,7 @@ dd {
   position: absolute;
   left: 9px;
   top: 3em;
-  background: #A82530;
+  background: #a82530;
   width: 3px;
   height: 100%;
   height: calc(100% + -2em);
@@ -504,9 +511,9 @@ dd {
   left: -9px;
   width: 15px;
   height: 15px;
-  border: solid 3px #FF6B77;
+  border: solid 3px #f4f4f4;
   border-radius: 50%;
-  background: #A82530;
+  background: #a82530;
 }
 
 @media only screen and (min-width: 768px) {
@@ -526,7 +533,7 @@ dd {
   width: 11px;
   height: 11px;
   border-radius: 50%;
-  background: #A82530;
+  background: #a82530;
 }
 
 .bl_exp .bl_exp_odd:before,
@@ -538,9 +545,9 @@ dd {
   left: -3em;
   width: 15px;
   height: 15px;
-  border: solid 3px #FF6B77;
+  border: solid 3px #f4f4f4;
   border-radius: 50%;
-  background: #A82530;
+  background: #a82530;
 }
 
 @media only screen and (min-width: 768px) {
@@ -557,14 +564,15 @@ dd {
 }
 
 body {
-  color: #401919;
-  background: #fefefe;
+  color: #f4f4f4;
+  background: #401919;
   line-height: 1.7em;
 }
 
 @media only screen and (max-width: 767px) {
   body {
     width: 100%;
+    height: 100%;
     min-width: 320px;
   }
 }
@@ -595,7 +603,7 @@ dd {
 
 .ly_wrapper_ttl {
   width: 100%;
-  color: #A82530;
+  color: #a82530;
   font-size: 1.75rem;
   text-align: center;
   margin: 0 auto 2em;
@@ -625,7 +633,7 @@ dd {
       -ms-flex-order: 2;
           order: 2;
   width: 100%;
-  color: #A82530;
+  color: #a82530;
   font-size: 1.75rem;
   margin: 0 0 .8em;
 }
@@ -666,6 +674,7 @@ dd {
 
 .bl_works_wrapper {
   width: 82%;
+  background: #f4f4f4;
 }
 
 @media only screen and (min-width: 768px) {
@@ -681,7 +690,7 @@ dd {
 .bl_works_link {
   display: block;
   text-align: center;
-  color: #401919;
+  color: #f4f4f4;
   -webkit-box-shadow: 0 2px 14px rgba(214, 187, 178, 0.3);
           box-shadow: 0 2px 14px rgba(214, 187, 178, 0.3);
   padding: 30px 20px;
@@ -689,22 +698,23 @@ dd {
 
 @media only screen and (min-width: 768px) {
   .bl_works_link:hover {
-    border: 2px solid #A82530;
+    border: 2px solid #a82530;
   }
 }
 
 .bl_works_ttl {
-  color: #A82530;
+  color: #a82530;
   font-weight: bold;
   margin-bottom: 2em;
 }
 
 .bl_works_desc {
+  color: #401919;
   margin-bottom: .5em;
 }
 
 .bl_works_tools {
-  color: #FF6B77;
+  color: #401919;
   margin-bottom: .5em;
 }
 
@@ -715,8 +725,6 @@ dd {
 
 html, body {
   height: 100%;
-  background: black;
-  color: #fff;
 }
 
 .home {
@@ -724,6 +732,9 @@ html, body {
   width: 100%;
   height: 100%;
   margin: auto;
+  color: #f4f4f4;
+  background: -webkit-gradient(linear, left top, left bottom, from(#92A8D1), color-stop(10%, #9e82c3b8), color-stop(36%, #d654aed1), color-stop(78%, #dc7975e8), to(#ffa1c7));
+  background: linear-gradient(to bottom, #92A8D1, #9e82c3b8 10%, #d654aed1 36%, #dc7975e8 78%, #ffa1c7);
 }
 
 .home .ttl {
@@ -4702,5 +4713,20 @@ html, body {
     opacity: 0.7;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
   }
+}
+
+canvas#set_layout {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+canvas#set_layout svg {
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 /*# sourceMappingURL=style.css.map */
