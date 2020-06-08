@@ -9,25 +9,29 @@
   &_ttl{
     order: 2;
     width: 100%;
-    color: $main-color;
+    color: $red;
     font-size: $ttl;
     letter-spacing: .03em;
     margin: 0 auto .5em;
   }
   &_ttl2{
     order: 3;
-    color: $sub-color;
+    color: $white;
     font-size: $ttl2;
     letter-spacing: .02em;
     margin: 0 auto 2.5em;
   }
   &_media{
     order: 1;
-    margin-top: 0;
+    width: 30%;
+    background: $red;
+    border-radius: 25%;
+    margin: 0 auto;
   }
   &_desc{
     order: 4;
     font-size: $txt;
+    color: $white;
     line-height: $base-height;
     letter-spacing: .05em;
     margin: 0 auto;

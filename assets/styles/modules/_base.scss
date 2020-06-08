@@ -6,11 +6,12 @@ body{
 
   @include media(sp){
     width: 100%;
+    height: 100%;
     min-width: $sp-min;
   }
 
-  color: $base-color;
-  background: $background-color;
+  color: $white;
+  background: $black;
   line-height: $base-height;
 }
 
@@ -38,7 +39,7 @@ dd{
 
   &_ttl{
     width: 100%;
-    color: $main-color;
+    color: $red;
     font-size: $ttl;
     text-align: center;
     margin: 0 auto 2em;
@@ -59,7 +60,7 @@ dd{
     &_ttl{
       order: 2;
       width: 100%;
-      color: $main-color;
+      color: $red;
       font-size: $ttl;
       margin: 0 0 .8em;
     }
