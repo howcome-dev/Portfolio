@@ -12,17 +12,129 @@ function init() {
 
   // 屋根裏
   var bgAttic = new createjs.Bitmap("assets/images/bgAttic.svg");
-  bgAttic.x = 0;
+  bgAttic.x = 300;
   bgAttic.y = 0;
   stage.addChild(bgAttic);
 
-  // 屋根の基礎
+  // 基礎ひだり
   var bgBaseLeft = new createjs.Bitmap("assets/images/bgBaseLeft.svg");
-  bgBaseLeft.x = 0;
-  bgBaseLeft.y = 100;
-  bgBaseLeft.scaleX = 2; // 横幅を2倍
-  bgBaseLeft.scaleY = 2; // 縦幅を2倍
+  bgBaseLeft.x = 50;
+  bgBaseLeft.y = 600;
+  bgBaseLeft.scaleX = 1;
+  bgBaseLeft.scaleY = 1;
   stage.addChild(bgBaseLeft);
+
+  // 基礎みぎ
+  var bgBaseRight = new createjs.Bitmap("assets/images/bgBaseRight.svg");
+  bgBaseRight.x = 50;
+  bgBaseRight.y = 600;
+  bgBaseRight.scaleX = 1;
+  bgBaseRight.scaleY = 1;
+  stage.addChild(bgBaseRight);
+
+  // とびら
+  var bgEntrance = new createjs.Bitmap("assets/images/bgEntrance.svg");
+  bgEntrance.x = 50;
+  bgEntrance.y = 600;
+  bgEntrance.scaleX = 1;
+  bgEntrance.scaleY = 1;
+  stage.addChild(bgEntrance);
+
+  // はしごの手すり
+  var bgHandrail = new createjs.Bitmap("assets/images/bgHandrail.svg");
+  bgHandrail.x = 50;
+  bgHandrail.y = 600;
+  bgHandrail.scaleX = 1;
+  bgHandrail.scaleY = 1;
+  stage.addChild(bgHandrail);
+
+  // ドアノブ
+  var bgKnob = new createjs.Bitmap("assets/images/bgKnob.svg");
+  bgKnob.x = 50;
+  bgKnob.y = 600;
+  bgKnob.scaleX = 1;
+  bgKnob.scaleY = 1;
+  stage.addChild(bgKnob);
+
+  // ドアノブPLAYボタン
+  var bgKnobBtn = new createjs.Bitmap("assets/images/bgKnobBtn.svg");
+  bgKnobBtn.x = 50;
+  bgKnobBtn.y = 600;
+  bgKnobBtn.scaleX = 1;
+  bgKnobBtn.scaleY = 1;
+  stage.addChild(bgKnobBtn);
+
+  // 柱ひだり
+  var bgPillarLeft = new createjs.Bitmap("assets/images/bgPillarLeft.svg");
+  bgPillarLeft.x = 50;
+  bgPillarLeft.y = 600;
+  bgPillarLeft.scaleX = 1;
+  bgPillarLeft.scaleY = 1;
+  stage.addChild(bgPillarLeft);
+
+  // 柱みぎ
+  var bgPillarRight = new createjs.Bitmap("assets/images/bgPillarRight.svg");
+  bgPillarRight.x = 50;
+  bgPillarRight.y = 600;
+  bgPillarRight.scaleX = 1;
+  bgPillarRight.scaleY = 1;
+  stage.addChild(bgPillarRight);
+
+  // 道
+  var bgRoad1 = new createjs.Bitmap("assets/images/bgRoad1.svg");
+  bgRoad1.x = 50;
+  bgRoad1.y = 600;
+  bgRoad1.scaleX = 1;
+  bgRoad1.scaleY = 1;
+  stage.addChild(bgRoad1);
+
+  // 屋根
+  var bgRoofBase = new createjs.Bitmap("assets/images/bgRoofBase.svg");
+  bgRoofBase.x = 50;
+  bgRoofBase.y = 600;
+  bgRoofBase.scaleX = 1;
+  bgRoofBase.scaleY = 1;
+  stage.addChild(bgRoofBase);
+
+  // カップケーキのカップ
+  var bgSecretBase = new createjs.Bitmap("assets/images/bgSecretBase.svg");
+  bgSecretBase.x = 50;
+  bgSecretBase.y = 600;
+  bgSecretBase.scaleX = 1;
+  bgSecretBase.scaleY = 1;
+  stage.addChild(bgSecretBase);
+
+  // カップケーキのいちご
+  var bgSecretBerry = new createjs.Bitmap("assets/images/bgSecretBerry.svg");
+  bgSecretBerry.x = 50;
+  bgSecretBerry.y = 600;
+  bgSecretBerry.scaleX = 1;
+  bgSecretBerry.scaleY = 1;
+  stage.addChild(bgSecretBerry);
+
+  // カップケーキのスポンジ
+  var bgSecretSponge = new createjs.Bitmap("assets/images/bgSecretSponge.svg");
+  bgSecretSponge.x = 50;
+  bgSecretSponge.y = 600;
+  bgSecretSponge.scaleX = 1;
+  bgSecretSponge.scaleY = 1;
+  stage.addChild(bgSecretSponge);
+
+  // 1階の窓
+  var bgWindow = new createjs.Bitmap("assets/images/bgWindow.svg");
+  bgWindow.x = 50;
+  bgWindow.y = 600;
+  bgWindow.scaleX = 1;
+  bgWindow.scaleY = 1;
+  stage.addChild(bgWindow);
+
+  // 2階の窓
+  var bgWindow2 = new createjs.Bitmap("assets/images/bgWindow2.svg");
+  bgWindow2.x = 50;
+  bgWindow2.y = 600;
+  bgWindow2.scaleX = 1;
+  bgWindow2.scaleY = 1;
+  stage.addChild(bgWindow2);
 
   //----------------------------------------
   // パズルのピースを作成
@@ -121,6 +233,6 @@ handleResize(); // 起動時にもリサイズしておく
   // タッチ操作をサポートしているブラウザーならば
   if (createjs.Touch.isSupported() == true) {
     // タッチ操作を有効にします。
-    createjs.Touch.enable(stage)
+    createjs.Touch.enable(stage);
   }
 }
