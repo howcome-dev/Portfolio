@@ -292,34 +292,28 @@ function init() {
   // パズルの土台を作成
   //----------------------------------------
 
-  // 屋根裏
-  var bgAttic = new createjs.Bitmap("assets/images/bgAttic.svg");
-  bgAttic.x = 300;
-  bgAttic.y = 0;
-  stage.addChild(bgAttic);
-
   // 基礎ひだり
   var bgBaseLeft = new createjs.Bitmap("assets/images/bgBaseLeft.svg");
-  bgBaseLeft.x = 50;
-  bgBaseLeft.y = 600;
-  bgBaseLeft.scaleX = 1;
-  bgBaseLeft.scaleY = 1;
+  bgBaseLeft.x = 680;
+  bgBaseLeft.y = 643;
+  bgBaseLeft.scaleX = .97;
+  bgBaseLeft.scaleY = .89;
   stage.addChild(bgBaseLeft);
 
   // 基礎みぎ
   var bgBaseRight = new createjs.Bitmap("assets/images/bgBaseRight.svg");
-  bgBaseRight.x = 50;
-  bgBaseRight.y = 600;
-  bgBaseRight.scaleX = 1;
-  bgBaseRight.scaleY = 1;
+  bgBaseRight.x = 1040;
+  bgBaseRight.y = 650;
+  bgBaseRight.scaleX = .99;
+  bgBaseRight.scaleY = .89;
   stage.addChild(bgBaseRight);
 
   // とびら
   var bgEntrance = new createjs.Bitmap("assets/images/bgEntrance.svg");
-  bgEntrance.x = 50;
-  bgEntrance.y = 600;
-  bgEntrance.scaleX = 1;
-  bgEntrance.scaleY = 1;
+  bgEntrance.x = 865;
+  bgEntrance.y = 465;
+  bgEntrance.scaleX = .95;
+  bgEntrance.scaleY = .96;
   stage.addChild(bgEntrance);
 
   // はしごの手すり
@@ -348,18 +342,18 @@ function init() {
 
   // 柱ひだり
   var bgPillarLeft = new createjs.Bitmap("assets/images/bgPillarLeft.svg");
-  bgPillarLeft.x = 50;
-  bgPillarLeft.y = 600;
-  bgPillarLeft.scaleX = 1;
-  bgPillarLeft.scaleY = 1;
+  bgPillarLeft.x = 690;
+  bgPillarLeft.y = 349;
+  bgPillarLeft.scaleX = .951;
+  bgPillarLeft.scaleY = 1.05;
   stage.addChild(bgPillarLeft);
 
   // 柱みぎ
   var bgPillarRight = new createjs.Bitmap("assets/images/bgPillarRight.svg");
-  bgPillarRight.x = 50;
-  bgPillarRight.y = 600;
-  bgPillarRight.scaleX = 1;
-  bgPillarRight.scaleY = 1;
+  bgPillarRight.x = 1152;
+  bgPillarRight.y = 374;
+  bgPillarRight.scaleX = .953;
+  bgPillarRight.scaleY = 1.06;
   stage.addChild(bgPillarRight);
 
   // 道
@@ -372,19 +366,33 @@ function init() {
 
   // 屋根
   var bgRoofBase = new createjs.Bitmap("assets/images/bgRoofBase.svg");
-  bgRoofBase.x = 50;
-  bgRoofBase.y = 600;
-  bgRoofBase.scaleX = 1;
-  bgRoofBase.scaleY = 1;
+  bgRoofBase.x = 660;
+  bgRoofBase.y = 130;
+  bgRoofBase.scaleX = .95;
+  bgRoofBase.scaleY = .95;
   stage.addChild(bgRoofBase);
+
+  // 屋根裏
+  var bgAttic = new createjs.Bitmap("assets/images/bgAttic.svg");
+  bgAttic.x = 900;
+  bgAttic.y = 198;
+  stage.addChild(bgAttic);
 
   // カップケーキのカップ
   var bgSecretBase = new createjs.Bitmap("assets/images/bgSecretBase.svg");
-  bgSecretBase.x = 50;
-  bgSecretBase.y = 600;
+  bgSecretBase.x = 976;
+  bgSecretBase.y = 175;
   bgSecretBase.scaleX = 1;
   bgSecretBase.scaleY = 1;
   stage.addChild(bgSecretBase);
+
+  // カップケーキのスポンジ
+  var bgSecretSponge = new createjs.Bitmap("assets/images/bgSecretSponge.svg");
+  bgSecretSponge.x = 944;
+  bgSecretSponge.y = 37;
+  bgSecretSponge.scaleX = 1;
+  bgSecretSponge.scaleY = 1;
+  stage.addChild(bgSecretSponge);
 
   // カップケーキのいちご
   var bgSecretBerry = new createjs.Bitmap("assets/images/bgSecretBerry.svg");
@@ -394,28 +402,20 @@ function init() {
   bgSecretBerry.scaleY = 1;
   stage.addChild(bgSecretBerry);
 
-  // カップケーキのスポンジ
-  var bgSecretSponge = new createjs.Bitmap("assets/images/bgSecretSponge.svg");
-  bgSecretSponge.x = 50;
-  bgSecretSponge.y = 600;
-  bgSecretSponge.scaleX = 1;
-  bgSecretSponge.scaleY = 1;
-  stage.addChild(bgSecretSponge);
-
   // 1階の窓
   var bgWindow = new createjs.Bitmap("assets/images/bgWindow.svg");
-  bgWindow.x = 50;
-  bgWindow.y = 600;
-  bgWindow.scaleX = 1;
-  bgWindow.scaleY = 1;
+  bgWindow.x = 764;
+  bgWindow.y = 421;
+  bgWindow.scaleX = .95;
+  bgWindow.scaleY = .951;
   stage.addChild(bgWindow);
 
   // 2階の窓
   var bgWindow2 = new createjs.Bitmap("assets/images/bgWindow2.svg");
-  bgWindow2.x = 50;
-  bgWindow2.y = 600;
-  bgWindow2.scaleX = 1;
-  bgWindow2.scaleY = 1;
+  bgWindow2.x = 888;
+  bgWindow2.y = 311.5;
+  bgWindow2.scaleX = .96;
+  bgWindow2.scaleY = .95;
   stage.addChild(bgWindow2);
 
   //----------------------------------------
