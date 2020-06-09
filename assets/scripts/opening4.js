@@ -19,7 +19,7 @@ function init() {
   // 屋根の基礎
   var bgBaseLeft = new createjs.Bitmap("assets/images/bgBaseLeft.svg");
   bgBaseLeft.x = 0;
-  bgBaseLeft.y = 0;
+  bgBaseLeft.y = 100;
   bgBaseLeft.scaleX = 2; // 横幅を2倍
   bgBaseLeft.scaleY = 2; // 縦幅を2倍
   stage.addChild(bgBaseLeft);
