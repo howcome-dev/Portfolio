@@ -34,29 +34,29 @@ function init() {
   bgEntrance.scaleY = .96;
   stage.addChild(bgEntrance);
 
-  // はしごの手すり
-  var bgHandrail = new createjs.Bitmap("assets/images/bgHandrail.svg");
-  bgHandrail.x = 50;
-  bgHandrail.y = 600;
-  bgHandrail.scaleX = 1;
-  bgHandrail.scaleY = 1;
-  stage.addChild(bgHandrail);
-
   // ドアノブ
   var bgKnob = new createjs.Bitmap("assets/images/bgKnob.svg");
-  bgKnob.x = 50;
-  bgKnob.y = 600;
-  bgKnob.scaleX = 1;
-  bgKnob.scaleY = 1;
+  bgKnob.x = 945;
+  bgKnob.y = 553;
+  bgKnob.scaleX = .94;
+  bgKnob.scaleY = .938;
   stage.addChild(bgKnob);
 
   // ドアノブPLAYボタン
   var bgKnobBtn = new createjs.Bitmap("assets/images/bgKnobBtn.svg");
-  bgKnobBtn.x = 50;
-  bgKnobBtn.y = 600;
-  bgKnobBtn.scaleX = 1;
-  bgKnobBtn.scaleY = 1;
+  bgKnobBtn.x = 954;
+  bgKnobBtn.y = 562;
+  bgKnobBtn.scaleX = .8;
+  bgKnobBtn.scaleY = .8;
   stage.addChild(bgKnobBtn);
+
+  // はしごの手すり
+  var bgHandrail = new createjs.Bitmap("assets/images/bgHandrail.svg");
+  bgHandrail.x = 1063;
+  bgHandrail.y = 270;
+  bgHandrail.scaleX = .9;
+  bgHandrail.scaleY = .925;
+  stage.addChild(bgHandrail);
 
   // 柱ひだり
   var bgPillarLeft = new createjs.Bitmap("assets/images/bgPillarLeft.svg");
@@ -76,10 +76,10 @@ function init() {
 
   // 道
   var bgRoad1 = new createjs.Bitmap("assets/images/bgRoad1.svg");
-  bgRoad1.x = 50;
-  bgRoad1.y = 600;
-  bgRoad1.scaleX = 1;
-  bgRoad1.scaleY = 1;
+  bgRoad1.x = 650;
+  bgRoad1.y = 643;
+  bgRoad1.scaleX = .924;
+  bgRoad1.scaleY = .936;
   stage.addChild(bgRoad1);
 
   // 屋根
@@ -114,9 +114,9 @@ function init() {
 
   // カップケーキのいちご
   var bgSecretBerry = new createjs.Bitmap("assets/images/bgSecretBerry.svg");
-  bgSecretBerry.x = 50;
-  bgSecretBerry.y = 600;
-  bgSecretBerry.scaleX = 1;
+  bgSecretBerry.x = 1068;
+  bgSecretBerry.y = 60;
+  bgSecretBerry.scaleX = .98;
   bgSecretBerry.scaleY = 1;
   stage.addChild(bgSecretBerry);
 
