@@ -46,21 +46,21 @@ let Spanizer = function() {
           letters: $(".js-letters")
       },
       init: function() {
-          t = this.settings, this.bindEvents() // tに文字列を分割して入れる
+          t = this.settings, this.bindEvents(); // tに文字列を分割して入れる
       },
       bindEvents: function() {
-          Spanizer.letters()
+          Spanizer.letters();
       },
       letters: function() {
           t.letters.html(function(t, n) { // nが文章
               let e = $.trim(n).split(""),// 文字列から空白を取り除く 
                   i = [];
               return e.forEach(function(t) {
-                  " " !== t ? i.push("<span>" + t + "</span>") : i.push("<span>&nbsp;</span>")
-              }), i.join("")
-          })
+                  " " !== t ? i.push("<span>" + t + "</span>") : i.push("<span>&nbsp;</span>");
+              }), i.join("");
+          });
       }
-  }
+  };
 }();
 
 // Init Spanizer
