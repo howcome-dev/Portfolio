@@ -60,7 +60,7 @@ gulp.task( 'imagemin', function() {
 // concat js file(s)
 gulp.task( 'js.concat', function() {
   gulp.src( [
-      './assets/scripts/opening.js' // 1
+      './assets/scripts/*.js' // 1
   ] )
       .pipe( plumber() )
       .pipe( jshint() ) // 2
