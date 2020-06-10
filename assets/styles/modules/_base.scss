@@ -10,7 +10,7 @@ body{
     min-width: $sp-min;
   }
 
-  color: $black;
+  color: $brown;
   background: $white;
   line-height: $base-height;
 }
@@ -22,6 +22,10 @@ a{
 
 dd{
   margin: 0;
+}
+
+main{
+  margin-bottom: 7em;
 }
 
 //sectionレイアウト

@@ -24,7 +24,7 @@
     display: block;
     text-align: center;
     color: $red;
-    box-shadow: 0 2px 14px rgba(214,187,178,0.3);
+    box-shadow: 0 2px 14px $brown;
     padding: 30px 20px;
   
     @include media(pc){
@@ -41,12 +41,12 @@
   }
 
   &_desc{
-    color: $black;
+    color: $brown;
     margin-bottom: .5em;
   }
 
   &_tools{
-    color: $black;
+    color: $brown;
     margin-bottom: .5em;
   }
 }
