@@ -3,10 +3,6 @@
 // 読み込みが終わってから初期化
 window.addEventListener("load", init);
 
-// 画面幅・高さを取得
-var w = window.innerWidth;
-var h = window.innerHeight;
-
 function init(){
 
   // Stageオブジェクトを作成。表示リストのルートになります。
@@ -17,26 +13,25 @@ function init(){
     // タッチ操作を有効にします。
     createjs.Touch.enable(stage);
   }
+  // リサイズイベントを検知してリサイズ処理を実行
+  window.addEventListener("resize", handleResize);
+  handleResize(); // 起動時にもリサイズしておく
+
+  // リサイズ処理
+  function handleResize(event) {
+    // 画面幅・高さを取得
+    var w = window.innerWidth;
+    var h = window.innerHeight;
+    // Canvas要素の大きさを画面幅・高さに合わせる
+    stage.canvas.width = w;
+    stage.canvas.height = h;
+    // 画面更新する
+    stage.update();
+  }
 
   //----------------------------------------
   // パズルの土台を作成
   //----------------------------------------
-
-  // 基礎ひだり
-  var bgBaseLeft = new createjs.Bitmap("assets/images/bgBaseLeft.svg");
-  bgBaseLeft.x = 680;
-  bgBaseLeft.y = 643;
-  bgBaseLeft.scaleX = 0.97;
-  bgBaseLeft.scaleY = 0.89;
-  stage.addChild(bgBaseLeft);
-
-  // 基礎みぎ
-  var bgBaseRight = new createjs.Bitmap("assets/images/bgBaseRight.svg");
-  bgBaseRight.x = 1040;
-  bgBaseRight.y = 650;
-  bgBaseRight.scaleX = 0.99;
-  bgBaseRight.scaleY = 0.89;
-  stage.addChild(bgBaseRight);
 
   // とびら
   var bgEntrance = new createjs.Bitmap("assets/images/bgEntrance.svg");
@@ -62,14 +57,6 @@ function init(){
   bgKnobBtn.scaleY = 0.8;
   stage.addChild(bgKnobBtn);
 
-  // はしごの手すり
-  var bgHandrail = new createjs.Bitmap("assets/images/bgHandrail.svg");
-  bgHandrail.x = 1063;
-  bgHandrail.y = 270;
-  bgHandrail.scaleX = 0.9;
-  bgHandrail.scaleY = 0.925;
-  stage.addChild(bgHandrail);
-
   // 柱ひだり
   var bgPillarLeft = new createjs.Bitmap("assets/images/bgPillarLeft.svg");
   bgPillarLeft.x = 690;
@@ -86,13 +73,21 @@ function init(){
   bgPillarRight.scaleY = 1.06;
   stage.addChild(bgPillarRight);
 
-  // 道
-  var bgRoad1 = new createjs.Bitmap("assets/images/bgRoad1.svg");
-  bgRoad1.x = 650;
-  bgRoad1.y = 643;
-  bgRoad1.scaleX = 0.924;
-  bgRoad1.scaleY = 0.936;
-  stage.addChild(bgRoad1);
+  // 基礎ひだり
+  var bgBaseLeft = new createjs.Bitmap("assets/images/bgBaseLeft.svg");
+  bgBaseLeft.x = 680;
+  bgBaseLeft.y = 643;
+  bgBaseLeft.scaleX = 0.97;
+  bgBaseLeft.scaleY = 0.89;
+  stage.addChild(bgBaseLeft);
+
+  // 基礎みぎ
+  var bgBaseRight = new createjs.Bitmap("assets/images/bgBaseRight.svg");
+  bgBaseRight.x = 1040;
+  bgBaseRight.y = 650;
+  bgBaseRight.scaleX = 0.99;
+  bgBaseRight.scaleY = 0.89;
+  stage.addChild(bgBaseRight);
 
   // 屋根
   var bgRoofBase = new createjs.Bitmap("assets/images/bgRoofBase.svg");
@@ -101,12 +96,6 @@ function init(){
   bgRoofBase.scaleX = 0.95;
   bgRoofBase.scaleY = 0.95;
   stage.addChild(bgRoofBase);
-
-  // 屋根裏
-  var bgAttic = new createjs.Bitmap("assets/images/bgAttic.svg");
-  bgAttic.x = 900;
-  bgAttic.y = 198;
-  stage.addChild(bgAttic);
 
   // カップケーキのカップ
   var bgSecretBase = new createjs.Bitmap("assets/images/bgSecretBase.svg");
@@ -132,6 +121,28 @@ function init(){
   bgSecretBerry.scaleY = 1;
   stage.addChild(bgSecretBerry);
 
+  // はしごの手すり
+  var bgHandrail = new createjs.Bitmap("assets/images/bgHandrail.svg");
+  bgHandrail.x = 1063;
+  bgHandrail.y = 270;
+  bgHandrail.scaleX = 0.9;
+  bgHandrail.scaleY = 0.925;
+  stage.addChild(bgHandrail);
+
+  // 道
+  var bgRoad1 = new createjs.Bitmap("assets/images/bgRoad1.svg");
+  bgRoad1.x = 650;
+  bgRoad1.y = 643;
+  bgRoad1.scaleX = 0.924;
+  bgRoad1.scaleY = 0.936;
+  stage.addChild(bgRoad1);
+
+  // 屋根裏
+  var bgAttic = new createjs.Bitmap("assets/images/bgAttic.svg");
+  bgAttic.x = 900;
+  bgAttic.y = 198;
+  stage.addChild(bgAttic);
+
   // 1階の窓
   var bgWindow = new createjs.Bitmap("assets/images/bgWindow.svg");
   bgWindow.x = 764;
@@ -151,61 +162,38 @@ function init(){
   //----------------------------------------
   // パズルのピースを作成
   //----------------------------------------
-  // 基礎ひだり
-  var baseLeft = new createjs.Bitmap("assets/images/baseLeft.svg");
-  baseLeft.x = 10;
-  baseLeft.y = 13;
-  baseLeft.scaleX = 0.97;
-  baseLeft.scaleY = 0.89;
-  stage.addChild(baseLeft);
 
-  // // 基礎みぎ
-  // var baseRight = new createjs.Bitmap("assets/images/baseRight.svg");
-  // baseRight.x = 10;
-  // baseRight.y = 6;
-  // baseRight.scaleX = 0.99;
-  // baseRight.scaleY = 0.89;
-  // stage.addChild(baseRight);
+  // とびら
+  var entrance = new createjs.Bitmap("assets/images/entrance.svg");
+  entrance.x = 86;
+  entrance.y = 46;
+  entrance.scaleX = 0.95;
+  entrance.scaleY = 0.96;
+  stage.addChild(entrance);
 
-  // // とびら
-  // var entrance = new createjs.Bitmap("assets/images/entrance.svg");
-  // entrance.x = 86;
-  // entrance.y = 46;
-  // entrance.scaleX = 0.95;
-  // entrance.scaleY = 0.96;
-  // stage.addChild(entrance);
+  // ドアノブ
+  var knob = new createjs.Bitmap("assets/images/knob.svg");
+  knob.x = 120;
+  knob.y = 455;
+  knob.scaleX = 0.94;
+  knob.scaleY = 0.938;
+  stage.addChild(knob);
 
-  // // ドアノブ
-  // var knob = new createjs.Bitmap("assets/images/knob.svg");
-  // knob.x = 94;
-  // knob.y = 55;
-  // knob.scaleX = 0.94;
-  // knob.scaleY = 0.938;
-  // stage.addChild(knob);
+  // ドアノブPLAYボタン
+  var knobBtn = new createjs.Bitmap("assets/images/knobBtn.svg");
+  knobBtn.x = 505;
+  knobBtn.y = 650;
+  knobBtn.scaleX = 0.8;
+  knobBtn.scaleY = 0.8;
+  stage.addChild(knobBtn);
 
-  // // ドアノブPLAYボタン
-  // var knobBtn = new createjs.Bitmap("assets/images/knobBtn.svg");
-  // knobBtn.x = 95;
-  // knobBtn.y = 56;
-  // knobBtn.scaleX = 0.8;
-  // knobBtn.scaleY = 0.8;
-  // stage.addChild(knobBtn);
-
-  // // はしごの手すり
-  // var handrail = new createjs.Bitmap("assets/images/handrail.svg");
-  // handrail.x = 106;
-  // handrail.y = 27;
-  // handrail.scaleX = 0.9;
-  // handrail.scaleY = 0.925;
-  // stage.addChild(handrail);
-
-  // // 柱ひだり
-  // var pillarLeft = new createjs.Bitmap("assets/images/pillarLeft.svg");
-  // pillarLeft.x = 69;
-  // pillarLeft.y = 34;
-  // pillarLeft.scaleX = 0.951;
-  // pillarLeft.scaleY = 1.05;
-  // stage.addChild(pillarLeft);
+  // 柱ひだり
+  var pillarLeft = new createjs.Bitmap("assets/images/pillarLeft.svg");
+  pillarLeft.x = 69;
+  pillarLeft.y = 504;
+  pillarLeft.scaleX = 0.951;
+  pillarLeft.scaleY = 1.05;
+  stage.addChild(pillarLeft);
 
   // // 柱みぎ
   // var pillarRight = new createjs.Bitmap("assets/images/pillarRight.svg");
@@ -215,13 +203,21 @@ function init(){
   // pillarRight.scaleY = 1.06;
   // stage.addChild(pillarRight);
 
-  // // 道
-  // var road1 = new createjs.Bitmap("assets/images/road1.svg");
-  // road1.x = 65;
-  // road1.y = 64;
-  // road1.scaleX = 0.924;
-  // road1.scaleY = 0.936;
-  // stage.addChild(road1);
+  // // 基礎ひだり
+  // var baseLeft = new createjs.Bitmap("assets/images/baseLeft.svg");
+  // baseLeft.x = 10;
+  // baseLeft.y = 13;
+  // baseLeft.scaleX = 0.97;
+  // baseLeft.scaleY = 0.89;
+  // stage.addChild(baseLeft);
+
+  // // 基礎みぎ
+  // var baseRight = new createjs.Bitmap("assets/images/baseRight.svg");
+  // baseRight.x = 340;
+  // baseRight.y = 200;
+  // baseRight.scaleX = 0.99;
+  // baseRight.scaleY = 0.89;
+  // stage.addChild(baseRight);
 
   // // 屋根
   // var roofBase = new createjs.Bitmap("assets/images/roofBase.svg");
@@ -230,12 +226,6 @@ function init(){
   // roofBase.scaleX = 0.95;
   // roofBase.scaleY = 0.95;
   // stage.addChild(roofBase);
-
-  // // 屋根裏
-  // var attic = new createjs.Bitmap("assets/images/attic.svg");
-  // attic.x = 90;
-  // attic.y = 19;
-  // stage.addChild(attic);
 
   // // カップケーキのカップ
   // var secretBase = new createjs.Bitmap("assets/images/secretBase.svg");
@@ -260,6 +250,28 @@ function init(){
   // secretBerry.scaleX = 0.98;
   // secretBerry.scaleY = 1;
   // stage.addChild(secretBerry);
+
+  // // はしごの手すり
+  // var handrail = new createjs.Bitmap("assets/images/handrail.svg");
+  // handrail.x = 106;
+  // handrail.y = 27;
+  // handrail.scaleX = 0.9;
+  // handrail.scaleY = 0.925;
+  // stage.addChild(handrail);
+
+  // // 道
+  // var road1 = new createjs.Bitmap("assets/images/road1.svg");
+  // road1.x = 65;
+  // road1.y = 64;
+  // road1.scaleX = 0.924;
+  // road1.scaleY = 0.936;
+  // stage.addChild(road1);
+
+  // // 屋根裏
+  // var attic = new createjs.Bitmap("assets/images/attic.svg");
+  // attic.x = 90;
+  // attic.y = 19;
+  // stage.addChild(attic);
 
   // // 1階の窓
   // var window = new createjs.Bitmap("assets/images/window.svg");
@@ -286,14 +298,14 @@ function init(){
   //----------------------------------------
   // マウスイベントを登録
   //----------------------------------------
-  baseLeft.addEventListener("mousedown", handleMouseDown);
-  // baseRight.addEventListener("mousedown", handleMouseDown);
-  // entrance.addEventListener("mousedown", handleMouseDown);
-  // knob.addEventListener("mousedown", handleMouseDown);
-  // knobBtn.addEventListener("mousedown", handleMouseDown);
-  // handrail.addEventListener("mousedown", handleMouseDown);
-  // pillarLeft.addEventListener("mousedown", handleMouseDown);
+  entrance.addEventListener("mousedown", handleMouseDown);
+  knob.addEventListener("mousedown", handleMouseDown);
+  knobBtn.addEventListener("mousedown", handleMouseDown);
+  pillarLeft.addEventListener("mousedown", handleMouseDown);
   // pillarRight.addEventListener("mousedown", handleMouseDown);
+  //baseLeft.addEventListener("mousedown", handleMouseDown);
+  //baseRight.addEventListener("mousedown", handleMouseDown);
+  // handrail.addEventListener("mousedown", handleMouseDown);
   // road1.addEventListener("mousedown", handleMouseDown);
   // roofBase.addEventListener("mousedown", handleMouseDown);
   // attic.addEventListener("mousedown", handleMouseDown);
@@ -312,26 +324,26 @@ function init(){
     var targetBase;
 
     // マウスダウンされたものの形状にあわせて、目標のシェイプを選定
-    if (piece == baseLeft) {
-      targetBase = bgBaseLeft;
+    if (piece == entrance) {
+      targetBase = bgEntrance;
     }
+    if (piece == knob) {
+      targetBase = bgKnob;
+    }
+    if (piece == knobBtn) {
+      targetBase = bgKnobBtn;
+    }
+    if (piece == pillarLeft) {
+      targetBase = bgPillarLeft;
+    }
+    // if (piece == baseLeft) {
+    //   targetBase = bgBaseLeft;
+    // }
     // if (piece == baseRight) {
     //   targetBase = bgBaseRight;
     // }
-    // if (piece == entrance) {
-    //   targetBase = bgEntrance;
-    // }
-    // if (piece == knob) {
-    //   targetBase = bgKnob;
-    // }
-    // if (piece == knobBtn) {
-    //   targetBase = bgKnobBtn;
-    // }
     // if (piece == handrail) {
     //   targetBase = bgHandrail;
-    // }
-    // if (piece == pillarLeft) {
-    //   targetBase = bgPillarLeft;
     // }
     // if (piece == pillarRight) {
     //   targetBase = bgPillarRight;
