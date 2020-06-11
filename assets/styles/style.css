@@ -772,6 +772,7 @@ main {
 
 .ttl {
   background: radial-gradient(transparent 6%, #9F5069 72%, #834655);
+  border: 25px solid #503643;
 }
 
 .ttl_q {
