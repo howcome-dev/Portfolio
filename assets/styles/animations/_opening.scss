@@ -13,11 +13,12 @@
 }
 
 .ttl{
-  background: -moz-radial-gradient(#fff 6%, #C8B273); 
-  background: -webkit-radial-gradient(#fff 6%, #C8B273); 
-  background: radial-gradient(#fff 6%, #C8B273);
+  background: $white;
+  border: 25px solid #C8B273;
 
-  border: 25px solid $red;
+  @include media(pc){
+    border-width: 100px;
+  }
 }
 
 .ttl_q{
@@ -33,6 +34,8 @@
     text-align: center;
     display: block;
     line-height: 1;
+    mix-blend-mode: hard-light;
+    filter: drop-shadow(1px 1px 0px black);
   }
 }
 
@@ -56,9 +59,14 @@
     margin: 0 auto;
     opacity: 0;
 
+    @include media(pc){
+      top: 42%;
+    }
+
     &:nth-child(4){
       font-size: 20vw;
       top: 45%;
+      letter-spacing: .09em;
 
       @include media(pc){
         top: 38%;
@@ -96,12 +104,12 @@
 .ttl_h .ttl_h_purpose{
   width: 100%;
   position: absolute;
-  top: 20%;
+  top: 26%;
   text-align: center;
   margin: 0 auto;
 
   @include media(pc){
-    top: 35%;
+    top: 31%;
   }
   
   span{
@@ -162,7 +170,7 @@
 
   span{
     font-family: $h-font;
-    color: $white;
+    color: $red;
     display: block;
     text-shadow: 0 0 1px $white;
     position: absolute;

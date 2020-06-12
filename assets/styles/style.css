@@ -771,8 +771,14 @@ main {
 }
 
 .ttl {
-  background: radial-gradient(#fff 6%, #C8B273);
-  border: 25px solid #9F5069;
+  background: #f4f4f4;
+  border: 25px solid #C8B273;
+}
+
+@media only screen and (min-width: 768px) {
+  .ttl {
+    border-width: 100px;
+  }
 }
 
 .ttl_q {
@@ -790,6 +796,9 @@ main {
   text-align: center;
   display: block;
   line-height: 1;
+  mix-blend-mode: hard-light;
+  -webkit-filter: drop-shadow(1px 1px 0px black);
+          filter: drop-shadow(1px 1px 0px black);
 }
 
 .ttl_h {
@@ -815,9 +824,16 @@ main {
   opacity: 0;
 }
 
+@media only screen and (min-width: 768px) {
+  .ttl_h_theme {
+    top: 42%;
+  }
+}
+
 .ttl_h_theme:nth-child(4) {
   font-size: 20vw;
   top: 45%;
+  letter-spacing: .09em;
 }
 
 @media only screen and (min-width: 768px) {
@@ -897,14 +913,14 @@ main {
 .ttl_h .ttl_h_purpose {
   width: 100%;
   position: absolute;
-  top: 20%;
+  top: 26%;
   text-align: center;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
   .ttl_h .ttl_h_purpose {
-    top: 35%;
+    top: 31%;
   }
 }
 
@@ -986,7 +1002,7 @@ main {
 
 .in_my_head span {
   font-family: "Balsamiq Sans", cursive;
-  color: #f4f4f4;
+  color: #9F5069;
   display: block;
   text-shadow: 0 0 1px #f4f4f4;
   position: absolute;
