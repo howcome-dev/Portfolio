@@ -771,8 +771,8 @@ main {
 }
 
 .ttl {
-  background: radial-gradient(transparent 6%, #9F5069 72%, #834655);
-  border: 25px solid #503643;
+  background: radial-gradient(#fff 6%, #C8B273);
+  border: 25px solid #9F5069;
 }
 
 .ttl_q {
@@ -796,23 +796,34 @@ main {
   position: relative;
   width: 100%;
   height: 100%;
+  color: #9F5069;
+  mix-blend-mode: hard-light;
 }
 
 .ttl_h_theme {
-  font-family: "Balsamiq Sans", cursive;
-  font-size: 15vw;
-  color: #9F5069;
   position: absolute;
   width: 100%;
-  top: 50%;
+  top: 46%;
   text-align: center;
+  font-family: "Balsamiq Sans", cursive;
+  font-size: 14vw;
+  line-height: 1em;
+  letter-spacing: .03em;
+  -webkit-filter: drop-shadow(0px 2px 2px black);
+          filter: drop-shadow(0px 2px 2px black);
   margin: 0 auto;
   opacity: 0;
-  letter-spacing: .03em;
 }
 
 .ttl_h_theme:nth-child(4) {
   font-size: 20vw;
+  top: 45%;
+}
+
+@media only screen and (min-width: 768px) {
+  .ttl_h_theme:nth-child(4) {
+    top: 38%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -886,9 +897,15 @@ main {
 .ttl_h .ttl_h_purpose {
   width: 100%;
   position: absolute;
-  top: 26%;
+  top: 20%;
   text-align: center;
   margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .ttl_h .ttl_h_purpose {
+    top: 35%;
+  }
 }
 
 .ttl_h .ttl_h_purpose span {
@@ -900,6 +917,9 @@ main {
   line-height: 1em;
   letter-spacing: .03em;
   text-shadow: 0px 0px 1px #9F5069;
+  -webkit-filter: drop-shadow(0px 2px 2px black);
+          filter: drop-shadow(0px 2px 2px black);
+  mix-blend-mode: hard-light;
   margin-bottom: .5em;
   -webkit-animation: blurFadeIn 3s ease-in 15s backwards;
   animation: blurFadeIn 3s ease-in 15s backwards;
@@ -920,17 +940,17 @@ main {
 @-webkit-keyframes blurFadeIn {
   0% {
     opacity: 0;
-    text-shadow: 0px 0px 40px #9F5069;
+    text-shadow: 0px 0px 40px #f4f4f4;
     -webkit-transform: scale(1.3);
   }
   50% {
     opacity: 0.5;
-    text-shadow: 0px 0px 10px #9F5069;
+    text-shadow: 0px 0px 10px #f4f4f4;
     -webkit-transform: scale(1.1);
   }
   100% {
     opacity: 1;
-    text-shadow: 0px 0px 1px #9F5069;
+    text-shadow: 0px 0px 1px #f4f4f4;
     -webkit-transform: scale(1);
   }
 }
@@ -938,17 +958,17 @@ main {
 @keyframes blurFadeIn {
   0% {
     opacity: 0;
-    text-shadow: 0px 0px 40px #9F5069;
+    text-shadow: 0px 0px 40px #f4f4f4;
     -webkit-transform: scale(1.3);
   }
   50% {
     opacity: 0.5;
-    text-shadow: 0px 0px 10px #9F5069;
+    text-shadow: 0px 0px 10px #f4f4f4;
     -webkit-transform: scale(1.1);
   }
   100% {
     opacity: 1;
-    text-shadow: 0px 0px 1px #9F5069;
+    text-shadow: 0px 0px 1px #f4f4f4;
     -webkit-transform: scale(1);
   }
 }
