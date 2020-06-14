@@ -2,30 +2,106 @@
 @import "../mixin/_layout.scss";
 @import "../mixin/_animation.scss";
 
-.ttl,
-.home{
-  position: relative;
+//額縁
+.frame_wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  margin: auto;
-  color: $white;
-  background: $sunset;
+  overflow: hidden;
 }
+.frame{
+  position: absolute;
 
-.ttl{
-  background: $white;
-  border: 25px solid #C8B273;
+  &:before{
+    content: "";
+    padding-top: 100%;
+    display: block;
+  }
+}
+.frame:not(:nth-child(1)){
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frame.bg1{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5B5149;
+}
+.frame.bg2{
+  width: 92vw;
+  height: 91vh;
+  background-color: #C8B273;
+}
+.frame.bg3{
+  width: 82vw;
+  height: 82vh;
+  background-color: #8F5F50;
+}
+.frame.bg4{
+  width: 79vw;
+  height: 80vh;
+  background-color: #532D3B;
+}
+.frame.bg5{
+  width: 73vw;
+  height: 75vh;
+  background-color: #834655;
+}
+.frame.bg6{
+  width: 67vw;
+  height: 70vh;
+  background-color: #CEB899;
+}
+.frame.home{
+  background: url('assets/images/home.svg') no-repeat;
+  background-position: center;
+  background-size: (62%);
+  filter: opacity(.3);
 
   @include media(pc){
     border-width: 100px;
+    background-size: (80% 80%);
   }
 }
 
+// アニメーション
+.ttl_wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: $white;
+  margin: auto;
+  overflow: hidden;
+  z-index: 0;
+  mix-blend-mode: color-burn;
+
+  // :beforeにぼかし効果を設定する
+  &:before{
+    content: '';
+    background: inherit;
+    position: absolute;
+    filter: blur(7px) sepia(.5);
+
+    //ブラー効果で画像の端がボヤけた分だけ位置を調整
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+  }
+}
+// ？
 .ttl_q{
   position: absolute;
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
+  mix-blend-mode: color-burn;
 
   #question{
     font-family: $q-font;
@@ -34,8 +110,8 @@
     text-align: center;
     display: block;
     line-height: 1;
-    mix-blend-mode: hard-light;
     filter: drop-shadow(1px 1px 0px black);
+
   }
 }
 
@@ -44,27 +120,23 @@
   width: 100%;
   height: 100%;
   color: $red;
-  mix-blend-mode: hard-light;
 
   &_theme{
     position: absolute;
     width: 100%;
-    top: 46%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
     font-family: $h-font;
-    font-size: 14vw;
+    font-size: 11vw;
     line-height: 1em;
     letter-spacing: .03em;
     filter: drop-shadow(0px 2px 2px black);
     margin: 0 auto;
     opacity: 0;
 
-    @include media(pc){
-      top: 42%;
-    }
-
     &:nth-child(4){
-      font-size: 20vw;
+      font-size: 17vw;
       top: 45%;
       letter-spacing: .09em;
 
@@ -101,22 +173,21 @@
     transform: scale(0);
   }
 }
+// Wanna Create, To Get To Like
 .ttl_h .ttl_h_purpose{
-  width: 100%;
   position: absolute;
-  top: 26%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   margin: 0 auto;
-
-  @include media(pc){
-    top: 31%;
-  }
   
   span{
     display: block;
     width: 100%;
     font-family: $h-font;
-    font-size: 18vw;
+    font-size: 15vw;
     color: transparent;
     line-height: 1em;
     letter-spacing: .03em;
@@ -138,7 +209,6 @@
 	    animation-delay: 17s;
     }
   }
-
   @include keyframes(blurFadeIn){
     0% {
       opacity: 0;
@@ -158,6 +228,7 @@
   }
 }
 
+// 下からわく？
 .in_my_head{
   position: fixed;
   width: 100%;
@@ -186,7 +257,6 @@
     animation-name: floating;
   }
 }
-
 @include keyframes(floating){
   0% {
     opacity: 0;
@@ -206,6 +276,7 @@
     transform: none;
   }
 }
+
 .intro{
   &_desc{
     font-family: 'Helvetica';
@@ -239,6 +310,14 @@
   }
 }
 
+.home{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  color: $white;
+  background: $sunset;
+}
 .canvas{
   display: block;
   width: 100%;

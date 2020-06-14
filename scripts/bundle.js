@@ -26,13 +26,13 @@ document.getElementById('question').animate(
 
 // 下からわく？たち
 const floating = {
-  chars: ['Why?','Warum?', 'Pourquoi?','왜?','为什么?'],
+  chars: ['なんで','Why?','Warum?', 'Pourquoi?','왜?','为什么?'],
 
   init: function () {
     floating.container = document.createElement('div'); // 要素を生成する
     floating.container.className = 'in_my_head';
-    const ttl = document.querySelector('.ttl');
-    ttl.after(floating.container); // .ttlのあとにdivを追加する
+    const ttl_wrapper = document.querySelector('.ttl_wrapper');
+    ttl_wrapper.after(floating.container); // .ttlのあとにdivを追加する
     window.setInterval(floating.add, 100); // 0.1秒後にadd functionを実行する
   },
 
