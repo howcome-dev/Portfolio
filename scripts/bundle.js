@@ -3,7 +3,6 @@
 // ？が降ってくる
 let questionTransform = [
   { transform: 'scale(0) translate3D(50%, 0, 0) rotate(-50deg)' },
-  //{ transform: 'scale(3) translate3D(0, 1vh, 0) rotate(310deg)' }, // 大きくなって一回転しながら真ん中へ
   { transform: 'scale(5) translate3D(0, 3vh, 0) rotate(390deg)' }, // 真ん中でちょっと止まる
   { transform: 'scale(5) translate3D(0, 3vh, 0) rotate(400deg)' }, // 真ん中でちょっと止まる
   { transform: 'translate3D(100%, -8vh, 0) rotate(5deg)' }, // ぴょんぴょんする
@@ -14,6 +13,7 @@ let questionTransform = [
   { transform: 'scale(0) translate3D(0, 0, 0) rotate(-10deg)' }
 ];
 let questionTiming = {
+  delay: 1500,
   duration: 3500,
   iterations: 1,
   fill: 'forwards',
@@ -57,6 +57,20 @@ const floating = {
   },
 };
 document.addEventListener('DOMContentLoaded', floating.init); // HTMLドキュメントの解析完了時
+
+// マウスオーバーで画像を変える
+const link = document.getElementById('link');
+const play = document.getElementById('play');
+const push = document.getElementById('push');
+
+link.addEventListener('mouseenter', () => {
+  play.setAttribute('src', 'assets/images/the_red_one_is_me.jpg');
+  push.classList.add('hover');
+});
+link.addEventListener('mouseleave', () => {
+  play.setAttribute('src', 'assets/images/play.svg');
+  push.classList.remove('hover');
+});
 /*jshint esversion: 6 */
 
 // 下からわく？たち
