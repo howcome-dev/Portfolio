@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "_base.scss";
+@import "assets/styles/modules/_base.scss";
 
 .ly_header{
   width: 90%;
@@ -18,6 +18,7 @@
     line-height: $line-height;
     filter: drop-shadow(3px 2px 1px $brown);
 
+    @include media(tb){ font-size: 4.9rem; }
     @include media(pc){ font-size: 6rem; }
   }
   &_ttl2{

@@ -1,7 +1,5 @@
 @charset "UTF-8";
-@import "../config/_color.scss";
-@import "../config/_size.scss";
-@import "../config/_font.scss";
+@import "assets/styles/config/_color.scss", "assets/styles/config/_size.scss", "assets/styles/config/_font.scss", "assets/styles/mixin/_animation.scss";
 
 // ブレイクポイントを設定
 $bp-sp: 559px; // スマホ 320px-559px

@@ -1,5 +1,56 @@
 /*jshint esversion: 6 */
+// .intro_desc letter-glowアニメーション
+let textbox = document.querySelector('.bl_intro_desc');
+let text = textbox.textContent;
 
+// .bl_intro_desc内のテキストを1文字ずつspanタグで囲って文字を光らせる
+let Spanizer = function() {
+  let t;
+  return {
+      settings: {
+          letters: $(".js-letters")
+      },
+      init: function() {
+          t = this.settings, this.bindEvents(); // tに文字列を分割して入れる
+      },
+      bindEvents: function() {
+          Spanizer.letters();
+      },
+      letters: function() {
+          t.letters.html(function(t, n) { // nが文章
+              let e = $.trim(n).split(""),// 文字列から空白を取り除く 
+                  i = [];
+              return e.forEach(function(t) {
+                  " " !== t ? i.push("<span>" + t + "</span>") : i.push("<span>&nbsp;</span>");
+              }), i.join("");
+          });
+      }
+  };
+}();
+
+// Init Spanizer
+Spanizer.init();
+/*jshint esversion: 6 */
+// a要素を一括取得する
+const aElementList = document.querySelectorAll('a');
+
+// 各a要素について処理する
+aElementList.forEach((element) => {
+  // aタグにtarget属性が存在しなかったらreturn
+  if (element.hasAttribute('target') === false) {
+    return;
+  }
+
+  // target属性_blankではなかったらreturn
+  if (element.getAttribute('target') !== '_blank') {
+    return;
+  }
+
+  // rel属性にnoopenerを付与する
+  element.setAttribute('rel', 'noopener');
+});
+
+/*jshint esversion: 6 */
 // ？が降ってくる
 let questionTransform = [
   { transform: 'scale(0) translate3D(50%, 0, 0) rotate(-50deg)' },
@@ -60,50 +111,29 @@ document.addEventListener('DOMContentLoaded', floating.init); // HTMLドキュ�
 
 // アニメーションをSkipする
 const skip = document.querySelector(".skip");
-skip.addEventListener('click', handleClick);
+// skip.addEventListener('click', handleClick);
+// const animate = document.querySelectorAll('#animate');
 
-function handleClick() {
-  const animate = document.querySelectorAll('.animate');
-  if (animate.classList.contains('active') === true) {
-    animate.addEventListener('animationend', () => {
-      animate.classList.remove('active');
-    });
+// function handleClick() {
+//   animate.addEventListener('animationend', () => {
+//     animate.classList.remove('active');
+//   });
+// };
+const animation = document.querySelector('#animate');
+
+// animation.addEventListener('animationend', () => {
+//   animation.classList.remove('active');
+// });
+
+skip.addEventListener('click', () => {
+  animation.classList.remove('active');
+  let active = animation.classList.contains('active');
+  if (active) {
+    animation.classList.remove('active');
   } else {
-    animate.classList.add('active');
+    animation.classList.add('active');
   }
-};
-/*jshint esversion: 6 */
-// .intro_desc letter-glowアニメーション
-let textbox = document.querySelector('.intro_desc');
-let text = textbox.textContent;
-
-// .intro_disc内のテキストを1文字ずつspanタグで囲って文字を光らせる
-let Spanizer = function() {
-  let t;
-  return {
-      settings: {
-          letters: $(".js-letters")
-      },
-      init: function() {
-          t = this.settings, this.bindEvents(); // tに文字列を分割して入れる
-      },
-      bindEvents: function() {
-          Spanizer.letters();
-      },
-      letters: function() {
-          t.letters.html(function(t, n) { // nが文章
-              let e = $.trim(n).split(""),// 文字列から空白を取り除く 
-                  i = [];
-              return e.forEach(function(t) {
-                  " " !== t ? i.push("<span>" + t + "</span>") : i.push("<span>&nbsp;</span>");
-              }), i.join("");
-          });
-      }
-  };
-}();
-
-// Init Spanizer
-Spanizer.init();
+});
 /*jshint esversion: 6 */
 
 // 読み込みが終わってから初期化

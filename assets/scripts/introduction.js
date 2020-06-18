@@ -1,9 +1,9 @@
 /*jshint esversion: 6 */
 // .intro_desc letter-glowアニメーション
-let textbox = document.querySelector('.intro_desc');
+let textbox = document.querySelector('.bl_intro_desc');
 let text = textbox.textContent;
 
-// .intro_disc内のテキストを1文字ずつspanタグで囲って文字を光らせる
+// .bl_intro_desc内のテキストを1文字ずつspanタグで囲って文字を光らせる
 let Spanizer = function() {
   let t;
   return {

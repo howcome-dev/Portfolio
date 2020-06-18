@@ -15,7 +15,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.3.1/web-animations.min.js" defer></script>
   <title>How Come? R's Portfolio Website</title>
 </head>
-<body>
+<body class="opening">
   <div class="frame_wrapper">
     <div class="frame bg1"></div>
     <div class="frame bg2"></div>
@@ -31,24 +31,24 @@
       <div class="corner"></div>
     </div>
 
-    <div class="frame home" id="push"></div>
+    <div class="frame home active" id="animate" id="push"></div>
 
   </div> <!-- frame_wrapper -->
 
   <main class="msg_wrapper">
     <section class="keyword">
-      <h1 id="question" class="animate active">?</h1>
+      <h1 id="question">?</h1>
     </section>
     <section class="msg">
-      <h2 class="msg_lede1 animate active">My Themes are</h2>
-      <h2 class="msg_lede1 animate active">1. How Come?</h2>
-      <h2 class="msg_lede1 animate active">2. Home</h2>
-      <h2 class="msg_lede1 animate active">3. Human</h2>
+      <h2 class="msg_lede1 active" id="animate">My Themes are</h2>
+      <h2 class="msg_lede1 active" id="animate">1. How Come?</h2>
+      <h2 class="msg_lede1 active" id="animate">2. Home</h2>
+      <h2 class="msg_lede1 active" id="animate">3. Human</h2>
       <h3 class="msg_lede2">
-        <span class="animate">Press Button</span>
-        <span class="animate">Play in My World!</span>
+        <span class="active" id="animate">Press Button</span>
+        <span class="active" id="animate">Play in My World!</span>
       </h2>
-      <button class="msg_btn animate">
+      <button class="msg_btn active" id="animate">
         <a class="msg_btn_link" href="https://howcome.dev"><img src="assets/images/play.svg" alt="press button, play in my world"></a>
       </button>
     </section>

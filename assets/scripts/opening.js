@@ -1,5 +1,4 @@
 /*jshint esversion: 6 */
-
 // ？が降ってくる
 let questionTransform = [
   { transform: 'scale(0) translate3D(50%, 0, 0) rotate(-50deg)' },
@@ -60,15 +59,26 @@ document.addEventListener('DOMContentLoaded', floating.init); // HTMLドキュ�
 
 // アニメーションをSkipする
 const skip = document.querySelector(".skip");
-skip.addEventListener('click', handleClick);
+// skip.addEventListener('click', handleClick);
+// const animate = document.querySelectorAll('#animate');
 
-function handleClick() {
-  const animate = document.querySelectorAll('.animate');
-  if (animate.classList.contains('active') === true) {
-    animate.addEventListener('animationend', () => {
-      animate.classList.remove('active');
-    });
+// function handleClick() {
+//   animate.addEventListener('animationend', () => {
+//     animate.classList.remove('active');
+//   });
+// };
+const animation = document.querySelector('#animate');
+
+// animation.addEventListener('animationend', () => {
+//   animation.classList.remove('active');
+// });
+
+skip.addEventListener('click', () => {
+  animation.classList.remove('active');
+  let active = animation.classList.contains('active');
+  if (active) {
+    animation.classList.remove('active');
   } else {
-    animate.classList.add('active');
+    animation.classList.add('active');
   }
-};
+});

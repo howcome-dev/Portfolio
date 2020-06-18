@@ -1,9 +1,3 @@
 @charset "UTF-8";
 @import "../../node_modules/normalize.css/normalize";
-@import "mixin/_layout.scss";
-@import "mixin/_animation.scss";
-@import "modules/_header.scss";
-@import "modules/_about.scss";
-@import "modules/_experiences.scss";
-@import "modules/_works.scss";
-@import "animations/_opening.scss";
+@import "mixin/_layout.scss", "mixin/_animation.scss", "modules/_header.scss", "modules/_about.scss", "modules/_experiences.scss", "modules/_works.scss", "modules/introduction", "animations/_opening.scss";
