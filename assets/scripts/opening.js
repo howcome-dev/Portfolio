@@ -31,8 +31,8 @@ const floating = {
   init: function () {
     floating.container = document.createElement('div'); // 要素を生成する
     floating.container.className = 'in_my_head';
-    const ttl_wrapper = document.querySelector('.ttl_wrapper');
-    ttl_wrapper.after(floating.container); // .ttlのあとにdivを追加する
+    const skip = document.querySelector('.skip');
+    skip.after(floating.container); // .skipのあとにdivを追加する
     window.setInterval(floating.add, 100); // 0.1秒後にadd functionを実行する
   },
 
@@ -58,16 +58,17 @@ const floating = {
 };
 document.addEventListener('DOMContentLoaded', floating.init); // HTMLドキュメントの解析完了時
 
-// マウスオーバーで画像を変える
-const link = document.getElementById('link');
-const play = document.getElementById('play');
-const push = document.getElementById('push');
+// アニメーションをSkipする
+const skip = document.querySelector(".skip");
+skip.addEventListener('click', handleClick);
 
-link.addEventListener('mouseenter', () => {
-  play.setAttribute('src', 'assets/images/the_red_one_is_me.jpg');
-  push.classList.add('hover');
-});
-link.addEventListener('mouseleave', () => {
-  play.setAttribute('src', 'assets/images/play.svg');
-  push.classList.remove('hover');
-});
+function handleClick() {
+  const animate = document.querySelectorAll('.animate');
+  if (animate.classList.contains('active') === true) {
+    animate.addEventListener('animationend', () => {
+      animate.classList.remove('active');
+    });
+  } else {
+    animate.classList.add('active');
+  }
+};

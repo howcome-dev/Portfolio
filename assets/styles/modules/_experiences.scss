@@ -3,131 +3,19 @@
 
 // 各exp
 .ly_wrapper.bl_exp{
-  width: 69%;
+  width: 91%;
 
-  @include media(pc){
-    width: 90%;
-  }
-
-  .ly_wrapper_ttl{
-    @include media(pc){
-      margin-bottom: 4em;
-    }
-  }
-
-  .bl_exp_odd,
-  .bl_exp_even{
-    position: relative;
-    width: 80%;
-    text-align: center;
-    margin-left: 3em;
-
-    @include media(pc){
-      width: 100%;
-      margin-left: 0;
-    }
-  }
+  @include media(tb){ width: 58%; }
+  @include media(pc){ width: 60%; }
+  
 }
 
-.bl_exp{
-
-    &_wrapper{
-
+.bl_exp_wrapper{
+  text-align: center;
     @include media(pc){
       padding: 0 2em;
     }
-  }
-
-  &_ttl{
-    color: $red;
-    font-weight: bold;
-    margin-bottom: 2em;
-  }
-
   dd{
     margin-bottom: .5em;
-  }
-
-  &_term{
-    color: $white;
-  }
-}
-
-// タイムライン
-@include media(pc){
-  .bl_exp{
-    &_col{
-      display: grid;
-      grid-template-columns: 20% 30% 30% 20%;
-      grid-template-rows: auto;
-
-      .ly_wrapper_conts:nth-child(1){
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-      }
-      .ly_wrapper_conts:nth-child(2){
-        grid-column: 3 / 4;
-        grid-row: 2 / 3;
-      }
-      .ly_wrapper_conts:nth-child(3){
-        grid-column: 2 / 3;
-        grid-row: 3 / 4;
-      }
-      .ly_wrapper_conts:nth-child(4){
-        grid-column: 3 / 4;
-        grid-row: 4 / 5;
-      }
-      .ly_wrapper_conts:nth-child(5){
-        grid-column: 2 / 3;
-        grid-row: 5 / 6;
-      }
-      .ly_wrapper_conts:nth-child(6){
-        grid-column: 3 / 4;
-        grid-row: 6 / 7;
-      }
-    }
-  }
-}
-
-// lineと上と下の丸
-.bl_exp{
-  position: relative;
-
-  &_line{
-    position: absolute;
-    left: 9px;
-    top: 3em;
-    background: $red;
-    width: 3px;
-    height: 100%;
-    height: calc(100% + -2em);
-
-    @include media(pc){
-      top: 5em;
-      left: 50%;
-    }
-
-    &:before{
-      content: "";
-      display: block;
-      position: absolute;
-      top: 0;
-      left: -4px;
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-      background: $red;
-    }
-    &:after{
-      content: "";
-      display: block;
-      position: absolute;
-      top: 100%;
-      left: -4px;
-      width: 11px;
-      height: 11px;
-      border-radius: 50%;
-      background: $red;
-    }
   }
 }

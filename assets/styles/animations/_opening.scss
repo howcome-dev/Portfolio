@@ -2,7 +2,9 @@
 @import "../mixin/_layout.scss";
 @import "../mixin/_animation.scss";
 
-//額縁
+/******************************************************************************
+  額縁
+*******************************************************************************/
 .frame_wrapper{
   position: absolute;
   top: 0;
@@ -21,10 +23,12 @@
     display: block;
   }
 }
+// ベース背景以外を中央寄せ
 .frame:not(:nth-child(1)){
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  max-width: 1280px;
 }
 .frame.bg1{
   top: 0;
@@ -38,51 +42,54 @@
   height: 85vh;
   background-color: #C8B273;
 
-  @include media(pc){
-    width: 69vw;
-    height: 90vh;
-  }
+  @include media(tb){ width: 84vw; height: 87vh; }
+  @include media(pcs){ width: 83vw; height: 93vh; }
+  @include media(pcm){ width: 65vw; height: 96vh; }
+  @include media(pc){ width: 57vw; height: 92vh; }
 }
 .frame.bg3{
   width: 91vw;
   height: 81vh;
   background-color: #8F5F50;
 
-  @include media(pc){
-    width: 66vw;
-    height: 85vh;
-  }
+  @include media(tb){ width: 80vw; height: 83vh; }
+  @include media(pcs){ width: 79vw; height: 88vh; }
+  @include media(pcm){ width: 61vw; height: 90vh; }
+  @include media(pc){ width: 53vw; height: 85vh; }
 }
 .frame.bg4{
   width: 87vw;
   height: 78vh;
   background-color: #532D3B;
 
-  @include media(pc){
-    width: 64vw;
-    height: 82vh;
-  }
+  @include media(tb){ width: 78vw; height: 81vh; }
+  @include media(pcs){ width: 76vw; height: 85vh; }
+  @include media(pcm){ width: 60vw; height: 89vh; }
+  @include media(pc){ width: 52vw; height: 83vh; }
 }
 .frame.bg5{
   width: 78vw;
   height: 72vh;
   background-color: #834655;
 
-  @include media(pc){
-    width: 60vw;
-    height: 77vh;
-  }
+  @include media(tb){ width: 73vw; height: 76vh; }
+  @include media(pcs){ width: 72vw; height: 80vh; }
+  @include media(pcm){ width: 56vw; height: 83vh; }
+  @include media(pc){ width: 49vw; height: 78vh; }
 }
 .frame.bg6{
   width: 74vw;
   height: 70vh;
   background-color: #CEB899;
 
-  @include media(pc){
-    width: 54vw;
-    height: 70vh;
-  }
+  @include media(tb){ width: 70vw; height: 73vh; }
+  @include media(pcs){ width: 70vw; height: 78vh; }
+  @include media(pcm){ width: 54vw; height: 80vh; }
+  @include media(pc){ width: 47vw; height: 75vh; }
 }
+/**
+ * 額縁のコーナー
+ */
 .corner_wrapper{
   position: absolute;
   top: 0;
@@ -100,90 +107,95 @@
     background: url(assets/images/corner.svg) no-repeat;
     background-size: 98%;
 
-    @include media(pc){
-      width: 32%;
-      height: 34%;
-      background-size: 70%;
-    }
+    @include media(tb){ width: 27%; height: 19%; background-size: 100%; }
+    @include media(pcs){ width: 27%; height: 22%; }
+    @include media(pcm){ width: 19%; height: 19%; }
+    @include media(pc){ width: 23%; height: 23%; }
 
     &:before{
       content: "";
       display: block;
       padding-top: 57.0135%;
     }
-
+    // 各コーナー
     &:nth-child(1){
       top: 5%;
       left: -6%;
       transform: rotate(-45deg);
 
-      @include media(pc){
-        top: -9%;
-        left: 8%;
-      }
+      @include media(tb){ top: 2%; left: -1%; }
+      @include media(pcs){ top: 0; left: 0; }
+      @include media(pcm){ top: -2%; left: 12%; }
+      @include media(pc){ top: -2%; left: 13%; }
     }
     &:nth-child(2){
       top: 5%;
       left: 75%;
       transform: rotate(45deg);
 
-      @include media(pc){
-        top: 3%;
-        left: 66%;
-      }
+      @include media(tb){ top: 2%; left: 74%; }
+      @include media(pcs){ top: 0; left: 73%; }
+      @include media(pcm){ top: -2%; left: 69%; }
+      @include media(pc){ top: -2%; left: 64%; }
     }
     &:nth-child(3){
       top: 81%;
       left: 75%;
       transform: rotate(135deg);
 
-      @include media(pc){
-        top: 75%;
-        left: 60%;
-      }
+      @include media(tb){ top: 80%; left: 74%; }
+      @include media(pcs){ top: 80%; left: 73%; }
+      @include media(pcm){ top: 83%; left: 69%; }
+      @include media(pc){ top: 79%; left: 64%; }
     }
     &:nth-child(4){
       top: 81%;
       left: -5%;
       transform: rotate(-135deg);
 
-      @include media(pc){
-        top: 63%;
-        left: 1%;
-      }
+      @include media(tb){ top: 80%; left: -1%; }
+      @include media(pcs){ top: 80%; left: 0; }
+      @include media(pcm){ top: 83%; left: 12%; }
+      @include media(pc){ top: 79%; left: 13%; }
     }
   }
 }
+/**
+ * MY HOME
+ */
 .frame.home{
   background: url('assets/images/home.svg') no-repeat;
   background-position: center;
   background-size: (66%);
 
-  -webkit-animation: home 22s ease-in;
-  animation: home 22s ease-in;
+  @include media(pcm){ background-size: 50%; }
+  @include media(pc){ background-size: 40%; }
 
-  @include keyframes(home){
-    0%{ filter: blur(5px) sepia(.6) opacity(.7); }
-    100%{ filter: blur(0) sepia(0) opacity(1); }
-  }
-
-
-  @include media(pc){
-    background-size: 40%;
+  // おうちの画像がだんだんはっきりしてくる
+  &.active{
+    @include animationValue(home, 22, ease-in, 0, 1, forwards);
+    @include keyframes(home){
+      0%{ filter: blur(5px) sepia(.6) opacity(.7); }
+      100%{ filter: blur(0) sepia(0) opacity(1); }
+    }
   }
 }
 
-// アニメーション
-.ttl_wrapper{
-  position: relative;
+/******************************************************************************
+  メッセージアニメーション
+*******************************************************************************/
+.msg_wrapper{
+  position: absolute;
   width: 100%;
   height: 100%;
   color: $white;
   margin: auto;
   overflow: hidden;
 }
-// ？
-.ttl_q{
+/**
+ * ？
+ */
+.keyword{
   position: absolute;
   top: 25%;
   left: 50%;
@@ -198,28 +210,30 @@
     display: block;
     line-height: 1;
     filter: drop-shadow(1px 1px 0px black);
-
-    -webkit-animation-name: opacity;
-    animation-name: opacity;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
-    @include animationValue(opacity, 1, ease, 0, 1, forwards);
-
-    @include keyframes(opacity){
-      0%{ opacity: 0;}
-      100%{opacity: 1;}
+    /**
+    * ？現れる
+    */
+    &.active{
+      @include animationValue(opacity, 1, ease, 0, 1, forwards);
+      @include keyframes(opacity){
+        0%{ opacity: 0;}
+        100%{opacity: 1;}
+      }
     }
   }
 }
 
-.ttl_h{
+/**
+ * テーマ
+ */
+.msg{
   position: relative;
   width: 100%;
   height: 100%;
   color: $white;
   mix-blend-mode: normal;
 
-  &_theme{
+  &_lede1{
     position: absolute;
     width: 100%;
     top: 50%;
@@ -232,57 +246,44 @@
     margin: 0 auto;
     opacity: 0;
 
-    @include media(pc){
-      font-size: 8vw;
-    }
-
-    &:nth-child(4){
-      font-size: 17vw;
-      letter-spacing: .09em;
-
-      @include media(pc){
-        font-size: 11vw;
-      }
-    }
+    @include media(tb){ font-size: 8vw;}
   }
 }
-// How Come? Home Human I Like It!
+/**
+ * How Come? Home Humanが現れて消える
+ */
 @for $cnt from 1 through 4{
-  .ttl_h_theme:nth-child(#{$cnt}){
+  .msglede1.active:nth-child(#{$cnt}){
     animation: blurFadeInOut 4s ease-in backwards;
   }
 }
-.ttl_h_theme:nth-child(1){
-  animation-delay: 5s;
-}
-.ttl_h_theme:nth-child(2){
-  animation-delay: 9s;
-}
-.ttl_h_theme:nth-child(3){
-  animation-delay: 13s;
-}
-.ttl_h_theme:nth-child(4){
-  animation-delay: 17s;
+.msg_lede1.active{
+  &:nth-child(1){ animation-delay: 5s; }
+  &:nth-child(2){ animation-delay: 9s; }
+  &:nth-child(3){ animation-delay: 13s; }
+  &:nth-child(4){ animation-delay: 17s; }
 }
 @include keyframes(blurFadeInOut){
-  0% {
+  0%{
     opacity: 0;
     text-shadow: 0px 0px 40px $red;
     transform: scale(1.3);
   }
-  20%, 75% {
+  20%, 75%{
     opacity: 1;
     text-shadow: 0px 0px 1px $red;
     transform: scale(1);
   }
-  100% {
+  100%{
     opacity: 0;
     text-shadow: 0px 0px 50px $red;
     transform: scale(0);
   }
 }
-// Wanna Create, To Get To Like
-.ttl_h .ttl_h_purpose{
+/**
+ * Press Button Play in My World!
+ */
+.msg_lede2{
   position: absolute;
   width: 100%;
   top: 50%;
@@ -290,8 +291,8 @@
   transform: translate(-50%, -50%);
   text-align: center;
   margin: 0 auto;
-  mix-blend-mode: screen;
-  
+  mix-blend-mode: luminosity;
+  // 上と下の文字指定
   span{
     display: block;
     width: 100%;
@@ -302,45 +303,34 @@
     letter-spacing: .03em;
     text-shadow: 0px 0px 1px $white;
     filter: drop-shadow(2px 2px 1px $red) drop-shadow(-3px -2px 1px $red) drop-shadow(2px -1px 1px $red);
-    margin-bottom: 4em;
-    -webkit-animation: blurFadeIn 3s ease-in 20s backwards;
-    animation: blurFadeIn 3s ease-in 20s backwards;
-
-
-    @include media(pc){
-      font-size: 6vw;
-      margin-bottom: 4.5em;
-    }
-
-    -webkit-animation: blurFadeIn 3s ease-in 20s backwards;
-    animation: blurFadeIn 3s ease-in 20s backwards;
+    margin-bottom: 2.9em;
     
+    @include media(tb){ font-size: 7.5vw; margin-bottom: 4.5em; }
+    @include media(pcm){ font-size: 7vw; margin-bottom: 4.9em; }
+    @include media(pc){ font-size: 6vw; margin-bottom: 5.3em; }
+    // Play in My World!
     &:nth-child(2){
       margin-bottom: 0;
+    }
+  }
+  span.active{
+    // Press ButtonのあとにPlay in My World!が現れる
+    @include animationValue(blurFadeIn, 3, ease-in, 20, 1, backwards);
+    @include keyframes(blurFadeIn){
+      0%{ opacity: 0; text-shadow: 0px 0px 40px $white; transform: scale(1.3); }
+      50%{ opacity: 0.5; text-shadow: 0px 0px 10px $white; transform: scale(1.1); }
+      100%{ opacity: 1; text-shadow: 0px 0px 1px $white; transform: scale(1); }
+    }
+    &:nth-child(2){
       -webkit-animation-delay: 22s;
 	    animation-delay: 22s;
     }
   }
-  @include keyframes(blurFadeIn){
-    0%{
-      opacity: 0;
-      text-shadow: 0px 0px 40px $white;
-      -webkit-transform: scale(1.3);
-    }
-    50%{
-      opacity: 0.5;
-      text-shadow: 0px 0px 10px $white;
-      -webkit-transform: scale(1.1);
-    }
-    100%{
-      opacity: 1;
-      text-shadow: 0px 0px 1px $white;
-      -webkit-transform: scale(1);
-    }
-  }
 }
-// Play
-.ttl_h_play{
+/**
+ * Play Button
+ */
+.msg_btn{
 	position: absolute;
   left: 50%;
   margin-left: -22vw;
@@ -350,60 +340,44 @@
 	height: 44vw;
   color: $white;
   z-index: 2;
-  clip-path: circle(50%);
-
-	-webkit-animation: fadeInRotate 1s linear 26s backwards;
-	-moz-animation: fadeInRotate 1s linear 26s backwards;
-	-ms-animation: fadeInRotate 1s linear 26s backwards;
-	animation: fadeInRotate 1s linear 26s backwards;
-	-webkit-transform: scale(1) rotate(0deg);
-	-moz-transform: scale(1) rotate(0deg);
-	-o-transform: scale(1) rotate(0deg);
-	-ms-transform: scale(1) rotate(0deg);
   transform: scale(1) rotate(0deg);
 
-  @include media(pc){
-    margin-left: -10vw;
-    width: 20vw;
-    height: 20vw;
+  &:hover{
+    transform: scale(.9);
+    transition: 1s;
   }
 
-  @include keyframes(fadeInRotate){
-    0% {
-      opacity: 0;
-      transform: scale(0) rotate(360deg);
+  @include media(tb){ margin-left: -14vw; bottom: 38%; width: 28vw; height: 28vw; }
+  @include media(pc){ margin-left: -10vw; width: 20vw; height: 20vw; }
+
+  // 再生ボタンがくるくる降ってくる
+  &.active{
+    @include animationValue(fadeInRotate, 1, linear, 26, 1, backwards);
+    @include keyframes(fadeInRotate){
+      0% { opacity: 0; transform: scale(0) rotate(360deg); }
+      100% { opacity: 1; transform: scale(1) rotate(0deg); }
     }
-    100% {
-      opacity: 1;
-      transform: scale(1) rotate(0deg);
-    }
   }
 }
-.ttl_h_media{
-  margin: 0;
 
-   img{
-    width: 100%;
-    height: 100%;
-   }
-}
-.ttl_h_lede{
-  font-family: $h-font;
-  font-size: 1.5rem;
-  margin-top: -1.8em;
-  letter-spacing: .05em;
+/**
+ * Skip Button
+ */
+.skip{
+  position: absolute;
+  top: 91%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  width: 21%;
+  z-index: 2;
 
-  @include media(pc){
-    font-size: 2rem;
-    margin-top: -1.8em;
-    margin-left: .4em;
-  }
-}
-.ttl_h_lede.hover{
-  display: none;
+  @include media(tb){ top: 85%; left: 79%; width: 12%; }
+  @include media(pcm){ top: 87%; left: 90%; }
 }
 
-// 下からわく？
+/******************************************************************************
+  下からわく？たち
+*******************************************************************************/
 .in_my_head{
   position: fixed;
   width: 100%;
@@ -426,35 +400,27 @@
     z-index: 1;
     opacity: 0;
     will-change: transform, opacity;
-    -webkit-animation-timing-function: ease-out;
-    animation-timing-function: ease-out;
     -webkit-animation-name: floating;
     animation-name: floating;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
   }
 }
 @include keyframes(floating){
-  0% {
-    opacity: 0;
-    transform: translateY(100vh);
-  }
-  25% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.1;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: none;
-  }
+  0%{ opacity: 0; transform: translateY(100vh); }
+  25%{ opacity: 0.2; }
+  50%{ opacity: 0.1; }
+  75%{ opacity: 0; }
+  100%{ opacity: 0; transform: none; }
 }
 
+/******************************************************************************
+  イントロ（仮）
+*******************************************************************************/
+// 文字がキラキラ表示される
 .intro{
   &_desc{
-    font-family: 'Helvetica';
+    font-family: $base-font;
     white-space: pre;
   } 
 }
@@ -485,6 +451,9 @@
   }
 }
 
+/******************************************************************************
+  おうちパズル（仮）
+*******************************************************************************/
 .home{
   position: relative;
   width: 100%;

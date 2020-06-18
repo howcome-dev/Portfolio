@@ -1,26 +1,39 @@
 @charset "UTF-8";
 @import "_base.scss";
 
-.ly_wrapper.bl_about{
-  width: 87%;
+.bl_about{
+  width: 97%;
   max-width: 328px;
-  .ly_wrapper_conts{
+
+  @include media(pc){ width: 100%; max-width: 338px; }
+
+  &_conts{
+    font-family: $base-font;
+    font-size: $base-size;
+    color: $brown;
+    @include boxSet;
     flex-flow: nowrap;
     padding: .5em 0;
-    margin-bottom: 0;
-    
-    .bl_about_data{
-      width: 71%;
-      @include media(pc){
-        width: 64%;
-      }
-    }
-    .bl_about_link{
-      color: $red;
+    margin: 0;
 
-      &:hover{
-        color: $white;
-      }
+    @include media(pc){ font-size: 1.3rem; }
+  }
+
+  &_data{
+    font-weight: bold;
+    color: $red;
+    width: 71%;
+    @include media(pc){
+      width: 64%;
+    }
+  }
+
+  &_link{
+    color: $darkblue;
+  
+    &:hover{
+      color: $gold;
+      transition: 1s;
     }
   }
 }

@@ -2,15 +2,36 @@
 @import "../config/_size.scss";
 @import "../mixin/_layout.scss";
 
+// ******************************************************************************
+// Reset
+// ******************************************************************************
 *, *:before, *:after{
   box-sizing: border-box;
 }
-
-html, body{
+html{
   width: 100%;
   height: 100%;
 }
-
+body{
+  @include media(sp){
+    width: 100%;
+    height: 100%;
+    min-width: $sp-min;
+  }
+  font-family: $base-font;
+  color: $brown;
+  background: $antique;
+  line-height: $line-height;
+}
+img{
+  width: 100%;
+  height: 100%;
+  vertical-align: bottom;
+}
+a{
+  display: block;
+  text-decoration: none;
+}
 h1, h2, h3{
   font-weight: normal;
   margin: 0;
@@ -18,66 +39,67 @@ h1, h2, h3{
 p{
   margin: 0;
 }
-
-body{
-
-  @include media(sp){
-    width: 100%;
-    height: 100%;
-    min-width: $sp-min;
-  }
-
-  color: $brown;
-  background: $white;
-  line-height: $base-height;
+li{
+  display: inherit;
 }
-
-a{
-  display: block;
-  text-decoration: none;
+dl{
+  margin: 0;
 }
-
 dd{
   margin: 0;
 }
+button{
+  background-color: transparent;
+  border: none;
+  line-height: 0;
+  padding: 0;
+  cursor: pointer;
 
-main{
-  margin-bottom: 7em;
+  &:focus{
+    outline: none;
+  }
 }
 
-//sectionレイアウト
+// ******************************************************************************
+// 共通パーツ
+// ******************************************************************************
+header, main{
+  max-width: 1280px;
+}
+main{
+  margin: 0 auto 7em;
+}
+// section
 .ly_wrapper{
-  width: 90%;
-  margin: 0 auto 10em;
+  margin: 0 auto 3em;
 
-  @include media(pc){
-    margin-bottom: 12em;
-  }
-
+  @include media(pc){ margin-bottom: 5em; }
   &:last-child{
     margin-bottom: 0;
   }
-
-  &_ttl{
+  &_ttl{ // About, Experiences, Works
     width: 100%;
     color: $red;
+    font-family: $q-font;
     font-size: $ttl;
     text-align: center;
-    margin: 0 auto 2em;
-  }
+    margin: 0 auto 1em;
+    text-shadow: 1px 2px 3px $brown;
 
+    @include media(pc){ font-size: 3rem; }
+  }
+  &_ttl2{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1em;
+
+    @include media(pc){ font-size: 1.3rem; }
+  }
   &_conts{
     width: 100%;
-    font-size: $base-size;
     display: flex;
     flex-flow: wrap;
     justify-content: space-between;
-    margin: 0 auto 3em;
-
-    a{
-      display: block;
-      width: 100%;
-    }
     &_ttl{
       order: 2;
       width: 100%;
@@ -95,6 +117,26 @@ main{
     &_desc{
       order: 4;
     }
-
+  }
+}
+// コンテンツボックス
+.bl_conts{
+  margin-bottom: 3em;
+	&_ttl{
+		color: $gold;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 1em;
+    filter: drop-shadow(1px 1px 1px $brown);
+	}
+	&_ttl2{
+    font-size: 1.3rem;
+    font-weight: bold;
+	}
+	&_desc{
+    color: $red;
+	}
+	&_note{
+    color: $brown;
   }
 }

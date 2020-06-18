@@ -31,8 +31,8 @@ const floating = {
   init: function () {
     floating.container = document.createElement('div'); // 要素を生成する
     floating.container.className = 'in_my_head';
-    const ttl_wrapper = document.querySelector('.ttl_wrapper');
-    ttl_wrapper.after(floating.container); // .ttlのあとにdivを追加する
+    const skip = document.querySelector('.skip');
+    skip.after(floating.container); // .skipのあとにdivを追加する
     window.setInterval(floating.add, 100); // 0.1秒後にadd functionを実行する
   },
 
@@ -58,55 +58,21 @@ const floating = {
 };
 document.addEventListener('DOMContentLoaded', floating.init); // HTMLドキュメントの解析完了時
 
-// マウスオーバーで画像を変える
-const link = document.getElementById('link');
-const play = document.getElementById('play');
-const push = document.getElementById('push');
+// アニメーションをSkipする
+const skip = document.querySelector(".skip");
+skip.addEventListener('click', handleClick);
 
-link.addEventListener('mouseenter', () => {
-  play.setAttribute('src', 'assets/images/the_red_one_is_me.jpg');
-  push.classList.add('hover');
-});
-link.addEventListener('mouseleave', () => {
-  play.setAttribute('src', 'assets/images/play.svg');
-  push.classList.remove('hover');
-});
-/*jshint esversion: 6 */
-
-// 下からわく？たち
-const floating = {
-  chars: ['?','Why?','How Come?','Warum?','Wozu?','Pourquoi?','Comment ça se fait?','왜?','어째서?','为什么?','怎么会?'],
-
-  init: function () {
-    floating.container = document.createElement('div'); // 要素を生成する
-    floating.container.className = 'intro_floating';
-    const intro_desc = document.querySelector('.intro_desc');
-    intro_desc.after(floating.container); // .intro_descのあとにdivを追加する
-    window.setInterval(floating.add, 100); // 0.1秒後にadd functionを実行する
-  },
-
-  add: function () {
-    let element = document.createElement('span');
-    floating.container.appendChild(element); // div要素の末尾にspanを追加する
-    floating.animate(element); // Web Animations APIでspanをアニメーションさせる
-  },
-
-  animate: function (element) {
-    let character = floating.chars[Math.floor(Math.random() * floating.chars.length)]; // Math.floor（切り捨てる。数値以下の最大の整数を返す）Math.random（浮動小数点の擬似乱数を返す0以上1未満）*floating.charsの文字列の長さ
-    let duration = Math.floor(Math.random() * 15) + 1;
-    let offset = Math.floor(Math.random() * (50 - duration * 2)) + 3;
-    let size = 10 + (15 - duration);
-    element.style.cssText = 'right:'+offset+'vw; font-size:'+size+'px;animation-duration:'+duration+'s';
-    element.innerHTML = character;
-    window.setTimeout(floating.remove, duration * 1000, element);
-  },
-
-  remove: function (element) {
-    element.parentNode.removeChild(element); // spanの親要素からspanを削除する
-  },
+function handleClick() {
+  const animate = document.querySelectorAll('.animate');
+  if (animate.classList.contains('active') === true) {
+    animate.addEventListener('animationend', () => {
+      animate.classList.remove('active');
+    });
+  } else {
+    animate.classList.add('active');
+  }
 };
-document.addEventListener('DOMContentLoaded', floating.init); // HTMLドキュメントの解析完了時
-
+/*jshint esversion: 6 */
 // .intro_desc letter-glowアニメーション
 let textbox = document.querySelector('.intro_desc');
 let text = textbox.textContent;
@@ -335,83 +301,83 @@ function init(){
   pillarLeft.scaleY = 1.05;
   stage.addChild(pillarLeft);
 
-  // 柱みぎ
-  var pillarRight = new createjs.Bitmap("assets/images/pillarRight.svg");
-  pillarRight.x = 115;
-  pillarRight.y = 27;
-  pillarRight.scaleX = 0.953;
-  pillarRight.scaleY = 1.06;
-  stage.addChild(pillarRight);
+  // // 柱みぎ
+  // var pillarRight = new createjs.Bitmap("assets/images/pillarRight.svg");
+  // pillarRight.x = 115;
+  // pillarRight.y = 27;
+  // pillarRight.scaleX = 0.953;
+  // pillarRight.scaleY = 1.06;
+  // stage.addChild(pillarRight);
 
-  // 基礎ひだり
-  var baseLeft = new createjs.Bitmap("assets/images/baseLeft.svg");
-  baseLeft.x = 10;
-  baseLeft.y = 13;
-  baseLeft.scaleX = 0.97;
-  baseLeft.scaleY = 0.89;
-  stage.addChild(baseLeft);
+  // // 基礎ひだり
+  // var baseLeft = new createjs.Bitmap("assets/images/baseLeft.svg");
+  // baseLeft.x = 10;
+  // baseLeft.y = 13;
+  // baseLeft.scaleX = 0.97;
+  // baseLeft.scaleY = 0.89;
+  // stage.addChild(baseLeft);
 
-  // 基礎みぎ
-  var baseRight = new createjs.Bitmap("assets/images/baseRight.svg");
-  baseRight.x = 340;
-  baseRight.y = 200;
-  baseRight.scaleX = 0.99;
-  baseRight.scaleY = 0.89;
-  stage.addChild(baseRight);
+  // // 基礎みぎ
+  // var baseRight = new createjs.Bitmap("assets/images/baseRight.svg");
+  // baseRight.x = 340;
+  // baseRight.y = 200;
+  // baseRight.scaleX = 0.99;
+  // baseRight.scaleY = 0.89;
+  // stage.addChild(baseRight);
 
-  // 屋根
-  var roofBase = new createjs.Bitmap("assets/images/roofBase.svg");
-  roofBase.x = 66;
-  roofBase.y = 253;
-  roofBase.scaleX = 0.95;
-  roofBase.scaleY = 0.95;
-  stage.addChild(roofBase);
+  // // 屋根
+  // var roofBase = new createjs.Bitmap("assets/images/roofBase.svg");
+  // roofBase.x = 66;
+  // roofBase.y = 253;
+  // roofBase.scaleX = 0.95;
+  // roofBase.scaleY = 0.95;
+  // stage.addChild(roofBase);
 
-  // カップケーキのカップ
-  var secretBase = new createjs.Bitmap("assets/images/secretBase.svg");
-  secretBase.x = 129;
-  secretBase.y = 217;
-  secretBase.scaleX = 1;
-  secretBase.scaleY = 1;
-  stage.addChild(secretBase);
+  // // カップケーキのカップ
+  // var secretBase = new createjs.Bitmap("assets/images/secretBase.svg");
+  // secretBase.x = 129;
+  // secretBase.y = 217;
+  // secretBase.scaleX = 1;
+  // secretBase.scaleY = 1;
+  // stage.addChild(secretBase);
 
-  // カップケーキのスポンジ
-  var secretSponge = new createjs.Bitmap("assets/images/secretSponge.svg");
-  secretSponge.x = 94;
-  secretSponge.y = 3;
-  secretSponge.scaleX = 1;
-  secretSponge.scaleY = 1;
-  stage.addChild(secretSponge);
+  // // カップケーキのスポンジ
+  // var secretSponge = new createjs.Bitmap("assets/images/secretSponge.svg");
+  // secretSponge.x = 94;
+  // secretSponge.y = 3;
+  // secretSponge.scaleX = 1;
+  // secretSponge.scaleY = 1;
+  // stage.addChild(secretSponge);
 
-  // カップケーキのいちご
-  var secretBerry = new createjs.Bitmap("assets/images/secretBerry.svg");
-  secretBerry.x = 386;
-  secretBerry.y = 606;
-  secretBerry.scaleX = 0.98;
-  secretBerry.scaleY = 1;
-  stage.addChild(secretBerry);
+  // // カップケーキのいちご
+  // var secretBerry = new createjs.Bitmap("assets/images/secretBerry.svg");
+  // secretBerry.x = 386;
+  // secretBerry.y = 606;
+  // secretBerry.scaleX = 0.98;
+  // secretBerry.scaleY = 1;
+  // stage.addChild(secretBerry);
 
-  // はしごの手すり
-  var handrail = new createjs.Bitmap("assets/images/handrail.svg");
-  handrail.x = 106;
-  handrail.y = 27;
-  handrail.scaleX = 0.9;
-  handrail.scaleY = 0.925;
-  stage.addChild(handrail);
+  // // はしごの手すり
+  // var handrail = new createjs.Bitmap("assets/images/handrail.svg");
+  // handrail.x = 106;
+  // handrail.y = 27;
+  // handrail.scaleX = 0.9;
+  // handrail.scaleY = 0.925;
+  // stage.addChild(handrail);
 
-  // 道
-  var road1 = new createjs.Bitmap("assets/images/road1.svg");
-  road1.x = 65;
-  road1.y = 64;
-  road1.scaleX = 0.924;
-  road1.scaleY = 0.936;
-  stage.addChild(road1);
+  // // 道
+  // var road1 = new createjs.Bitmap("assets/images/road1.svg");
+  // road1.x = 65;
+  // road1.y = 64;
+  // road1.scaleX = 0.924;
+  // road1.scaleY = 0.936;
+  // stage.addChild(road1);
 
-  // 屋根裏
-  var attic = new createjs.Bitmap("assets/images/attic.svg");
-  attic.x = 90;
-  attic.y = 19;
-  stage.addChild(attic);
+  // // 屋根裏
+  // var attic = new createjs.Bitmap("assets/images/attic.svg");
+  // attic.x = 90;
+  // attic.y = 19;
+  // stage.addChild(attic);
 
   // // 1階の窓
   // var window = new createjs.Bitmap("assets/images/window.svg");

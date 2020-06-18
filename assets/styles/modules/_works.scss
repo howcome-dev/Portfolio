@@ -2,18 +2,11 @@
 @import "_base.scss";
 
 .bl_works{
-
-  @include media(pc){
-    @include boxSet();
-  }
-
+  @include media(pc){ @include boxSet(); width: 70%;}
   &_wrapper{
-    width: 82%;
-    background: $white;
+    width: 100%;
 
-    @include media(pc){
-      width: 45%;
-    }
+    @include media(pc){ width: 45%; align-items: flex-start;}
 
     &:last-child{
       margin-bottom: 0;
@@ -22,31 +15,32 @@
 
   &_link{
     display: block;
+    width: 90%;
     text-align: center;
     color: $red;
-    box-shadow: 0 2px 14px $brown;
-    padding: 30px 20px;
+    background: $gold;
+    box-shadow: 0 2px 14px $darkblue;
+    padding: 2em .5em;
+    margin: 0 auto 2em;
+
+    @include media(tb){ width: 70%; }
+    @include media(pc){ width: 90%; padding: 2em 2em; }
   
-    @include media(pc){
-      &:hover{
-        border: 2px solid $red;
-      }
+    &:hover{
+      filter: brightness(1.2);
+      transform: scale(.95);
+      transition: 1s;
     }
   }
-
-  &_ttl{
-    color: $red;
-    font-weight: bold;
-    margin-bottom: 2em;
+  &_ttl.bl_conts_ttl{
+    color: $darkblue;
+    line-height: 1.5em;
   }
-
-  &_desc{
-    color: $brown;
-    margin-bottom: .5em;
-  }
-
-  &_tools{
-    color: $brown;
-    margin-bottom: .5em;
-  }
+}
+.bl_conts_desc{
+  margin-bottom: 1em;
+}
+.bl_conts_desc2{
+  color: $darkblue;
+  font-weight: bold;
 }

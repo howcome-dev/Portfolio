@@ -1,19 +1,9 @@
 @charset "UTF-8";
 
-// ブレイクポイントを設定
-$bp-sp: 767px;
-$bp-pc: 768px;
-
-// PC最小サイズ
-$pc-min: 1000px;
-
-// SP最小サイズ
-$sp-min: 320px;
-
 // フォントサイズ
-$base-size: 1rem;
-$ttl: 1.75rem;
-$ttl2: 0.875rem;
-$txt: 0.812rem;
+$base-size: 1.1rem;
+$ttl: 2.2rem;
+$ttl2: 1.9rem;
+$txt: 1.125rem;
 
-$base-height: 1.7em;
+$line-height: 1.7em;
