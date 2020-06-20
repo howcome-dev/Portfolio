@@ -2,32 +2,33 @@
 @import "assets/styles/modules/_base.scss";
 
 .ly_header{
-  width: 90%;
-  font-family: $h-font;
+  width: 100%;
   text-align: center;
-  margin: 1em auto 5em;
+  background: $sunset;
+  margin: 0 auto 5em;
 
   &_ttl{
     order: 2;
     width: 100%;
-    color: $gold;
+    color: $lightred;
     font-family: $q-font;
     font-size: 2.8rem;
     letter-spacing: .03em;
     margin: 0 auto;
     line-height: $line-height;
-    filter: drop-shadow(3px 2px 1px $brown);
+    text-shadow: 1px 1px 1px $red;
 
     @include media(tb){ font-size: 4.9rem; }
     @include media(pc){ font-size: 6rem; }
   }
   &_ttl2{
     order: 3;
-    color: $gold;
+    color: $lightred;
+    font-family: $h-font;
     font-size: $ttl2;
     letter-spacing: .02em;
     margin: 0 auto 1.2em;
-    filter: drop-shadow(3px 2px 1px $brown);
+    text-shadow: 1px 1px 1px $red;
   }
   &_media{
     order: 1;
@@ -61,8 +62,8 @@
   }
   &_desc{
     position: absolute;
-    top: 24%;
-    left: -12%;
+    top: 20%;
+    left: -15%;
     display: inline-block;
     padding: 0 5px;
     width: 30vw;
@@ -82,8 +83,8 @@
     &:before{
       content: "";
       position: absolute;
-      bottom: -8px;
-      right: -8px;
+      bottom: -7px;
+      right: -7px;
       margin-top: -15px;
       border: 15px solid transparent;
       border-left: 15px solid $white;
@@ -97,7 +98,6 @@
   }
   &_note{
     order: 4;
-    font-family: $h-font;
     font-size: $txt;
     color: $brown;
     line-height: 1.5em;
@@ -107,6 +107,7 @@
     @include media(pc){ font-size: 1.5rem; }
   }
   &_link{
+    font-family: $h-font;
     display: inline-block;
     color: $darkblue;
     font-size: 2rem;
@@ -120,10 +121,49 @@
     }
 
     span{
-      font-family: $q-font;
+      font-family: $h-font;
+      font-weight: 700;
       line-height: $line-height;
       background: linear-gradient(45deg, $gold, $white, $gold);
       padding: 0 .3em;
     }
   }
+}
+
+/******************************************************************************
+  letter-glow
+*******************************************************************************/
+.bl_intro_desc{
+  font-size: 1rem;
+  line-height: 1.7em;
+  white-space: pre;
+  margin-bottom: 2em;
+
+  @include media(tb){ font-size: 1.5rem; }
+}
+@for $cnt from 1 through 213{
+.bl_intro_desc span:nth-child(#{$cnt}){
+  span{
+    -webkit-animation: letter-glow 3s ease;
+    animation: letter-glow 3s ease;
+  }
+  @include animationValue(letter-glow, 0.7, ease, $cnt * 0.05 , 1, both);
+}
+}
+@include keyframes(letter-glow){
+0%{
+  opacity: 0;
+  text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.1);
+}
+66%{
+  opacity: 1;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+}
+77%{
+  opacity: 1;
+}
+100%{
+  opacity: 1;
+  text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+}
 }

@@ -13,19 +13,20 @@
   color: $gold;
 
   &_ttl.ly_wrapper_ttl{
-    color: $antique;
-    text-shadow: 1px 2px 3px $darkblue;
-    margin-bottom: 3em;
+    color: $red;
+    text-shadow: 0px 1px 4px $gold;
+    margin-bottom: 1em;
   }
   &_desc{
     font-size: 1rem;
     line-height: 1.7em;
     white-space: pre;
+    margin-bottom: 2em;
 
     @include media(tb){ font-size: 1.5rem; }
   }
 }
-@for $cnt from 1 through 578{
+@for $cnt from 1 through 217{
   .bl_intro_desc span:nth-child(#{$cnt}){
     span{
       -webkit-animation: letter-glow 3s ease;
@@ -47,7 +48,15 @@
     opacity: 1;
   }
   100%{
-    opacity: 0.7;
+    opacity: 1;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
   }
+}
+
+.bl_intro_desc_en{
+  font-size: 1rem;
+  line-height: 1.7em;
+  letter-spacing: .05em;
+
+  @include media(tb){ font-size: 1.5rem; }
 }
