@@ -19,7 +19,7 @@ body{
   }
   font-family: $base-font;
   color: $brown;
-  background: $antique;
+  background: $darkwhite;
   line-height: $line-height;
 }
 img{
@@ -31,21 +31,13 @@ a{
   display: block;
   text-decoration: none;
 }
-h1, h2, h3{
+h1, h2, h3, p, ul, dl, dd{
   font-weight: normal;
-  margin: 0;
-}
-p{
+  padding: 0;
   margin: 0;
 }
 li{
   display: inherit;
-}
-dl{
-  margin: 0;
-}
-dd{
-  margin: 0;
 }
 button{
   background-color: transparent;
@@ -62,17 +54,20 @@ button{
 // ******************************************************************************
 // 共通パーツ
 // ******************************************************************************
-header, main{
-  max-width: 1280px;
-}
 main{
   margin: 0 auto 7em;
 }
+// ******************************************************************************
 // section
+// ******************************************************************************
 .ly_wrapper{
+  width: 91%;
   margin: 0 auto 3em;
+  @include boxSet;
 
-  @include media(pc){ margin-bottom: 5em; }
+  @include media(tb){ width: 58%; }
+  @include media(pc){ width: 58vw; max-width: 58vw; margin-bottom: 5em; }
+
   &:last-child{
     margin-bottom: 0;
   }
@@ -83,7 +78,6 @@ main{
     font-size: $ttl;
     text-align: center;
     margin: 0 auto 1em;
-    text-shadow: 0px 1px 4px $pink;
 
     @include media(pc){ font-size: 3rem; }
   }
@@ -96,37 +90,31 @@ main{
   }
   &_conts{
     width: 100%;
-    display: flex;
-    flex-flow: wrap;
-    justify-content: space-between;
+
+    @include media(pcs){ width: 48%; }
+  }
     &_ttl{
-      order: 2;
       width: 100%;
       color: $red;
       font-size: $ttl;
       margin: 0 0 .8em;
     }
-    &_ttl2{
-      order: 3;
-    }
-    &_term{
-      order: 1;
-      font-size: $txt;
-    }
-    &_desc{
-      order: 4;
-    }
   }
-}
-// コンテンツボックス
+
+// ******************************************************************************
+// works, exp共通
+// ******************************************************************************
 .bl_conts{
-  margin-bottom: 3em;
+  padding: 2em .5em;
+  margin: 0 auto 3em;
+
+  @include media(tb){ padding: 2em; }
+
 	&_ttl{
-		color: $gold;
+		color: $lightred;
     font-size: 1.4rem;
     font-weight: bold;
     margin-bottom: 1em;
-    filter: drop-shadow(1px 1px 1px $brown);
 	}
 	&_ttl2{
     font-size: 1.3rem;

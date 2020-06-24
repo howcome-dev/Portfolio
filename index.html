@@ -9,6 +9,7 @@
   <link rel="icon" href="/favicon.ico">
   <link rel="apple-touch-icon" type="image/png" href="/apple-touch-icon-180x180.png">
   <link rel="icon" type="image/png" href="/icon-192x192.png">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="assets/scripts/main.js" defer></script>
   <script src="assets/scripts/introduction.js" defer></script>
@@ -18,18 +19,30 @@
 </head>
 <body>
   <header class="ly_header">
+    <a href="index.html">
       <h1 class="ly_header_ttl">How Come?</h1>
       <h2 class="ly_header_ttl2">R's Portfolio Website</h2>
-      <h2 class="ly_header_media">
-        <img alt="My Avatar" src="assets/images/myAvatar.svg">
-        <img alt="Me" src="assets/images/the_red_one_is_me.jpg">
-        <p class="ly_header_desc">It's me!</p>
-      </h2>
-      <p class="bl_intro_desc js-letters">
-こんにちは！Rです。
-私のポートフォリオサイトへようこそ。
+    </a>
+    <h2 class="ly_header_media">
+      <img alt="My Avatar" src="assets/images/myAvatar.svg">
+      <img alt="Me" src="assets/images/the_red_one_is_me.jpg">
+      <p class="ly_header_desc">It's me!</p>
+    </h2>
+  </header>
 
-私は考えることが好きです。
+  <main>
+    <section class="bl_intro">
+      <div class="bl_intro_tab">
+        <button class="bl_intro_item"><a href="#" data-id="jpn" class="bl_intro_link is-active">日本語</a></button>
+        <button class="bl_intro_item"><a href="#" data-id="eng" class="bl_intro_link">English</a></button>
+      </div>
+      <div class="bl_intro_conts">
+        <p class="bl_intro_desc js-letters is-active" id="jpn">
+ようこそ。
+フロントエンドエンジニア
+Rのポートフォリオサイトです。
+
+私は考えることが好きで
 いつでもどこでも
 「なんで？」
 が頭の中に浮かんでいます。
@@ -37,56 +50,149 @@
 "How Come?"
 この単語をタイトルにしたのは、
 ドメインとしての独自性が
-高いからです。
+高いから。
 
+"develp"
 自分が知らなかったことを知って
 受け入れるか、
 もしくは考えつづけたい。
 
-"howcome.dev"
-自分の生活を開発して創造することは
-信じられないくらいとっても楽しい！
-</p>
-  <h3 class="ly_header_note">
-    <a class="ly_header_link" href="introduction.html"><span>Read in English</span></a>
-  </h3>
-  </header>
+"create"
+サイトトップのアニメーションは、
+家の絵をIllustratorで
+なんとなーく描き始めたことが
+きっかけで生まれました。
+考えることが好きな私が、
+考えるよりも先に手が動いた！
 
-  <main>
-    <section class="ly_wrapper bl_about">
-      <h2 class="ly_wrapper_ttl">ABOUT<br><span class="ly_wrapper_ttl2">SNSリンク</span></h2>
-      <dl class="ly_wrapper_conts bl_about_conts bl_about_conts">
-        <dt>Name</dt>
-        <dd class="bl_about_data">R (My Web Name)</dd>
-      </dl>
-      <dl class="ly_wrapper_conts bl_about_conts">
-        <dt>Twitter</dt>
-        <dd class="bl_about_data">
-          <a class="bl_about_link" href="https://twitter.com/howcome_dev" target="_blank">@howcome_dev</a>
-        </dd>
-      </dl>
-      <dl class="ly_wrapper_conts bl_about_conts">
-        <dt>Blog</dt>
-        <dd class="bl_about_data">
-          <a class="bl_about_link" href="https://howcome-dev.hatenablog.com/" target="_blank">howcome-dev’s blog</a>
-        </dd> 
-      </dl>
-      <dl class="ly_wrapper_conts bl_about_conts">
-        <dt>GitHub</dt>
-        <dd class="bl_about_data">
-          <a class="bl_about_link" href="https://github.com/howcome-dev" target="_blank">howcome-dev</a>
-        </dd>
-      </dl>
-      <dl class="ly_wrapper_conts bl_about_conts">
-        <dt>Pinterest</dt>
-        <dd class="bl_about_data">
-          <a class="bl_about_link" href="https://www.pinterest.jp/ruri82/" target="_blank">ruri82</a>
-        </dd>
-      </dl>
-      <dl class="ly_wrapper_conts bl_about_conts">
-        <dt>Mail</dt>
-        <dd class="bl_about_data">contact[at]howcome.dev</dd>
-      </dl>
+"howcome.dev"
+自分の生活を開発して
+創造することは
+信じられないくらい
+とっても楽しい！
+</p>
+<p class="bl_intro_desc js-letters" id="eng">
+Welcome to
+my portfolio website.
+My web name is R.
+I am a frontend engineer.
+
+I like to spend my time
+on thinking.
+Every time,
+everywhere,
+"Why?"
+keeps popping up
+in my head.
+
+"How Come?"
+The reason
+why I named this title is
+its uniqueness as a website domain.
+
+"develop"
+I'd like to explore things
+I never knew,
+to accept,
+or to grow thoughts about it.
+
+"create"
+
+"How Come?"
+It's incredibly so much fun
+to develop
+and
+create my life!
+</p>
+      </div><!-- bl_intro_conts -->
+    </section>
+
+    <section class="ly_wrapper bl_profile">
+      <h2 class="ly_wrapper_ttl">ABOUT<br><span class="ly_wrapper_ttl2">私について</span></h2>
+      <h3 class="bl_profile_ttl" id="profile">「疑問」・「家」・「人」<br>ぜんぶ好き。好きになりたいから好き。</h3>
+      <button class="bl_profile_button">
+        <a class="bl_profile_link" href="#howcome">How Come?とは</a>
+        <a class="bl_profile_link" href="#home">Homeとは</a>
+        <a class="bl_profile_link" href="#human">Humanとは</a>
+      </button>
+
+      <div id="howcome" class="bl_profile_overlay">
+        <div class="bl_profile_modal">
+          <h4 class="bl_profile_lede">How Come?</h4>
+          <a class="bl_profile_close" href="#profile">&times;</a>
+          <p class="bl_profile_desc">
+            なんで？が好き。<br>
+            大学時代に考えることが好きになりました。<br>
+            ひとつのきっかけは、講義でジンメルのゲシュタルトを安定させる枠の機能性について学んだことです。<br>
+            枠があることで人は安心する。<br>
+            額縁の意味を考えたことで、「ブランド」、「レッテル」、「固定観念」といった<br>
+            普段目にする身の回りの事象を俯瞰的に見られるようになりました。<br>
+            <br>
+            冒頭のアニメーションでは、額縁をborderで表現しています。<br>
+            自分の成長過程を象徴する重要なものです。
+          </p>
+        </div> <!-- bl_profile_modal -->
+      </div> <!-- howcome -->
+
+      <div id="home" class="bl_profile_overlay">
+        <div class="bl_profile_modal">
+          <h4 class="bl_profile_lede">Home</h4>
+          <a class="bl_profile_close" href="#profile">&times;</a>
+          <p class="bl_profile_desc">
+            家が好き。<br>
+            今までは嫌いでした。私には帰るふるさとがなかったからです。<br>
+            最近、「ただいま！」と言える場所と、「おかえり！」と言ってくれる人ができました。<br>
+            <br>
+            トップページの写真には、私の大切な友達、私の家を作ってくれた人たちを飾りました。<br>
+            こんな居場所があるのだったら、もうすこし家を好きになってみてもいいかもしれない。<br>
+            この背景のグラデーションは、彼らと見たある日の夕焼けの色の再現です。
+          </p>
+        </div> <!-- bl_profile_modal -->
+      </div> <!-- home -->
+
+      <div id="human" class="bl_profile_overlay">
+        <div class="bl_profile_modal">
+          <h4 class="bl_profile_lede">Human</h4>
+          <a class="bl_profile_close" href="#profile">&times;</a>
+          <p class="bl_profile_desc">
+            人が好き。<br>
+            話がしたい。思いを共有したい。<br>
+            私の人間性を知ってもらいたい。あなたの人間性を知りたい。<br>
+            尊重し合いたいから。<br>
+            <br>
+            同じ倫理観を持った方々と働きたいです。<br>
+            この思いから、単なるポートフォリオサイトではなくMy World展開のサイトに発展しました。
+          </p>
+        </div> <!-- bl_profile_modal -->
+      </div> <!-- human -->
+
+      <h2 class="bl_profile_ttl">愛すべき人・才能をサポートする仕事がしたい。</h2>
+        <h3 class="bl_profile_lede2">
+          お客さんの目的、目指すゴール、理念を共有しながらみんなで作りたい。<br>
+          経営者・デザイナーの視点を理解できるエンジニアになりたい。
+        </h3>
+        <ul class="bl_profile_desc">
+          <li>JavaScript始め、やりたいこと・必要なことが実現できるスキルを身につけたい。</li>
+          <li>自分が全体の中でどういった意味の作業をしているかを、把握できる環境にありたい。</li>
+          <li>クライアント・一緒に働くチームが一丸となって、<br>何がよりよいものか、<br>共に考え、デザインしたい！</li>
+        </ul>
+    </section> <!-- bl_profile -->
+          
+    <section class="ly_wrapper bl_sns">
+      <nav class="bl_sns_conts">
+        <a class="bl_sns_link" href="https://twitter.com/howcome_dev" target="_blank">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="bl_sns_link" href="https://howcome-dev.hatenablog.com/" target="_blank">
+          <i class="fas fa-edit"></i>
+        </a>
+        <a class="bl_sns_link" href="https://github.com/howcome-dev" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a class="bl_sns_link" href="https://www.pinterest.jp/ruri82/" target="_blank">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </nav>
     </section>
 
     <section class="ly_wrapper bl_works">
@@ -99,14 +205,14 @@
         </a>
       </dl>
       <dl class="ly_wrapper_conts bl_works_wrapper">
-        <a class="bl_conts bl_works_link" href="https://howcome.dev/home.html" target="_blank">
+        <a class="bl_conts bl_works_link" href="home.html" target="_blank">
           <dt class="bl_conts_ttl bl_works_ttl">おうちをつくろう</dt>
           <dd class="bl_conts_desc">デザイン<br>コーディング<br>期間：建設中<br>仮想空間的模様替えを楽しみたい。<br>パズルにするかどうするか。<br><span class="bl_conts_desc2">おうちを見てみる</span></dd>
           <dd class="bl_conts_note">Canvas, Create.JS, Affinity Designer, Affinity Photo, Affinity Publisher</dd>
         </a>
       </dl>
       <dl class="ly_wrapper_conts bl_works_wrapper">
-        <a class="bl_conts bl_works_link" href="https://howcome.dev/GermanyWalk/index.php" target="_blank">
+        <a class="bl_conts bl_works_link" href="https://howcome.dev/GermanyWalk/" target="_blank">
           <dt class="bl_conts_ttl bl_works_ttl">Germany Walk<br>(やや)架空の<br>ドイツ観光情報サイト</dt>
           <dd class="bl_conts_desc">デザイン<br>コーディング<br>期間：10日<br><span class="bl_conts_desc2">Germany Walkを見てみる</span></dd>
           <dd class="bl_conts_note">PHP, Photoshop</dd>
@@ -150,32 +256,32 @@
     </section>
 
     <section class="ly_wrapper bl_exp">
-      <h2 class="ly_wrapper_ttl">EXPERIENCES<br><span class="ly_wrapper_ttl2">WEBデザイナーになってから<br>いままで</span></h2>
-        <dl class="bl_conts bl_exp_wrapper">
+      <h2 class="ly_wrapper_ttl">EXPERIENCES<br><span class="ly_wrapper_ttl2">WEB業界に入ってから<br>いままで</span></h2>
+        <dl class="ly_wrapper_conts bl_conts bl_exp_wrapper">
           <dt class="bl_conts_ttl">ゲームアプリ制作会社</dt>
           <dd class="bl_conts_ttl2">コーディング</dd>
           <dd class="bl_conts_desc">2019/03 ~ 2019/05</dd>
           <dd class="bl_conts_note">ブラウザゲームの開発でコーディングを担当。</dd>
         </dl>
-        <dl class="bl_conts bl_exp_wrapper">
+        <dl class="ly_wrapper_conts bl_conts bl_exp_wrapper">
           <dt class="bl_conts_ttl">WEB制作会社</dt>
           <dd class="bl_conts_ttl2">デザイン&amp;コーディング</dd>
           <dd class="bl_conts_desc">2019/01 ~ 2019/03</dd>
           <dd class="bl_conts_note">ネイルサロンの新規サイト立ち上げ、WEBシステムのレジ画面のデザイン、コーポレートサイトのリニューアルデザイン制作、ダウンロード特典の冊子デザイン等を行う。</dd>
         </dl>
-        <dl class="bl_conts bl_exp_wrapper">
+        <dl class="ly_wrapper_conts bl_conts bl_exp_wrapper">
           <dt class="bl_conts_ttl">ECサイト運営会社</dt>
           <dd class="bl_conts_ttl2">ECサイト更新・運用</dd>
           <dd class="bl_conts_desc">2018/10 ~ 2019/12</dd>
           <dd class="bl_conts_note">大手アパレルブランドのサイトのバナー更新やLP制作、EC-CUBE、 WordPressの投稿ページ更新、Mail Publisherを使ったメルマガ配信を行う。</dd>
         </dl>
-        <dl class="bl_conts bl_exp_wrapper">
+        <dl class="ly_wrapper_conts bl_conts bl_exp_wrapper">
           <dt class="bl_conts_ttl">WEB制作会社のインターン参加</dt>
           <dd class="bl_conts_ttl2">LP&amp;バナー制作</dd>
           <dd class="bl_conts_desc">2018/06 ~ 2018/07</dd>
           <dd class="bl_conts_note">LP制作とバナー制作を行い、実務の基本を学ぶ。</dd>
         </dl>
-        <dl class="bl_conts bl_exp_wrapper">
+        <dl class="ly_wrapper_conts bl_conts bl_exp_wrapper">
           <dt class="bl_conts_ttl">JMS小倉東京オフィスさま<br>サイト全面リニューアル</dt>
           <dd class="bl_conts_ttl2">フェリカテクニカルアカデミー<br>WEBサイト制作科在籍</dd>
           <dd class="bl_conts_desc">2018/05 ~ 2018/07</dd>

@@ -1,0 +1,64 @@
+@charset "UTF-8";
+@import "assets/styles/modules/_base.scss";
+
+.ly_wrapper.bl_sns{
+  width: 76%;
+  
+  @include media(tb){ width: 340px; max-width: 340px; }
+}
+
+.bl_sns{
+  &_conts{
+    @include boxSet;
+    width: 90%;
+    flex-flow: nowrap;
+    padding: .5em 0;
+    margin: 0 auto;
+
+    @include media(tb){ width: 100%; }
+    @include media(pc){ font-size: 1.3rem; }
+  }
+  &_link{
+    position: relative;
+    width: 14vw;
+    height: 14vw;
+    background: $darkblue;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 1px $brown);
+    cursor: pointer;
+
+    @include media(tb){ width: 70px; height: 70px; }
+
+    &:hover:before{
+      transform: scale(1);
+    }
+    &:before{
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      transform: scale(0);
+      background: $lightred;
+      transition: all .3s cubic-bezier(0.77,0,0.17,1.02) 0s;
+    }
+
+    .fab,
+    .fas{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      font-size: 1.5rem;
+      line-height: 14vw;
+      text-align: center;
+      color: $darkwhite;
+
+      @include media(tb){ line-height: 70px; }
+    }
+  }
+}

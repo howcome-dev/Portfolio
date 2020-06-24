@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import "assets/styles/modules/_base.scss";
+
+.ly_wrapper.bl_profile{
+  padding: 3em .5em;
+  margin-bottom: 2em;
+}
+
+.bl_profile{
+  background: radial-gradient($gold, $darkwhite);
+  padding: 1.5em;
+
+  &_ttl{
+    color: $brown;
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 2em;
+    text-align: center;
+    padding: 1em 0;
+    margin: 0 auto;
+  }
+
+  &_button{
+    width: 100%;
+  }
+  &_link{
+    font-family: $h-font;
+    font-weight: 900;
+    color: $lightred;
+    padding: 1em;
+
+    &:hover{
+      color: $gold;
+      filter: brightness(1.2);
+      transition: .8s;
+    }
+  }
+
+  &_overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(91, 81, 73, .7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+  
+    &:target{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}
+
+.bl_profile{
+  &_modal{
+    width: 90vw;
+    background: $sunset;
+    padding: .5em;
+    margin: 1em auto;
+
+    @include media(tb){ width: 70vw; padding: 6.5em;}
+    @include media(pcs){ padding: 8.5em;}
+  }
+  &_ttl2{
+    color: $brown;
+    font-size: 1.1rem;
+    font-weight: 900;
+    line-height: 2em;
+    padding: 1em 0;
+    margin-bottom: .5em;
+  }
+
+  &_lede,
+  &_lede2{
+    font-family: $h-font;
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: $line-height;
+    text-align: center;
+  }
+  &_lede2{
+    font-size: 1rem;
+    margin: 0 auto 2em;
+  }
+
+  &_close{
+    color: $darkwhite;
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transition: all 200ms;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    transform: translateX(-50%);
+
+    @include media(tb){ top: 88%; font-size: 3rem; }
+  }
+  &_desc{
+    font-size: 1rem;
+    line-height: $line-height;
+    text-align: center;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+}

@@ -1,42 +1,35 @@
 @charset "UTF-8";
 @import "assets/styles/modules/_base.scss";
 
-.bl_works{
-  @include media(pc){ @include boxSet(); width: 70%;}
-  &_wrapper{
-    width: 100%;
+.ly_wrapper.bl_works_wrapper{
+  width: 100%;
 
-    @include media(pc){ width: 45%; align-items: flex-start;}
+  @include media(pcs){ width: 40%; }
+  @include media(pc){ width: 45%; align-items: flex-start;}
 
     &:last-child{
       margin-bottom: 0;
     }
   }
 
-  &_link{
+  .bl_works{
+    &_link{
     display: block;
-    width: 90%;
     text-align: center;
     color: $red;
-    background: $gold;
-    box-shadow: 0 2px 14px $darkblue;
-    padding: 2em .5em;
-    margin: 0 auto 2em;
-
-    @include media(tb){ width: 70%; }
-    @include media(pc){ width: 90%; padding: 2em 2em; }
+    background: radial-gradient($darkwhite 54%, $antique);
+    box-shadow: 0 2px 14px $brown;
   
     &:hover{
       filter: brightness(1.2);
       transform: scale(.95);
-      transition: 1s;
+      transition: .8s;
     }
   }
   &_ttl.bl_conts_ttl{
     color: $darkblue;
     line-height: 1.5em;
   }
-}
 .bl_conts_desc{
   margin-bottom: 1em;
 }
@@ -44,3 +37,4 @@
   color: $darkblue;
   font-weight: bold;
 }
+  }

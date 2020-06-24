@@ -1,20 +1,9 @@
 @charset "UTF-8";
 @import "assets/styles/modules/_base.scss";
 
-// 各exp
-.ly_wrapper.bl_exp{
-  width: 91%;
+.bl_conts.bl_exp_wrapper{
+  background: linear-gradient(135deg, $darkwhite, rgba(240, 238, 233, .3), $darkwhite);
 
-  @include media(tb){ width: 58%; }
-  @include media(pc){ width: 60%; }
-  
-}
-
-.bl_exp_wrapper{
-  text-align: center;
-    @include media(pc){
-      padding: 0 2em;
-    }
   dd{
     margin-bottom: .5em;
   }

@@ -16,6 +16,8 @@
   height: 100%;
   overflow: hidden;
   z-index: 0;
+
+  @include media(pc){ max-width: 100vw; }
 }
 .frame{
   position: absolute;
@@ -47,7 +49,7 @@
   @include media(tb){ width: 84vw; height: 87vh; }
   @include media(pcs){ width: 83vw; height: 93vh; }
   @include media(pcm){ width: 65vw; height: 96vh; }
-  @include media(pc){ width: 57vw; height: 92vh; max-width: 57vw; }
+  @include media(pc){ width: 57vw; height: 92vh; }
 }
 .frame.bg3{
   width: 91vw;
@@ -57,7 +59,7 @@
   @include media(tb){ width: 80vw; height: 83vh; }
   @include media(pcs){ width: 79vw; height: 88vh; }
   @include media(pcm){ width: 61vw; height: 90vh; }
-  @include media(pc){ width: 53vw; height: 85vh; max-width: 53vw; }
+  @include media(pc){ width: 53vw; height: 85vh; }
 }
 .frame.bg4{
   width: 87vw;
@@ -67,7 +69,7 @@
   @include media(tb){ width: 78vw; height: 81vh; }
   @include media(pcs){ width: 76vw; height: 85vh; }
   @include media(pcm){ width: 60vw; height: 89vh; }
-  @include media(pc){ width: 52vw; height: 83vh; max-width: 52vw; }
+  @include media(pc){ width: 52vw; height: 83vh; }
 }
 .frame.bg5{
   width: 78vw;
@@ -77,90 +79,17 @@
   @include media(tb){ width: 73vw; height: 76vh; }
   @include media(pcs){ width: 72vw; height: 80vh; }
   @include media(pcm){ width: 56vw; height: 83vh; }
-  @include media(pc){ width: 49vw; height: 78vh; max-width: 49vw; }
+  @include media(pc){ width: 49vw; height: 78vh; }
 }
 .frame.bg6{
   width: 74vw;
   height: 70vh;
-  background-color: #CEB899;
+  background-color: $darkwhite;
 
   @include media(tb){ width: 70vw; height: 73vh; }
   @include media(pcs){ width: 70vw; height: 78vh; }
   @include media(pcm){ width: 54vw; height: 80vh; }
-  @include media(pc){ width: 47vw; height: 75vh; max-width: 47vw; }
-}
-/**
- * 額縁のコーナー
- */
-.corner_wrapper{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-
-  .corner{
-    position: absolute;
-    width: 32%;
-    height: 14%;
-    top: 0;
-    left: 0;
-    background: url(assets/images/corner.svg) no-repeat;
-    background-size: 98%;
-
-    @include media(tb){ width: 27%; height: 19%; background-size: 100%; }
-    @include media(pcs){ width: 27%; height: 22%; }
-    @include media(pcm){ width: 19%; height: 19%; }
-    @include media(pc){ width: 21vw; height: 12vw; max-width: 21vw; }
-
-    &:before{
-      content: "";
-      display: block;
-      padding-top: 57.0135%;
-    }
-    // 各コーナー
-    &:nth-child(1){
-      top: 5%;
-      left: -6%;
-      transform: rotate(-45deg);
-
-      @include media(tb){ top: 2%; left: -1%; }
-      @include media(pcs){ top: 0; left: 0; }
-      @include media(pcm){ top: -2%; left: 12%; }
-      @include media(pc){ top: -1%; left: 15%; }
-    }
-    &:nth-child(2){
-      top: 5%;
-      left: 75%;
-      transform: rotate(45deg);
-
-      @include media(tb){ top: 2%; left: 74%; }
-      @include media(pcs){ top: 0; left: 73%; }
-      @include media(pcm){ top: -2%; left: 69%; }
-      @include media(pc){ top: -1%; left: 64%; }
-    }
-    &:nth-child(3){
-      top: 81%;
-      left: 75%;
-      transform: rotate(135deg);
-
-      @include media(tb){ top: 80%; left: 74%; }
-      @include media(pcs){ top: 80%; left: 73%; }
-      @include media(pcm){ top: 83%; left: 69%; }
-      @include media(pc){ top: 72%; left: 64%; }
-    }
-    &:nth-child(4){
-      top: 81%;
-      left: -5%;
-      transform: rotate(-135deg);
-
-      @include media(tb){ top: 80%; left: -1%; }
-      @include media(pcs){ top: 80%; left: 0; }
-      @include media(pcm){ top: 83%; left: 12%; }
-      @include media(pc){ top: 72%; left: 15%; }
-    }
-  }
+  @include media(pc){ width: 47vw; height: 75vh; }
 }
 /**
  * MY HOME
@@ -171,7 +100,7 @@
   background-size: (66%);
 
   @include media(pcm){ background-size: 50%; }
-  @include media(pc){ background-size: 40%; max-width: 79vw;}
+  @include media(pc){ background-size: 34%; }
 
   // おうちの画像がだんだんはっきりしてくる
   &.active{
@@ -189,7 +118,7 @@
 .msg_wrapper{
   position: absolute;
   width: 100%;
-  max-width: 1280px;
+  max-width: 100vw;
   height: 100%;
   color: $white;
   margin: auto;
@@ -313,7 +242,7 @@
     
     @include media(tb){ font-size: 7.5vw; }
     @include media(pcm){ font-size: 7vw; line-height: 7em; }
-    @include media(pc){ font-size: 6vw; }
+    @include media(pc){ font-size: 6vw; line-height: 5em; }
   }
   span.active{
     // Press ButtonのあとにPlay in My World!が現れる
@@ -374,6 +303,10 @@
   transform: translate(-50%, -50%);
   width: 21%;
   z-index: 2;
+
+  &:hover{
+    filter: brightness(1.3);
+  }
 
   @include media(tb){ top: 85%; left: 79%; width: 12%; }
   @include media(pcm){ top: 87%; left: 90%; }
